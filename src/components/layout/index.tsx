@@ -22,6 +22,8 @@ export default function Layout({ children, background, header = "title" }: any) 
                 const featurePosition = feature.getBoundingClientRect();
                 const content: any = document.querySelector('#content');
                 const contentPosition = content.getBoundingClientRect();
+                const teamMember: any = document.querySelector('#teamMember');
+                const teamMemberPosition = teamMember.getBoundingClientRect();
 
 
                 if (welcomePosition.top + 250 < window.innerHeight && welcomePosition.bottom >= 0) {
@@ -32,6 +34,9 @@ export default function Layout({ children, background, header = "title" }: any) 
                 }
                 if (contentPosition.top + 250 < window.innerHeight && contentPosition.bottom >= 0) {
                     updateLeftPanel(2);
+                }
+                if (teamMemberPosition.top + 250 < window.innerHeight && teamMemberPosition.bottom >= 0) {
+                    updateLeftPanel(3);
                 }
             }} >
                 <BackgroundVideo />

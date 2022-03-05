@@ -32,9 +32,9 @@ const ContentSection = () => {
 
     return <Container id="content" className='select-none' >
         <div>
-            <div className='flex absolute w-screen h-screen '>
+            <div className='flex absolute w-screen' style={{ height: "100%" }}>
                 <div className='w-full h-full' >
-                    <div className='overflow-hidden w-screen  relative' style={{ height: "107.5vh" }}>
+                    <div className='overflow-hidden w-screen  relative h-full'  >
                         <ImageContainer
                             src={"/images/feature3.webp"}
                             layout='fill'
@@ -46,7 +46,6 @@ const ContentSection = () => {
                         />
                     </div>
                 </div>
-
             </div>
             <div className='px-2 sm:px-24 w-screen h-full relative z-20 text-lg'>
                 <div className='w-full '>
@@ -56,10 +55,10 @@ const ContentSection = () => {
                     <p className='text-4xl sm:text-5xl uppercase mt-6 font-bold text-center'>
                         All this in a single platform
                     </p>
-                    <div className='flex mt-10 md:mt-40 flex-wrap w-full justify-center gap-y-5'>
+                    <div className='flex mt-10 md:mt-20 flex-wrap w-full justify-center gap-y-5'>
                         {contents.map((data, index) => {
                             return (
-                                <div className='w-full md:w-1/2 lg:w-1/3 rounded-md overflow-hidden px-4 content-card ' style={{ height: 300 }}>
+                                <div className='w-full md:w-1/2 lg:w-1/3 rounded-md overflow-hidden px-4 content-card ' style={{ height: 300 }} key={index}>
                                     <div className=' background rounded-md flex flex-col p-4 justify-center ' style={{ background: "#00000066" }}>
                                         <div className='w-full h-36 flex justify-center '  >
                                             <div className='overflow-hidden w-36 h-36 relative'>

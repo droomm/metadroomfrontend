@@ -2,6 +2,7 @@ import Layout from '../components/layout'
 import ContentSection from '../section/content'
 import FeatureSection from '../section/features'
 import HeroSection from '../section/hero'
+import TeamMemberSection from '../section/team'
 
 const Home = () => {
 
@@ -10,6 +11,7 @@ const Home = () => {
             <HeroSection />
             <FeatureSection />
             <ContentSection />
+            <TeamMemberSection />
         </Layout>
     )
 }

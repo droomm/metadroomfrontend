@@ -1,3 +1,4 @@
+import router from 'next/router';
 import React, { useState, useContext, useEffect } from "react";
 import CallSVG from '../../assets/icons/call';
 import DashboardSVG from '../../assets/icons/dashboard';
@@ -41,7 +42,7 @@ const NavBarProvider: React.FC = ({ children }) => {
         },
 
         {
-            path: "#team",
+            path: "#teamMember",
             icon:
                 <ListSVG width="25" height="25" key={3} />,
         },
@@ -57,7 +58,12 @@ const NavBarProvider: React.FC = ({ children }) => {
         console.log("hash",)
         let count = 0;
         for (let icon of icons) {
-            if (window.location.hash === icon.path) setLeftPanelTab(count);
+            if (window.location.hash === icon.path) {
+                // setTimeout(() => {
+                //     router.push(`/${icon.path}`, undefined, { shallow: true });
+                // }, 500)
+                setLeftPanelTab(count);
+            }
             count++;
         }
     }, [])

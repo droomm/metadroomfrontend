@@ -6,7 +6,7 @@ import Image from "next/image";
 import GridSVG from '../../assets/icons/grid';
 
 const HeaderComponent = () => {
-    return <Container className='fixed z-20 px-5 items-center flex overflow-hidden justify-between'>
+    return <Container className='fixed z-40 px-5 items-center flex overflow-hidden justify-between'>
 
         <LogoSVG height="50" width='50' />
 
@@ -18,12 +18,12 @@ const HeaderComponent = () => {
                 </p>
                 <div className='rounded-full overflow-hidden w-11 h-11 relative'>
                     <Image
-                        src={"/images/avatar.png"}
+                        src={"/images/avatar.webp"}
                         layout='fill'
                         alt="avatar"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={"/images/avatar.png"}
+                        blurDataURL={"/images/avatar.webp"}
                         quality={100}
                     />
                 </div>

@@ -6,7 +6,7 @@ const BackgroundVideo = () => {
 
         <video
             style={{ width: "100vw", height: "100vh", objectFit: "cover" }}
-        // autoPlay loop muted preload="auto"
+            autoPlay loop muted preload="auto"
         >
             <source src='/videos/background.mp4' type="video/mp4" />
         </video>

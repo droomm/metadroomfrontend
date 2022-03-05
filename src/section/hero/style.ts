@@ -67,6 +67,9 @@ export const Container = styled.div`
   }
   .hero-Image {
     height: 60vh;
+    @media (max-width: 800px) {
+      height: 500px;
+    }
     @media (max-width: 630px) {
       height: 400px;
     }

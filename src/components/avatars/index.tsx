@@ -1,7 +1,7 @@
 import React, { } from "react";
 import Image from "next/image";
 
-const AvatarBox = ({ image = "/images/avatar.png", name = "name" }: { image: string, name: string }) => {
+const AvatarBox = ({ image = "/images/avatar.webp", name = "name" }: { image: string, name: string }) => {
     return <div className='w-full flex flex-col items-center px-1 gap-y-2'>
 
         <div className='rounded-full overflow-hidden w-full h-12 relative '>
