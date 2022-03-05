@@ -11,12 +11,12 @@ const HeaderComponent = () => {
         <LogoSVG height="50" width='50' />
 
         <div className='hidden sm:flex right-corner h-full items-center gap-x-3'>
-            <div className='divider  rounded-full' />
+            {/* <div className='divider  rounded-full' /> */}
             <div className=' flex items-center gap-x-4 ml-5'>
-                <p className='text-lg font-thin '>
+                {/* <p className='text-lg font-thin '>
                     SomeName
-                </p>
-                <div className='rounded-full overflow-hidden w-11 h-11 relative'>
+                </p> */}
+                <div className='rounded-full overflow-hidden w-14 h-14 relative'>
                     <Image
                         src={"/images/avatar.webp"}
                         layout='fill'

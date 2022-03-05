@@ -28,7 +28,7 @@ const LeftSidePanel = () => {
                         {data.icon}
                     </SVGContainer>
                 })}
-                <div className='absolute bottom-7 w-full flex items-center flex-col gap-y-7 bottom-left-side-panel'>
+                {/* <div className='absolute bottom-7 w-full flex items-center flex-col gap-y-7 bottom-left-side-panel'>
                     <BottomSVGContainer active={true}>
                         <NotificationSVG width="25" height="25" />
                     </BottomSVGContainer>
@@ -36,7 +36,7 @@ const LeftSidePanel = () => {
                         <SoundSVG width="25" height="25" />
                     </BottomSVGContainer>
 
-                </div>
+                </div> */}
             </div>
         </SidePanelStructure>
     )
