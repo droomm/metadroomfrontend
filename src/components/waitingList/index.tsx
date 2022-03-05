@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Container } from './style';
-import Image from "next/image";
-import OverViewCard from '../overViewCard';
 import { useTheme } from 'styled-components';
 
 const WaitingList = () => {
