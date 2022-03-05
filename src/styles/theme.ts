@@ -17,8 +17,6 @@ export const theme = {
     white: "#ffffff",
     primary: "#EEFF04",
     primaryBackground: "#1f1f1f",
-    secondaryBackground: "#FFFFFF",
-    secondary: "#0D4E59",
     third: "#AAAAAA",
     secondaryLight: "#363636",
     secondaryDark: "#252525",

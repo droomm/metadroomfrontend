@@ -2,11 +2,11 @@ import React, { } from "react";
 import { Container } from './style';
 
 const BackgroundVideo = () => {
-    return <Container className='z-0 fixed bg-zinc-700 w-screen h-screen '>
+    return <Container className='z-0 fixed  w-screen h-screen '>
 
         <video
             style={{ width: "100vw", height: "100vh", objectFit: "cover" }}
-            autoPlay loop muted preload="auto"
+        // autoPlay loop muted preload="auto"
         >
             <source src='/videos/background.mp4' type="video/mp4" />
         </video>
