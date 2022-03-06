@@ -3,7 +3,10 @@ import Image from "next/image";
 
 export const Container = styled.div`
   min-width: 320px;
-  height: 105vh;
+  height: 110vh;
+  @media (max-width: 420px) {
+    height: 100vh;
+  }
   position: relative;
 
   color: ${(props) => props.theme.colors.primary};
@@ -16,11 +19,15 @@ export const Container = styled.div`
 
   .top-text {
     @media (max-width: 545px) {
-      font-size: 3.15rem /* 48px */;
+      font-size: 3.05rem /* 48px */;
       line-height: 1;
     }
     @media (max-width: 420px) {
       font-size: 2.5rem /* 36px */;
+      line-height: 3rem /* 40px */;
+    }
+    @media (max-width: 400px) {
+      font-size: 2.35rem /* 36px */;
       line-height: 3rem /* 40px */;
     }
     @media (max-width: 360px) {
@@ -30,7 +37,7 @@ export const Container = styled.div`
   }
   .bottom-text {
     @media (max-width: 420px) {
-      font-size: 2.25rem /* 36px */;
+      font-size: 2.15rem /* 36px */;
       line-height: 2.5rem /* 40px */;
     }
     @media (max-width: 360px) {
@@ -72,6 +79,9 @@ export const Container = styled.div`
     }
     @media (max-width: 630px) {
       height: 400px;
+    }
+    @media (max-width: 420px) {
+      height: 300px;
     }
     @media (max-width: 530px) {
       width: 90vw;

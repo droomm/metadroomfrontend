@@ -33,7 +33,7 @@ const leftButtonAni = {
         transition: {
             ease: "easeInOut",
             delay: 1.5,
-            duration: 0.75,
+            duration: 1,
         },
     },
 };
@@ -46,7 +46,7 @@ const rightButtonAni = {
         transition: {
             ease: "easeInOut",
             delay: 1.5,
-            duration: 0.75,
+            duration: 1,
         },
     },
 };
@@ -58,7 +58,7 @@ const ImageAni = {
         transition: {
             ease: "easeInOut",
             delay: 2,
-            duration: 0.75,
+            duration: 1.2,
         },
     },
 };
@@ -89,10 +89,10 @@ let title2 = "To The Metaverse";
 const HeroSection = () => {
 
     return <Container id="welcome" >
-        <div className='sm:px-24 w-screen pt-28 sm:pt-10 flex items-center flex-col h-full'>
+        <div className='sm:px-24 w-screen pt-8 sm:pt-10 flex items-center flex-col h-full'>
             <div className='flex flex-col items-center justify-center w-full mt-4'>
                 <motion.span
-                    className='row-title mb-2'
+                    className='row-title sm:mb-2'
                     variants={banner}
                     initial='initial'
                     animate='animate'>
@@ -139,7 +139,7 @@ const HeroSection = () => {
 
             </div>
             <div
-                className='flex w-full flex-wrap gap-y-4 mt-16 sm:mt-10 justify-center'>
+                className='flex w-full flex-wrap gap-y-4 mt-8 sm:mt-10 justify-center'>
                 <motion.div
                     variants={leftButtonAni}
                     initial='initial'
@@ -165,7 +165,7 @@ const HeroSection = () => {
                 variants={ImageAni}
                 initial='initial'
                 animate='animate'
-                className=' overflow-hidden w-10/12 md:w-10/12  xl:w-7/12  relative mt-14 hero-Image ' >
+                className=' overflow-hidden w-10/12 md:w-10/12  xl:w-7/12  relative mt-6 sm:mt-14 hero-Image ' >
                 <ImageContainer
                     src={"/images/hero.webp"}
                     layout='fill'

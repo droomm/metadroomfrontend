@@ -50,7 +50,7 @@ const TeamMemberSection = () => {
                     <div className='flex mt-10  flex-wrap w-full justify-center gap-y-5'>
                         {teamMembers.map((data, index) => {
                             return (
-                                <div className='w-full md:w-1/2 lg:w-1/4 rounded-md overflow-hidden px-4 content-card ' key={index}>
+                                <div className='w-full md:w-1/3 xl:w-1/4 rounded-md overflow-hidden px-4 content-card ' key={index}>
                                     <div className=' rounded-md flex flex-col p-4 justify-center ' >
                                         <div className='w-full h-44 flex justify-center '  >
                                             <div className='overflow-hidden w-44 h-44  rounded-full border-2 avatar-box relative'>
@@ -66,12 +66,12 @@ const TeamMemberSection = () => {
                                             </div>
                                         </div>
                                         <div className=' flex justify-center  w-full'>
-                                            <p className='text-4xl lg:text-3xl font-bold my-3'>
+                                            <p className='text-3xl font-thin my-3'>
                                                 {data.title}
                                             </p>
                                         </div>
-                                        <div className='flex justify-center mt-3 items-start  w-full'>
-                                            <p className='text-2xl lg:text-lg text-center'>
+                                        <div className='flex justify-center mt-1 items-start  w-full'>
+                                            <p className='text-lg text-center'>
                                                 {data.detail}
                                             </p>
                                         </div>
@@ -85,7 +85,7 @@ const TeamMemberSection = () => {
                     <div className='flex mt-10 flex-wrap w-full justify-center gap-y-5'>
                         {advisors.map((data, index) => {
                             return (
-                                <div className='w-full md:w-1/2 lg:w-1/3  rounded-md overflow-hidden px-4 content-card ' key={index}>
+                                <div className='w-full md:w-1/2 xl:w-1/3  rounded-md overflow-hidden px-4 content-card ' key={index}>
                                     <div className=' rounded-md flex flex-col p-4 justify-center ' >
                                         <div className='w-full h-44 flex justify-center '  >
                                             <div className='overflow-hidden w-44 h-44  rounded-full border-2 avatar-box relative'>
@@ -101,12 +101,12 @@ const TeamMemberSection = () => {
                                             </div>
                                         </div>
                                         <div className=' flex justify-center  w-full'>
-                                            <p className='text-3xl md:text-2xl xl:text-3xl font-bold my-3'>
+                                            <p className='text-2xl xl:text-3xl font-thin my-3'>
                                                 {data.title}
                                             </p>
                                         </div>
                                         <div className='flex justify-center  items-start  w-full'>
-                                            <p className='text-lg text-center'>
+                                            <p className='text-md text-center'>
                                                 {data.detail}
                                             </p>
                                         </div>
