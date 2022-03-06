@@ -58,8 +58,8 @@ const ContentSection = () => {
                     <div className='flex mt-10 md:mt-20 flex-wrap w-full justify-center gap-y-5'>
                         {contents.map((data, index) => {
                             return (
-                                <div className='w-full md:w-1/2 lg:w-1/3 rounded-md overflow-hidden px-4 content-card ' style={{ height: 300 }} key={index}>
-                                    <div className=' background rounded-md flex flex-col p-4 justify-center ' style={{ background: "#00000066" }}>
+                                <div className='w-full md:w-1/2 lg:w-1/3 rounded-md overflow-hidden px-4 content-card ' key={index}>
+                                    <div className=' background rounded-md flex flex-col p-4 justify-center  py-5' style={{ background: "#00000066" }}>
                                         <div className='w-full h-36 flex justify-center '  >
                                             <div className='overflow-hidden w-36 h-36 relative'>
                                                 <ImageContainer
@@ -78,7 +78,7 @@ const ContentSection = () => {
                                                 {data.title}
                                             </p>
                                         </div>
-                                        <div className='h-14 flex justify-center  items-start  w-full'>
+                                        <div className=' flex justify-center  items-start  w-full'>
                                             <p className='text-mg md:text-sm text-center'>
                                                 {data.detail}
                                             </p>
