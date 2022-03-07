@@ -1,6 +1,5 @@
 import React, { } from "react";
 import LogoSVG from '../../assets/icons/logo';
-import SettingSVG from '../../assets/icons/setting';
 import { Container } from './style';
 import Image from "next/image";
 import GridSVG from '../../assets/icons/grid';
@@ -16,7 +15,7 @@ const HeaderComponent = () => {
                 {/* <p className='text-lg font-thin '>
                     SomeName
                 </p> */}
-                <div className='rounded-full overflow-hidden w-14 h-14 relative'>
+                <div className='rounded-full overflow-hidden w-12 h-12 relative'>
                     <Image
                         src={"/images/avatar.webp"}
                         layout='fill'
@@ -28,10 +27,6 @@ const HeaderComponent = () => {
                     />
                 </div>
 
-            </div>
-            <div className='w-14 flex justify-center'>
-
-                <SettingSVG width="30" height="30" />
             </div>
         </div>
         <div className='flex sm:hidden mobile-panel'>

@@ -23,18 +23,18 @@ export const LayoutContainer = styled.div<LayoutContainerData>`
   ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 1px ${(props) => props.theme.colors.primaryBackground};
     border-radius: 10px;
-    background: ${(props) => props.theme.colors.primary};
+    /* background: ${(props) => props.theme.colors.primary}; */
   }
 
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: ${(props) => props.theme.colors.primary};
+    /* background: ${(props) => props.theme.colors.white}; */
     border-radius: 10px;
   }
 
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: ${(props) => props.theme.colors.primary};
+    /* background: ${(props) => props.theme.colors.white}; */
   }
   .background {
     height: 100%;

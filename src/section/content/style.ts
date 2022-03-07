@@ -12,16 +12,14 @@ export const Container = styled.div`
   .content-card {
     color: ${(props) => props.theme.colors.text};
   }
+  .content-image-box {
+    height: 500px;
+    @media (max-width: 420px) {
+      height: 400px;
+    }
+  }
 `;
 
 export const ImageContainer = styled(Image)`
   object-fit: cover;
-  -webkit-mask-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(rgba(0, 0, 0, 1)),
-    to(rgba(0, 0, 0, 0.65))
-  );
-  mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.65));
 `;
