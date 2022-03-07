@@ -27,7 +27,7 @@ export const Container = styled.div`
     position: absolute;
     top: 54%;
     @media (max-width: 630px) {
-      top: 52.5%;
+      top: 51.5%;
     }
     left: 50%;
     min-height: 100%;

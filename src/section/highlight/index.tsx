@@ -32,7 +32,7 @@ const HighLight = () => {
                                     {data.title}
                                 </p>
                             </div>
-                            <p className='text-md font-thin text-white/60 w-2/3'>
+                            <p className='text-md font-thin text-white/60 lg:w-2/3'>
                                 {data.detail}
                             </p>
 

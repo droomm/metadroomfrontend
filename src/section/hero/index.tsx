@@ -91,7 +91,7 @@ let title2 = "The Metaverse";
 const HeroSection = () => {
 
     return <Container id="welcome">
-        <div className='sm:px-24 w-screen pt-28  flex items-center flex-col h-full'>
+        <div className='sm:px-24 w-screen pt-36 sm:pt-0 sm:justify-center  flex items-center flex-col h-full'>
             <div className='flex flex-col items-center justify-center w-full '>
                 <p className='text-2xl mb-4 font-bold'>
                     VirtualWide Inc.
@@ -128,7 +128,7 @@ const HeroSection = () => {
 
             </div>
             <div
-                className='flex w-full flex-wrap gap-y-10 mt-20 justify-center'>
+                className='flex w-full flex-wrap gap-y-8 mt-14 justify-center'>
                 <motion.div
                     variants={leftButtonAni}
                     initial='initial'
@@ -154,7 +154,7 @@ const HeroSection = () => {
                     </button>
                 </motion.div>
             </div>
-            <div className='absolute bottom-0 cursor-pointer animate-bounce down-arrow' onClick={() => {
+            <div className='absolute bottom-0 cursor-pointer animate-bounce down-arrow hidden sm:flex ' onClick={() => {
                 let highLight = document.getElementById('highLight');
                 let topPos = 0;
                 if (highLight)

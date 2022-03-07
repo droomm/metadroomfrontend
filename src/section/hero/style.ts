@@ -6,7 +6,8 @@ export const Container = styled.div`
   height: 100vh;
 
   @media (max-width: 420px) {
-    height: 100vh;
+    height: auto;
+    padding-bottom: 15vh;
   }
   position: relative;
 
@@ -27,7 +28,7 @@ export const Container = styled.div`
       line-height: 3rem /* 40px */;
     }
     @media (max-width: 400px) {
-      font-size: 2.35rem /* 36px */;
+      font-size: 2.3rem /* 36px */;
       line-height: 3rem /* 40px */;
     }
     @media (max-width: 360px) {
