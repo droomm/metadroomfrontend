@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Container, ImageContainer } from './style';
 import { motion } from "framer-motion";
 import Image from 'next/image';
+import WhiteListSVG from '../../assets/icons/whitelist';
+import ArrowDownSVG from '../../assets/icons/arrowDown';
+import DownloadSVG from '../../assets/icons/download';
 
 const banner = {
     animate: {
@@ -83,68 +86,56 @@ const banner1 = {
     },
 };
 
-let title1 = "The Social Passport";
-let title2 = "To The Metaverse";
+let title1 = "The Social Passport To";
+let title2 = "The Metaverse";
 const HeroSection = () => {
 
-    return <Container id="welcome" >
-        <div className='sm:px-24 w-screen pt-8 sm:pt-18 flex items-center flex-col h-full'>
-            <div className='flex flex-col items-center justify-center w-full mt-4'>
-                <p className=' text-xl sm:text-2xl mb-4 font-bold'>
+    return <Container id="welcome">
+        <div className='sm:px-24 w-screen pt-28  flex items-center flex-col h-full'>
+            <div className='flex flex-col items-center justify-center w-full '>
+                <p className='text-2xl mb-4 font-bold'>
                     VirtualWide Inc.
                 </p>
-                <motion.span
-                    className='row-title sm:mb-2 flex'
-                    variants={banner}
-                    initial='initial'
-                    animate='animate'>
-                    {[...title1.split("")].map((letter, index) => {
-                        if (letter === " ")
-                            return <div className='mx-2' key={index} />
-                        else return (
-                            <motion.span
-                                key={index}
-                                className='row-letter font-thin top-text text-6xl md:text-7xl lg:text-8xl'
-                                variants={letterAni}>
-                                {letter}
-                            </motion.span>)
-                    })}
-                </motion.span>
-                <motion.span
-                    className='row-title flex gap-x-2 items-center mt-2'
+                <motion.div
+                    className='row-title flex flex-col w-full gap-x-2 items-center mt-2 justify-center'
                     variants={banner1}
                     initial='initial'
                     animate='animate'>
-                    <motion.span
-                        className='row-letter font-thin bottom-text text-5xl lg:text-6xl'
+                    <motion.div
+                        className=' top-text text-5xl md:text-6xl font-medium lg:text-8xl'
+                        variants={letterAni1}>
+                        {title1}
+                    </motion.div>
+                    <motion.div
+                        className='row-letter flex pb-1 items-end gap-x-2 font-thin top-text text-5xl md:text-6xl lg:text-8xl mt-3'
                         variants={letterAni1}>
                         {title2}
-                    </motion.span>
-                    <motion.div
-                        variants={letterAni1}
-                        className='overflow-hidden w-14 h-14 relative'>
-                        <Image
-                            src={"/images/passport.webp"}
-                            layout='fill'
-                            alt="avatar"
-                            loading="lazy"
-                            placeholder="blur"
-                            blurDataURL={"/images/avatar.webp"}
-                            quality={100}
-                        />
+                        <div
+                            className='overflow-hidden w-11 h-11 md:w-14 md:h-14 lg:w-20 lg:h-20 relative'>
+                            <Image
+                                src={"/images/passport.webp"}
+                                layout='fill'
+                                alt="avatar"
+                                loading="lazy"
+                                placeholder="blur"
+                                blurDataURL={"/images/avatar.webp"}
+                                quality={100}
+                            />
+                        </div>
                     </motion.div>
 
-                </motion.span>
+                </motion.div>
 
             </div>
             <div
-                className='flex w-full flex-wrap gap-y-4 mt-8 sm:mt-10 justify-center'>
+                className='flex w-full flex-wrap gap-y-10 mt-20 justify-center'>
                 <motion.div
                     variants={leftButtonAni}
                     initial='initial'
                     animate='animate'
                     className='w-10/12 sm:w-1/2 lg:w-1/3 xl:w-1/4 px-2'>
-                    <button className='w-full py-2 rounded-lg left-button text-xl font-black'>
+                    <button className='w-full flex gap-x-4 justify-center items-center py-2 rounded-lg left-button text-2xl font-thin'>
+                        <WhiteListSVG width="30" height='30' />
                         <p>
                             Join Whitelist
                         </p>
@@ -155,10 +146,21 @@ const HeroSection = () => {
                     initial='initial'
                     animate='animate'
                     className='w-10/12 sm:w-1/2 lg:w-1/3 xl:w-1/4 px-2'>
-                    <button className=' w-full py-2 rounded-lg right-button text-xl font-black'>
-                        Grab Our Pitch Deck
+                    <button className='w-full flex gap-x-4 justify-center items-center py-2 rounded-lg right-button text-2xl font-thin'>
+                        <DownloadSVG width="30" height='30' />
+                        <p>
+                            Grab Our Pitch Deck
+                        </p>
                     </button>
                 </motion.div>
+            </div>
+            <div className='absolute bottom-0 cursor-pointer animate-bounce down-arrow' onClick={() => {
+                let highLight = document.getElementById('highLight');
+                let topPos = 0;
+                if (highLight)
+                    highLight.scrollIntoView();
+            }}>
+                <ArrowDownSVG width="50" height="50" />
             </div>
         </div>
     </Container>

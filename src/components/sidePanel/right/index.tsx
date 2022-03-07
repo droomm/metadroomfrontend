@@ -4,14 +4,25 @@ import SidePanelStructure from '../index';
 import { SVGContainer } from './style';
 import Image from "next/image"
 import AvatarBox from '../../avatars';
+import { useNavBar } from '../../../contexts/navbar';
 
 const RightSidePanel = () => {
+
+    const { teamMembers, updateSelected } = useNavBar();
     return (
 
         <SidePanelStructure left={false} >
             <div className='relative w-full flex flex-col items-center gap-y-5 py-5'>
-                {Array(4).fill(0).map((data, index) => {
-                    return <AvatarBox image="/images/avatar.webp" name="name" key={index} />
+                {teamMembers.map((data, index) => {
+                    return <div
+                        className='cursor-pointer'
+                        key={index} onClick={() => {
+                            updateSelected(data.id)
+                            let member = document.getElementById(data.id);
+                            if (member) member.scrollIntoView();
+                        }}>
+                        <AvatarBox image={data.image} name={data.name} />
+                    </div>
                 })}
             </div>
         </SidePanelStructure>

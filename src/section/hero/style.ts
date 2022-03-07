@@ -3,7 +3,8 @@ import Image from "next/image";
 
 export const Container = styled.div`
   min-width: 320px;
-  height: 85vh;
+  height: 100vh;
+
   @media (max-width: 420px) {
     height: 100vh;
   }
@@ -18,7 +19,7 @@ export const Container = styled.div`
 
   .top-text {
     @media (max-width: 545px) {
-      font-size: 3.05rem /* 48px */;
+      font-size: 2.95rem /* 48px */;
       line-height: 1;
     }
     @media (max-width: 440px) {
@@ -48,14 +49,23 @@ export const Container = styled.div`
     border: 3px solid ${(props) => props.theme.colors.text}99;
     color: ${(props) => props.theme.colors.text}dd;
     transition: border 0.4s solid;
-
+    svg {
+      transition: all 0.4s solid;
+      fill: ${(props) => props.theme.colors.text}dd;
+    }
     :hover {
       border: 3px solid ${(props) => props.theme.colors.text}cc;
       color: ${(props) => props.theme.colors.text}df;
+      svg {
+        fill: ${(props) => props.theme.colors.text}df;
+      }
     }
     :active {
       border: 3px solid ${(props) => props.theme.colors.text};
       color: ${(props) => props.theme.colors.text};
+      svg {
+        fill: ${(props) => props.theme.colors.text};
+      }
     }
     background: transparent;
   }
@@ -64,11 +74,16 @@ export const Container = styled.div`
     border: 3px solid ${(props) => props.theme.colors.primaryBackground};
     color: ${(props) => props.theme.colors.primary}dd;
     transition: border 0.4s solid;
+    svg {
+      transition: all 0.4s solid;
+      stroke: ${(props) => props.theme.colors.primary}dd;
+    }
 
     :hover {
       color: ${(props) => props.theme.colors.primary}ff;
-    }
-    :active {
+      svg {
+        stroke: ${(props) => props.theme.colors.primary};
+      }
     }
   }
   .hero-Image {
@@ -84,6 +99,11 @@ export const Container = styled.div`
     }
     @media (max-width: 530px) {
       width: 90vw;
+    }
+  }
+  .down-arrow {
+    svg {
+      stroke: ${(props) => props.theme.colors.white};
     }
   }
 `;

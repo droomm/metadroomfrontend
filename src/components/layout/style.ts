@@ -41,4 +41,11 @@ export const LayoutContainer = styled.div<LayoutContainerData>`
     background-color: rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(5px);
   }
+  .hero-background {
+    height: 100vh;
+    width: 100vw;
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    backdrop-filter: blur(8px) saturate(180%);
+  }
 `;

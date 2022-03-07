@@ -1,45 +1,19 @@
 import React, { useState } from "react";
+import OverViewSection from '../../components/overView';
+import { useNavBar } from '../../contexts/navbar';
 import { Container, ImageContainer } from './style';
 
 const TeamMemberSection = () => {
-    const teamMembers = [
-        {
-            image: "/images/avatar.webp",
-            title: "Rakesh S",
-            detail: "CEO & Co-Founder"
-        },
-        {
-            image: "/images/avatar.webp",
-            title: "Preetham S",
-            detail: 'Product & Co-Founder'
-        },
-        {
-            image: "/images/avatar.webp",
-            title: "Suvesh",
-            detail: 'Tech & Co-Founder'
-        },
-        {
-            image: "/images/avatar.webp",
-            title: "Uday Allu",
-            detail: 'AI & Co-Founder'
-        }
-    ]
-    const advisors = [
-        {
-            image: "/images/avatar.webp",
-            title: "Manish Goyal",
-            detail: "Strategic Advisor Ex IDC, F&S"
-        },
-        {
-            image: "/images/avatar.webp",
-            title: "Varun Sharma",
-            detail: 'Strategic Advisor - BlockChain Investor, Mentor @ ETHDenver'
-        },
-    ]
+    const { teamMembers, advisor, selected } = useNavBar();
 
     return <Container id="teamMember" className='select-none' >
-
-        <div className='px-2 sm:px-24 w-screen h-full relative z-20 text-lg'>
+        <video
+            className='team-video'
+            autoPlay loop muted preload="auto"
+        >
+            <source src='/videos/team.mp4' type="video/mp4" />
+        </video>
+        <div className='px-2 sm:px-24 w-screen h-full relative  text-lg'>
             <div className='w-full '>
                 <p className='capitalize content-header text-xl text-center' >
                     The Team
@@ -47,35 +21,11 @@ const TeamMemberSection = () => {
                 <p className='text-4xl sm:text-5xl uppercase mt-6 font-bold text-center'>
                     Meet The Team
                 </p>
-                <div className='flex mt-10  flex-wrap w-full justify-center gap-y-5'>
+                <div className='flex mt-10 flex-wrap w-full justify-center gap-y-5'>
                     {teamMembers.map((data, index) => {
                         return (
-                            <div className='w-full md:w-1/3 xl:w-1/4 rounded-md overflow-hidden px-4 content-card ' key={index}>
-                                <div className=' rounded-md flex flex-col p-4 justify-center ' >
-                                    <div className='w-full h-44 flex justify-center '  >
-                                        <div className='overflow-hidden w-44 h-44  rounded-full border-2 avatar-box relative'>
-                                            <ImageContainer
-                                                src={data.image}
-                                                layout='fill'
-                                                alt="feature"
-                                                loading="lazy"
-                                                placeholder="blur"
-                                                blurDataURL={data.image}
-                                                quality={100}
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className=' flex justify-center  w-full'>
-                                        <p className='text-3xl font-thin my-3'>
-                                            {data.title}
-                                        </p>
-                                    </div>
-                                    <div className='flex justify-center mt-1 items-start  w-full'>
-                                        <p className='text-lg text-center'>
-                                            {data.detail}
-                                        </p>
-                                    </div>
-                                </div>
+                            <div className='w-full xl:w-1/2 sm:px-2' id={data.id} key={index}>
+                                <OverViewSection data={data} selected={data.id === selected} />
                             </div>
                         )
                     })}
@@ -83,34 +33,10 @@ const TeamMemberSection = () => {
                     Advisor Board
                 </p>
                 <div className='flex mt-10 flex-wrap w-full justify-center gap-y-5'>
-                    {advisors.map((data, index) => {
+                    {advisor.map((data, index) => {
                         return (
-                            <div className='w-full md:w-1/2 xl:w-1/3  rounded-md overflow-hidden px-4 content-card ' key={index}>
-                                <div className=' rounded-md flex flex-col p-4 justify-center ' >
-                                    <div className='w-full h-44 flex justify-center '  >
-                                        <div className='overflow-hidden w-44 h-44  rounded-full border-2 avatar-box relative'>
-                                            <ImageContainer
-                                                src={data.image}
-                                                layout='fill'
-                                                alt="feature"
-                                                loading="lazy"
-                                                placeholder="blur"
-                                                blurDataURL={data.image}
-                                                quality={100}
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className=' flex justify-center  w-full'>
-                                        <p className='text-2xl xl:text-3xl font-thin my-3'>
-                                            {data.title}
-                                        </p>
-                                    </div>
-                                    <div className='flex justify-center  items-start  w-full'>
-                                        <p className='text-md text-center'>
-                                            {data.detail}
-                                        </p>
-                                    </div>
-                                </div>
+                            <div className='w-full xl:w-1/2 px-2' id={data.id} key={index}>
+                                <OverViewSection data={data} selected={false} />
                             </div>
                         )
                     })}

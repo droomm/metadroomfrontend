@@ -7,18 +7,23 @@ const FeatureSection = () => {
     const features = [
         {
             image: "/images/feature1.webp",
-            title: "Title",
-            detail: 'Dolore quis consequat magna qui aliqua veniam ut nostrud Lorem. Sint nisi laborum dolor est pariatur ex quis. Fugiat dolore id anim esse labore officia occaecat laboris dolore cillum commodo pariatur exercitation. Laborum labore ea anim pariatur. Occaecat mollit amet nostrud pariatur minim et tempor ea cillum nostrud adipisicing Lorem ad. Quis ullamco ut ex labore aliquip et culpa proident aliqua. Aliquip occaecat enim anim esse anim incididunt incididunt adipisicing. Duis aute ex et irure esse pariatur ut. '
+            title: "Central Discovery Feed1",
+            detail: 'Discover & monetize creativity. Earn from content sales, ads, digital merchandized and much more…'
         },
         {
             image: "/images/feature2.webp",
-            title: "Title 2",
-            detail: 'Veniam consectetur in dolor id. Tempor nisi Lorem ut nostrud laborum laboris amet reprehenderit. Duis dolore tempor nisi sint incididunt in qui reprehenderit dolor amet aute commodo labore aliquip.Eiusmod consectetur ullamco minim eiusmod minim minim occaecat irure exercitation. Pariatur eiusmod irure enim tempor cupidatat qui ipsum. Ipsum mollit ad nostrud laborum in qui. Sint irure enim ex dolore ipsum.Qui ex amet officia dolor elit ipsum dolor sunt eu dolor laboris labore. Duis Lorem in quis dolor voluptate. '
+            title: "Wallet2",
+            detail: 'Multitoken wallets to help you trade and buy your favorite digital assets.'
+        },
+        {
+            image: "/images/feature3.webp",
+            title: "Meta-Commerce3",
+            detail: 'NFT powered social networking & meta-commerce. Mint and share your cherished moments on blockchain  forever.'
         },
         {
             image: "/images/feature4.webp",
-            title: "Title 3",
-            detail: 'Nostrud minim do aute officia officia reprehenderit sunt sint elit do cupidatat tempor nisi qui. Elit est pariatur tempor non duis velit irure ut quis incididunt minim. Veniam aute amet veniam eu esse consectetur incididunt laborum adipisicing ipsum elit in mollit. Anim cupidatat officia voluptate magna irure consectetur in nostrud ad sunt voluptate velit ea.Non eu eiusmod ipsum pariatur consectetur ipsum reprehenderit qui anim reprehenderit eu ipsum. Est commodo ut voluptate do non eu ut proident velit. Ad cillum nulla dolore nostrud sit nulla sunt officia quis exercitation officia eiusmod consequat. '
+            title: "Virtual Worlds4",
+            detail: 'Go Live on Metaverse instantly. Play games, attend classes and work interactively in virtual worlds'
         }
     ]
 
@@ -42,7 +47,6 @@ const FeatureSection = () => {
                     </div>
                 })}
             </div>
-            {/* <div className='absolute z-10 background w-full h-full ' /> */}
             <div className='sm:px-24 w-screen flex justify-center items-center flex-col z-20 absolute bottom-5  '>
                 <div className='top-padding' />
                 <DetailCard title={features[tab]!.title} detail={features[tab]!.detail}
@@ -50,18 +54,23 @@ const FeatureSection = () => {
 
                         if (tab === 0) {
                             gsap.fromTo("#feature1", { x: "0" }, { x: "100vw", duration: 0.5 })
-                            gsap.fromTo("#feature3", { x: "-300vw" }, { x: "-200vw", duration: 0.5 })
-                            setTabs(2)
+                            gsap.fromTo("#feature4", { x: "-400vw" }, { x: "-300vw", duration: 0.5 })
+                            setTabs(3)
                         }
                         else if (tab === 1) {
                             gsap.fromTo("#feature1", { x: "-100vw" }, { x: "0", duration: 0.5 })
                             gsap.fromTo("#feature2", { x: "-100vw" }, { x: "0", duration: 0.5 })
                             setTabs(0)
                         }
-                        else {
+                        else if (tab === 2) {
                             gsap.fromTo("#feature2", { x: "-200vw" }, { x: "-100vw", duration: 0.5 })
                             gsap.fromTo("#feature3", { x: "-200vw" }, { x: "-100vw", duration: 0.5 })
                             setTabs(1)
+                        }
+                        else {
+                            gsap.fromTo("#feature3", { x: "-300vw" }, { x: "-200vw", duration: 0.5 })
+                            gsap.fromTo("#feature4", { x: "-300vw" }, { x: "-200vw", duration: 0.5 })
+                            setTabs(2)
                         }
                     }}
                     rightAction={() => {
@@ -69,18 +78,21 @@ const FeatureSection = () => {
                         if (tab === 0) {
                             gsap.fromTo("#feature1", { x: "0" }, { x: "-100vw", duration: 0.5 })
                             gsap.fromTo("#feature2", { x: "0" }, { x: "-100vw", duration: 0.5 })
-                            gsap.fromTo("#feature3", { x: "0" }, { x: "-100vw", duration: 0.5 })
                             setTabs(1)
                         }
                         else if (tab === 1) {
-                            gsap.fromTo("#feature1", { x: "-100vw" }, { x: "-200vw", duration: 0.5 })
                             gsap.fromTo("#feature2", { x: "-100vw" }, { x: "-200vw", duration: 0.5 })
                             gsap.fromTo("#feature3", { x: "-100vw" }, { x: "-200vw", duration: 0.5 })
                             setTabs(2)
                         }
+                        else if (tab === 2) {
+                            gsap.fromTo("#feature3", { x: "-200vw" }, { x: "-300vw", duration: 0.5 })
+                            gsap.fromTo("#feature4", { x: "-200vw" }, { x: "-300vw", duration: 0.5 })
+                            setTabs(3)
+                        }
                         else {
                             gsap.fromTo("#feature1", { x: "100vw" }, { x: "0", duration: 0.5 })
-                            gsap.fromTo("#feature3", { x: "-200vw" }, { x: "-300vw", duration: 0.5 })
+                            gsap.fromTo("#feature4", { x: "-300vw" }, { x: "-400vw", duration: 0.5 })
                             setTabs(0)
                         }
                     }}

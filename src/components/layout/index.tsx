@@ -15,7 +15,7 @@ export default function Layout({ children, background, header = "title" }: any) 
                 <title>{header}</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
-            <LayoutContainer background={background} onScroll={(event: any) => {
+            <LayoutContainer background={background} id="layout" onScroll={(event: any) => {
                 const welcome: any = document.querySelector('#welcome');
                 const welcomePosition = welcome.getBoundingClientRect();
                 const feature: any = document.querySelector('#features');
@@ -43,9 +43,8 @@ export default function Layout({ children, background, header = "title" }: any) 
                 <LeftSidePanel />
                 <RightSidePanel />
                 <HeaderComponent />
-                {/* <div className='fixed background w-full h-full ' /> */}
+                <div className='hero-background fixed' />
                 <main className=''>
-                    <div style={{ height: "8vh", width: "100vw" }} />
                     {children}
                 </main>
             </LayoutContainer>
