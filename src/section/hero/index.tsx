@@ -6,26 +6,6 @@ import WhiteListSVG from '../../assets/icons/whitelist';
 import ArrowDownSVG from '../../assets/icons/arrowDown';
 import DownloadSVG from '../../assets/icons/download';
 
-const banner = {
-    animate: {
-        transition: {
-            delayChildren: 0.15,
-            staggerChildren: 0.05,
-        },
-    },
-};
-
-const letterAni = {
-    initial: { y: 100, opacity: 0 },
-    animate: {
-        y: 0,
-        opacity: 1,
-        transition: {
-            ease: "easeInOut",
-            duration: 0.75,
-        },
-    },
-};
 
 
 const leftButtonAni = {
@@ -35,7 +15,7 @@ const leftButtonAni = {
         opacity: 1,
         transition: {
             ease: "easeInOut",
-            delay: 1.5,
+            delay: 0.9,
             duration: 1,
         },
     },
@@ -48,19 +28,8 @@ const rightButtonAni = {
         opacity: 1,
         transition: {
             ease: "easeInOut",
-            delay: 1.5,
+            delay: 0.9,
             duration: 1,
-        },
-    },
-};
-const ImageAni = {
-    initial: { y: 350, opacity: 0 },
-    animate: {
-        y: 0,
-        opacity: 1,
-        transition: {
-            ease: "easeInOut",
-            duration: 1.2,
         },
     },
 };
@@ -72,7 +41,7 @@ const letterAni1 = {
         opacity: 1,
         transition: {
             ease: "easeInOut",
-            duration: 0.75,
+            duration: 1.25,
         },
     },
 };
@@ -80,7 +49,6 @@ const letterAni1 = {
 const banner1 = {
     animate: {
         transition: {
-            delayChildren: 1.35,
             // staggerChildren: 0.15,
         },
     },

@@ -7,22 +7,22 @@ const FeatureSection = () => {
     const features = [
         {
             image: "/images/feature1.webp",
-            title: "Central Discovery Feed1",
+            title: "Central Discovery Feed",
             detail: 'Discover & monetize creativity. Earn from content sales, ads, digital merchandized and much more…'
         },
         {
             image: "/images/feature2.webp",
-            title: "Wallet2",
+            title: "Wallet",
             detail: 'Multitoken wallets to help you trade and buy your favorite digital assets.'
         },
         {
             image: "/images/feature3.webp",
-            title: "Meta-Commerce3",
+            title: "Meta-Commerce",
             detail: 'NFT powered social networking & meta-commerce. Mint and share your cherished moments on blockchain  forever.'
         },
         {
             image: "/images/feature4.webp",
-            title: "Virtual Worlds4",
+            title: "Virtual Worlds",
             detail: 'Go Live on Metaverse instantly. Play games, attend classes and work interactively in virtual worlds'
         }
     ]
