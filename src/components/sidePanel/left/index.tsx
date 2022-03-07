@@ -1,20 +1,12 @@
 import router from 'next/router';
-import React, { useState } from "react";
-import AccountSVG from '../../../assets/icons/account';
-import CallSVG from '../../../assets/icons/call';
-import DashboardSVG from '../../../assets/icons/dashboard';
-import DesignSVG from '../../../assets/icons/design';
-import ListSVG from '../../../assets/icons/list';
-import NotificationSVG from '../../../assets/icons/notification';
-import RewardSVG from '../../../assets/icons/reward';
-import SoundSVG from '../../../assets/icons/sound';
+import React from "react";
 import { useNavBar } from '../../../contexts/navbar';
 import SidePanelStructure from '../index';
 import { BottomSVGContainer, SVGContainer } from './style';
 
 const LeftSidePanel = () => {
 
-    const { icons, updateLeftPanel, leftPanelTab } = useNavBar();
+    const { icons, leftPanelTab } = useNavBar();
     return (
         <SidePanelStructure left={true}>
             <div className='relative h-full flex flex-col gap-y-4 py-5 '>
@@ -28,15 +20,6 @@ const LeftSidePanel = () => {
                         {data.icon}
                     </SVGContainer>
                 })}
-                {/* <div className='absolute bottom-7 w-full flex items-center flex-col gap-y-7 bottom-left-side-panel'>
-                    <BottomSVGContainer active={true}>
-                        <NotificationSVG width="25" height="25" />
-                    </BottomSVGContainer>
-                    <BottomSVGContainer active={false}>
-                        <SoundSVG width="25" height="25" />
-                    </BottomSVGContainer>
-
-                </div> */}
             </div>
         </SidePanelStructure>
     )

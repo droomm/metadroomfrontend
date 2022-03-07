@@ -10,11 +10,7 @@ const RightSidePanel = () => {
 
         <SidePanelStructure left={false} >
             <div className='relative w-full flex flex-col items-center gap-y-5 py-5'>
-
-                <SVGContainer className='w-full flex justify-center'>
-                    <AccountSVG width='25' height='25' />
-                </SVGContainer>
-                {Array(3).fill(0).map((data, index) => {
+                {Array(4).fill(0).map((data, index) => {
                     return <AvatarBox image="/images/avatar.webp" name="name" key={index} />
                 })}
             </div>

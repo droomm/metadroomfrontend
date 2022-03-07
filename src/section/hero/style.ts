@@ -3,17 +3,16 @@ import Image from "next/image";
 
 export const Container = styled.div`
   min-width: 320px;
-  height: 110vh;
+  height: 85vh;
   @media (max-width: 420px) {
     height: 100vh;
   }
   position: relative;
 
-  color: ${(props) => props.theme.colors.primary};
+  color: ${(props) => props.theme.colors.white};
   .row-title,
   .row-letter {
     position: relative;
-    display: inline-block;
     white-space: nowrap;
   }
 
@@ -22,7 +21,7 @@ export const Container = styled.div`
       font-size: 3.05rem /* 48px */;
       line-height: 1;
     }
-    @media (max-width: 420px) {
+    @media (max-width: 440px) {
       font-size: 2.5rem /* 36px */;
       line-height: 3rem /* 40px */;
     }
@@ -36,7 +35,7 @@ export const Container = styled.div`
     }
   }
   .bottom-text {
-    @media (max-width: 420px) {
+    @media (max-width: 440px) {
       font-size: 2.15rem /* 36px */;
       line-height: 2.5rem /* 40px */;
     }
