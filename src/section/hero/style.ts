@@ -218,35 +218,27 @@ export const Container = styled.div`
     stroke: ${(props) => props.theme.colors.white};
   }
 
+  .welcome-box {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(16px) saturate(110%);
+  }
   .left-button {
-    background: radial-gradient(
-      100% 100% at 0% 0%,
-      rgba(255, 255, 255, 0.4) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    box-shadow: inset -5px -5px 250px rgba(255, 255, 255, 0.02);
-    backdrop-filter: blur(42px);
-
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(16px) saturate(110%);
     border-radius: 50px;
     svg {
       stroke: ${(props) => props.theme.colors.black};
     }
+    max-width: 450px;
   }
   .right-button {
-    background: radial-gradient(
-      100% 100% at 0% 0%,
-      rgba(255, 255, 255, 0.4) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    box-shadow: inset -5px -5px 250px rgba(255, 255, 255, 0.02);
-    backdrop-filter: blur(42px);
-
-    /* border: 4px solid; */
-
-    border-radius: 500px;
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(16px) saturate(110%);
+    border-radius: 50px;
     svg {
       fill: ${(props) => props.theme.colors.white};
     }
+    max-width: 450px;
   }
 `;
 

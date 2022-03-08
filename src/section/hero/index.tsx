@@ -10,13 +10,13 @@ const HeroSection = () => {
 
     return <Container id="welcome">
         <div className='pb-20 px-2 sm:px-24 xl:px-28 w-screen flex pt-20 sm:pt-32 flex-col h-full'>
-            <div className='hidden md:flex w-full  py-2 gap-x-3 items-center'>
+            <div className='hidden md:flex w-full  py-2 gap-x-3 items-center mb-1'>
                 <LogoSVG width="70" height='70' />
                 <p className='text-3xl font-M-Black'>
                     VirtualWide
                 </p>
             </div>
-            <div className='flex md:hidden w-full  py-2 gap-x-3 items-center'>
+            <div className='flex md:hidden w-full  py-2 gap-x-3 items-center mb-5'>
                 <LogoSVG width="50" height='50' />
                 <p className='text-2xl font-M-Black'>
                     VirtualWide
@@ -38,31 +38,19 @@ const HeroSection = () => {
                 </div>
             </div>
 
-            <div className='w-5/12 mt-6 sm:mt-16 xl:ml-5 minor-text'>
+            <div className='w-5/12 mt-6 sm:mt-10 xl:ml-5 minor-text'>
                 <p className='font-M-Medium text-xl sm:text-justify'>
                     Build your social network on web3. Search and interact in virtual worlds. Play games, attend events, crash parties with friends and shop with your favourite global brands.
                 </p>
             </div>
             <Listing />
-
-            <div className='flex flex-wrap justify-center sm:justify-start mt-10 sm:mt-24  gap-x-4 gap-y-4'>
-                <button className='w-11/12 md:w-1/4 py-1 sm:py-2 px-2 h-16 sm:h-20 items-center flex justify-center gap-x-5  left-button relative'>
-                    <p className='text-center text-xl sm:text-3xl font-M-Bold'>
-                        Join Wait list
+            <Buttons />
+            <div className='w-full flex justify-center  mt-24'>
+                <div className='w-full flex px-5 font-M-Bold justify-center rounded-3xl md:w-2/3 welcome-box py-12 sm:py-16  '>
+                    <p className="text-2xl  md:text-3xl lg:text-5xl text-center " style={{ color: "#19191B" }}>
+                        Welcome To The Future
                     </p>
-                    <div className='bg-white rounded-full p-3'>
-
-                        <RightArrowSVG width="26" height="26" />
-                    </div>
-                </button>
-                <button className='w-11/12 md:w-1/4 py-1 sm:py-2 px-2 h-16  sm:h-20 items-center flex justify-center gap-x-5 right-button relative'>
-                    <p className='text-center text-xl sm:text-3xl font-M-Bold'>
-                        Pitch Deck
-                    </p>
-                    <div className=' rounded-full '>
-                        <DownloadSVG width="40" height="40" />
-                    </div>
-                </button>
+                </div>
             </div>
 
         </div>
@@ -74,9 +62,32 @@ export default HeroSection;
 
 
 
+const Buttons = () => {
+    return (
+        <div className='flex flex-wrap justify-center md:justify-start mt-10 sm:mt-16  gap-x-4 gap-y-6'>
+            <button className='w-11/12 md:w-5/12 xl:w-4/12 py-1 sm:py-2 px-2 h-16 sm:h-20 items-center flex justify-center gap-x-5  left-button relative'>
+                <p className='text-center text-xl xl:text-3xl font-M-Bold'>
+                    Join Wait list
+                </p>
+                <div className='bg-white rounded-full p-3'>
+
+                    <RightArrowSVG width="26" height="26" />
+                </div>
+            </button>
+            <button className='w-11/12 md:w-5/12 lg:w-5/12 xl:w-4/12 py-1 sm:py-2 px-2 h-16  sm:h-20 items-center flex justify-center gap-x-5 right-button relative'>
+                <p className='text-center text-xl xl:text-3xl font-M-Bold'>
+                    Pitch Deck
+                </p>
+                <div className=' rounded-full '>
+                    <DownloadSVG width="35" height="35" />
+                </div>
+            </button>
+        </div>
+    )
+}
 const Listing = () => {
     return (
-        <div className='flex mt-10 sm:mt-24 xl:ml-4  justify-evenly  sm:justify-start gap-x-1 md:gap-x-4'>
+        <div className='flex mt-10 sm:mt-16 xl:ml-4  justify-evenly  md:justify-start gap-x-1 md:gap-x-4'>
             <div className='flex flex-col gap-y-3 justify-center items-center'>
                 <div className='h-12 sm:h-16 flex items-center justify-center w-full'>
                     <p className=' text-3xl md:text-6xl text-center'>
