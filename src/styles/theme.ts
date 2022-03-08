@@ -13,7 +13,7 @@ export const theme = {
     heading: "#02073E", // primary heading color
     heading_secondary: "#343D48", // heading color
     border_color: "#E9EDF5", // border color
-    black: "#0F2137", // black color
+    black: "#141239", // black color
     gray: "#F8FAFC",
     muted: "#7B8188", // muted color
     accent: "#609", // a contrast color for emphasizing UI

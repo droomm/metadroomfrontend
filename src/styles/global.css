@@ -1,12 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'Montserrat-black'; 
+    src: url('../assets/Montserrat/static/Montserrat-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium'; 
+    src: url('../assets/Montserrat/static/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Thin'; 
+    src: url('../assets/Montserrat/static/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: 'Montserrat-Bold'; 
+    src: url('../assets/Montserrat/static/Montserrat-Bold.ttf');
+}
+
+
+.font-M-Black{
+    font-family: 'Montserrat-black'; 
+}
+
+.font-M-Bold{
+
+    font-family: 'Montserrat-Bold'; 
+}
+
+.font-M-Medium{
+    font-family: 'Montserrat-Medium'; 
+}
+
+.font-M-Thin{
+    font-family: 'Montserrat-Thin'; 
+}
+
 html,
 body {
     scroll-behavior: smooth;
     padding: 0;
     margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Montserrat-black;
     font-style: normal;
     font-weight: normal;
 }

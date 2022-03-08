@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React from "react";
 import { useNavBar } from '../../contexts/navbar';
-import BackgroundVideo from '../background';
+import Background from '../background';
 import HeaderComponent from '../header';
 import LeftSidePanel from '../sidePanel/left';
 import RightSidePanel from '../sidePanel/right';
@@ -39,11 +39,10 @@ export default function Layout({ children, background, header = "title" }: any) 
                     updateLeftPanel(3);
                 }
             }} >
-                <BackgroundVideo />
+                <Background />
                 <LeftSidePanel />
                 <RightSidePanel />
                 <HeaderComponent />
-                <div className='hero-background fixed' />
                 <main className=''>
                     {children}
                 </main>

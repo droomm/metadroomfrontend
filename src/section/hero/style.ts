@@ -3,108 +3,249 @@ import Image from "next/image";
 
 export const Container = styled.div`
   min-width: 320px;
-  height: 100vh;
-
-  @media (max-width: 420px) {
-    height: auto;
-    padding-bottom: 15vh;
-  }
   position: relative;
+  color: ${(props) => props.theme.colors.white}ff;
 
-  color: ${(props) => props.theme.colors.white};
-  .row-title,
-  .row-letter {
-    position: relative;
-    white-space: nowrap;
+  .motdGradient {
+    background: -webkit-linear-gradient(
+      45.05deg,
+      #f8a8ff 26.98%,
+      #6155ed 90.22%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  .top-text {
-    @media (max-width: 545px) {
-      font-size: 2.95rem /* 48px */;
+  .topText {
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  .bottomTextBig {
+    font-size: 10rem;
+    line-height: 1;
+  }
+  .minor-text {
+    max-width: 800px;
+  }
+  @media (max-width: 1800px) {
+    .minor-text {
+      width: 70%;
+    }
+  }
+  @media (max-width: 1000px) {
+    .minor-text {
+      width: 95%;
+    }
+  }
+  @media (max-width: 1530px) {
+    .topText {
+      font-size: 7rem;
       line-height: 1;
     }
-    @media (max-width: 440px) {
-      font-size: 2.5rem /* 36px */;
-      line-height: 3rem /* 40px */;
+
+    .bottomTextBig {
+      font-size: 8rem;
+      line-height: 1;
     }
-    @media (max-width: 400px) {
-      font-size: 2.3rem /* 36px */;
-      line-height: 3rem /* 40px */;
-    }
-    @media (max-width: 360px) {
-      font-size: 2.25rem /* 36px */;
-      line-height: 2.5rem /* 40px */;
+    .box-left {
+      margin-top: 15px;
     }
   }
-  .bottom-text {
-    @media (max-width: 440px) {
-      font-size: 2.15rem /* 36px */;
-      line-height: 2.5rem /* 40px */;
-    }
-    @media (max-width: 360px) {
-      font-size: 2.05rem /* 36px */;
-      line-height: 2.5rem /* 40px */;
-    }
-  }
-  .left-button {
-    border: 3px solid ${(props) => props.theme.colors.text}99;
-    color: ${(props) => props.theme.colors.text}dd;
-    transition: border 0.4s solid;
-    svg {
-      transition: all 0.4s solid;
-      fill: ${(props) => props.theme.colors.text}dd;
-    }
-    :hover {
-      border: 3px solid ${(props) => props.theme.colors.text}cc;
-      color: ${(props) => props.theme.colors.text}df;
-      svg {
-        fill: ${(props) => props.theme.colors.text}df;
-      }
-    }
-    :active {
-      border: 3px solid ${(props) => props.theme.colors.text};
-      color: ${(props) => props.theme.colors.text};
-      svg {
-        fill: ${(props) => props.theme.colors.text};
-      }
-    }
-    background: transparent;
-  }
-  .right-button {
-    background: ${(props) => props.theme.colors.primaryBackground};
-    border: 3px solid ${(props) => props.theme.colors.primaryBackground};
-    color: ${(props) => props.theme.colors.primary}dd;
-    transition: border 0.4s solid;
-    svg {
-      transition: all 0.4s solid;
-      stroke: ${(props) => props.theme.colors.primary}dd;
+
+  @media (min-width: 1354px) {
+    .box-left {
+      margin-left: 1rem;
     }
 
-    :hover {
-      color: ${(props) => props.theme.colors.primary}ff;
-      svg {
-        stroke: ${(props) => props.theme.colors.primary};
-      }
+    .bottomTextBig {
+      font-size: 8rem;
+      line-height: 1;
     }
   }
-  .hero-Image {
-    height: 60vh;
-    @media (max-width: 800px) {
-      height: 500px;
+
+  @media (max-width: 1024px) {
+    .topText {
+      font-size: 7rem;
+      line-height: 1;
     }
-    @media (max-width: 630px) {
-      height: 400px;
-    }
-    @media (max-width: 420px) {
-      height: 300px;
-    }
-    @media (max-width: 530px) {
-      width: 90vw;
+
+    .bottomTextBig {
+      font-size: 7rem;
+      line-height: 1;
     }
   }
-  .down-arrow {
+  .top-to {
+    display: none;
+  }
+  .bottom-to {
+    display: flex;
+  }
+  @media (min-width: 923px) {
+    .top-to {
+      display: none;
+    }
+    .bottom-to {
+      display: flex;
+    }
+  }
+  @media (max-width: 924px) {
+    .topText {
+      font-size: 6rem;
+      line-height: 1;
+    }
+    .bottomTextBig {
+      font-size: 6rem;
+      line-height: 1;
+    }
+    .top-to {
+      display: flex;
+    }
+    .bottom-to {
+      display: none;
+    }
+  }
+  @media (max-width: 846px) {
+    .topText {
+      font-size: 5rem;
+      line-height: 1;
+    }
+    .bottomTextBig {
+      font-size: 5rem;
+      line-height: 1.45;
+    }
+    .top-to {
+      display: flex;
+    }
+    .bottom-to {
+      display: none;
+    }
+  }
+
+  @media (max-width: 634px) {
+    .topText {
+      font-size: 5rem;
+      line-height: 1;
+    }
+
+    .bottomTextBig {
+      font-size: 5rem;
+      line-height: 1.5;
+    }
+    .box-left {
+      margin-top: 5px;
+    }
+  }
+
+  @media (max-width: 579px) {
+    .topText {
+      font-size: 6rem;
+      line-height: 1.05;
+    }
+
+    .bottomTextBig {
+      font-size: 5rem;
+      line-height: 0;
+    }
+    .box-left {
+      margin-top: 20px;
+    }
+  }
+  @media (max-width: 460px) {
+    .topText {
+      font-size: 5.5rem;
+      line-height: 1;
+    }
+
+    .bottomTextBig {
+      font-size: 4.5rem;
+      line-height: 1;
+    }
+    .box-left {
+      margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .topText {
+      font-size: 4.75rem;
+      line-height: 1;
+    }
+
+    .bottomTextBig {
+      font-size: 4rem;
+      line-height: 1;
+    }
+    .box-left {
+      margin-top: 15px;
+    }
+  }
+
+  @media (max-width: 390px) {
+    .topText {
+      font-size: 4.35rem;
+      line-height: 1;
+    }
+
+    .bottomTextBig {
+      font-size: 3.65rem;
+      line-height: 1;
+    }
+    .box-left {
+      margin-top: 15px;
+    }
+  }
+  @media (max-width: 360px) {
+    .topText {
+      font-size: 3.75rem;
+      line-height: 1;
+    }
+
+    .bottomTextBig {
+      font-size: 3.25rem;
+      line-height: 1;
+    }
+    .box-left {
+      margin-top: 15px;
+    }
+  }
+
+  .heroImage {
+    width: 450px;
+    height: 450px;
+  }
+  svg {
+    stroke: ${(props) => props.theme.colors.white};
+  }
+
+  .left-button {
+    background: radial-gradient(
+      100% 100% at 0% 0%,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    box-shadow: inset -5px -5px 250px rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(42px);
+
+    border-radius: 50px;
     svg {
-      stroke: ${(props) => props.theme.colors.white};
+      stroke: ${(props) => props.theme.colors.black};
+    }
+  }
+  .right-button {
+    background: radial-gradient(
+      100% 100% at 0% 0%,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    box-shadow: inset -5px -5px 250px rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(42px);
+
+    /* border: 4px solid; */
+
+    border-radius: 500px;
+    svg {
+      fill: ${(props) => props.theme.colors.white};
     }
   }
 `;

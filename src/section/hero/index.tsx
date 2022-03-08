@@ -1,135 +1,70 @@
 import React, { useEffect, useState } from "react";
 import { Container, ImageContainer } from './style';
-import { motion } from "framer-motion";
-import Image from 'next/image';
-import WhiteListSVG from '../../assets/icons/whitelist';
-import ArrowDownSVG from '../../assets/icons/arrowDown';
+import LogoSVG from '../../assets/icons/logo';
+import InfinitySVG from '../../assets/icons/infinity';
+import RightArrowSVG from '../../assets/icons/rightArrow';
 import DownloadSVG from '../../assets/icons/download';
 
 
-
-const leftButtonAni = {
-    initial: { x: -150, opacity: 0 },
-    animate: {
-        x: 0,
-        opacity: 1,
-        transition: {
-            ease: "easeInOut",
-            delay: 0.9,
-            duration: 1,
-        },
-    },
-};
-
-const rightButtonAni = {
-    initial: { x: 150, opacity: 0 },
-    animate: {
-        x: 0,
-        opacity: 1,
-        transition: {
-            ease: "easeInOut",
-            delay: 0.9,
-            duration: 1,
-        },
-    },
-};
-
-const letterAni1 = {
-    initial: { y: 50, opacity: 0 },
-    animate: {
-        y: 0,
-        opacity: 1,
-        transition: {
-            ease: "easeInOut",
-            duration: 1.25,
-        },
-    },
-};
-
-const banner1 = {
-    animate: {
-        transition: {
-            // staggerChildren: 0.15,
-        },
-    },
-};
-
-let title1 = "The Social Passport To";
-let title2 = "The Metaverse";
 const HeroSection = () => {
 
     return <Container id="welcome">
-        <div className='sm:px-24 w-screen pt-36 sm:pt-0 sm:justify-center  flex items-center flex-col h-full'>
-            <div className='flex flex-col items-center justify-center w-full '>
-                <p className='text-2xl mb-4 font-bold'>
-                    VirtualWide Inc.
+        <div className='pb-20 px-2 sm:px-24 xl:px-28 w-screen flex pt-20 sm:pt-32 flex-col h-full'>
+            <div className='hidden md:flex w-full  py-2 gap-x-3 items-center'>
+                <LogoSVG width="70" height='70' />
+                <p className='text-3xl font-M-Black'>
+                    VirtualWide
                 </p>
-                <motion.div
-                    className='row-title flex flex-col w-full gap-x-2 items-center mt-2 justify-center'
-                    variants={banner1}
-                    initial='initial'
-                    animate='animate'>
-                    <motion.div
-                        className=' top-text text-5xl md:text-6xl font-medium lg:text-8xl'
-                        variants={letterAni1}>
-                        {title1}
-                    </motion.div>
-                    <motion.div
-                        className='row-letter flex pb-1 items-end gap-x-2 font-thin top-text text-5xl md:text-6xl lg:text-8xl mt-3'
-                        variants={letterAni1}>
-                        {title2}
-                        <div
-                            className='overflow-hidden w-11 h-11 md:w-14 md:h-14 lg:w-20 lg:h-20 relative'>
-                            <Image
-                                src={"/images/passport.webp"}
-                                layout='fill'
-                                alt="avatar"
-                                loading="lazy"
-                                placeholder="blur"
-                                blurDataURL={"/images/avatar.webp"}
-                                quality={100}
-                            />
-                        </div>
-                    </motion.div>
+            </div>
+            <div className='flex md:hidden w-full  py-2 gap-x-3 items-center'>
+                <LogoSVG width="50" height='50' />
+                <p className='text-2xl font-M-Black'>
+                    VirtualWide
+                </p>
+            </div>
+            <div className='w-full mt-5 sm:mt-2 relative font-M-Bold'>
+                <p className='topText'>
+                    The social passport
+                </p>
+                <div className='flex box-left'  >
+                    <p className='text-8xl topText'>
+                        <span>
+                            to
+                        </span>
+                        <span className='motdGradient font-M-Black text-9xl bottomTextBig'>
+                            {""} Metaverse
+                        </span>
+                    </p>
+                </div>
+            </div>
 
-                </motion.div>
+            <div className='w-5/12 mt-6 sm:mt-16 xl:ml-5 minor-text'>
+                <p className='font-M-Medium text-xl sm:text-justify'>
+                    Build your social network on web3. Search and interact in virtual worlds. Play games, attend events, crash parties with friends and shop with your favourite global brands.
+                </p>
+            </div>
+            <Listing />
 
+            <div className='flex flex-wrap justify-center sm:justify-start mt-10 sm:mt-24  gap-x-4 gap-y-4'>
+                <button className='w-11/12 md:w-1/4 py-1 sm:py-2 px-2 h-16 sm:h-20 items-center flex justify-center gap-x-5  left-button relative'>
+                    <p className='text-center text-xl sm:text-3xl font-M-Bold'>
+                        Join Wait list
+                    </p>
+                    <div className='bg-white rounded-full p-3'>
+
+                        <RightArrowSVG width="26" height="26" />
+                    </div>
+                </button>
+                <button className='w-11/12 md:w-1/4 py-1 sm:py-2 px-2 h-16  sm:h-20 items-center flex justify-center gap-x-5 right-button relative'>
+                    <p className='text-center text-xl sm:text-3xl font-M-Bold'>
+                        Pitch Deck
+                    </p>
+                    <div className=' rounded-full '>
+                        <DownloadSVG width="40" height="40" />
+                    </div>
+                </button>
             </div>
-            <div
-                className='flex w-full flex-wrap gap-y-8 mt-14 justify-center'>
-                <motion.div
-                    variants={leftButtonAni}
-                    initial='initial'
-                    animate='animate'
-                    className='w-10/12 sm:w-1/2 lg:w-1/3 xl:w-1/4 px-2'>
-                    <button className='w-full flex gap-x-4 justify-center items-center py-2 rounded-lg left-button text-2xl font-thin'>
-                        <WhiteListSVG width="30" height='30' />
-                        <p>
-                            Join Whitelist
-                        </p>
-                    </button>
-                </motion.div>
-                <motion.div
-                    variants={rightButtonAni}
-                    initial='initial'
-                    animate='animate'
-                    className='w-10/12 sm:w-1/2 lg:w-1/3 xl:w-1/4 px-2'>
-                    <button className='w-full flex gap-x-4 justify-center items-center py-2 rounded-lg right-button text-2xl font-thin'>
-                        <DownloadSVG width="30" height='30' />
-                        <p>
-                            Grab Our Pitch Deck
-                        </p>
-                    </button>
-                </motion.div>
-            </div>
-            <div className='absolute bottom-0 cursor-pointer animate-bounce down-arrow hidden sm:flex ' onClick={() => {
-                let highLight = document.getElementById('highLight');
-                let topPos = 0;
-                if (highLight)
-                    highLight.scrollIntoView();
-            }}>
-                <ArrowDownSVG width="50" height="50" />
-            </div>
+
         </div>
     </Container>
 
@@ -137,3 +72,44 @@ const HeroSection = () => {
 
 export default HeroSection;
 
+
+
+const Listing = () => {
+    return (
+        <div className='flex mt-10 sm:mt-24 xl:ml-4  justify-evenly  sm:justify-start gap-x-1 md:gap-x-4'>
+            <div className='flex flex-col gap-y-3 justify-center items-center'>
+                <div className='h-12 sm:h-16 flex items-center justify-center w-full'>
+                    <p className=' text-3xl md:text-6xl text-center'>
+                        15+
+                    </p>
+
+                </div>
+                <p className='font-M-Thin text-sm sm:text-md  md:text-xl text-center'>
+                    Meta-Stores
+                </p>
+            </div>
+            <div className='h-12 mt-2 bg-white/25 rounded-full mx-0 sm:mx-2 md:mx-4' style={{ width: 4 }} />
+            <div className='h-full flex flex-col gap-y-3 items-center'>
+                <div className='h-12 sm:h-16  flex items-center '>
+                    <InfinitySVG width='80' height='25' />
+                </div>
+                <p className='font-M-Thin text-sm sm:text-md  md:text-xl text-center'>
+                    Digital Avatars
+                </p>
+            </div>
+            <div className='h-12 mt-2 bg-white/25 rounded-full mx-0 sm:mx-2 md:mx-4' style={{ width: 4 }} />
+            <div className=' flex flex-col gap-y-3 justify-center items-center'>
+                <div className='h-12 sm:h-16  flex items-center justify-center'>
+                    <p className=' text-3xl md:text-5xl text-center'>
+                        1000+
+                    </p>
+
+                </div>
+                <p className='font-M-Thin text-sm sm:text-md md:text-xl text-center'>
+                    Event Hours
+                </p>
+            </div>
+
+        </div>
+    )
+}

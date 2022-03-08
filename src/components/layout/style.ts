@@ -3,8 +3,6 @@ interface LayoutContainerData {
   background?: string;
 }
 export const LayoutContainer = styled.div<LayoutContainerData>`
-  background-color: ${(props) =>
-    props.background ? props.background : props.theme.colors.primaryBackground};
   color: ${(props) => props.theme.colors.text};
   height: 100vh;
   width: 100vw;
@@ -46,6 +44,6 @@ export const LayoutContainer = styled.div<LayoutContainerData>`
     width: 100vw;
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.75);
-    backdrop-filter: blur(8px) saturate(180%);
+    backdrop-filter: blur(5px) saturate(100%);
   }
 `;
