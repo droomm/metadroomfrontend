@@ -41,8 +41,8 @@ export default function Layout({ children, background, header = "title" }: any) 
             }} >
                 <Background />
                 <LeftSidePanel />
-                <RightSidePanel />
-                <HeaderComponent />
+                {/* <RightSidePanel /> */}
+                {/* <HeaderComponent /> */}
                 <main className=''>
                     {children}
                 </main>

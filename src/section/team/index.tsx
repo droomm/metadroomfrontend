@@ -57,7 +57,7 @@ const TeamMemberSection = () => {
             </div>
             <div className='flex gap-x-10 gap-y-4 justify-evenly flex-wrap px-10 mt-12'>
                 {Array(5).fill(0).map((data, index) => {
-                    return <div className='relative h-24 w-36' key={index}>
+                    return <div className='relative h-24 w-5/12 sm:w-36' key={index}>
                         <ImageContainer
                             src={`/icons/logo${index + 1}.svg`}
                             alt="feature"

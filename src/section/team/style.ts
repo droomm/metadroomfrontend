@@ -57,6 +57,10 @@ export const Container = styled.div`
       padding-left: 20px;
       padding-right: 20px;
     }
+    @media (max-width: 600px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
   .member {
     width: 30%;

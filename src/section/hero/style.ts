@@ -17,12 +17,12 @@ export const Container = styled.div`
   }
 
   .topText {
-    font-size: 8rem;
+    font-size: 7rem;
     line-height: 1;
   }
 
   .bottomTextBig {
-    font-size: 10rem;
+    font-size: 9rem;
     line-height: 1;
   }
   .minor-text {
@@ -38,14 +38,14 @@ export const Container = styled.div`
       width: 95%;
     }
   }
-  @media (max-width: 1530px) {
+  @media (max-width: 1330px) {
     .topText {
-      font-size: 7rem;
+      font-size: 6.5rem;
       line-height: 1;
     }
 
     .bottomTextBig {
-      font-size: 8rem;
+      font-size: 7rem;
       line-height: 1;
     }
     .box-left {
@@ -66,12 +66,12 @@ export const Container = styled.div`
 
   @media (max-width: 1024px) {
     .topText {
-      font-size: 7rem;
+      font-size: 6.5rem;
       line-height: 1;
     }
 
     .bottomTextBig {
-      font-size: 7rem;
+      font-size: 6.5rem;
       line-height: 1;
     }
   }
@@ -183,7 +183,7 @@ export const Container = styled.div`
 
   @media (max-width: 390px) {
     .topText {
-      font-size: 4.35rem;
+      font-size: 4.15rem;
       line-height: 1;
     }
 
@@ -232,7 +232,7 @@ export const Container = styled.div`
     max-width: 450px;
   }
   .right-button {
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(16px) saturate(110%);
     border-radius: 50px;
     svg {
