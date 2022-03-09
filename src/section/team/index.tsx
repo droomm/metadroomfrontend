@@ -10,7 +10,7 @@ const TeamMemberSection = () => {
     return <Container id="teamMember" className='select-none' >
         <div className='px-2 sm:px-24 w-screen h-full relative pt-5 text-lg'>
             <p className='text-3xl  mt-6 font-bold text-center'>
-                The team building your the future
+                The team building you the future
             </p>
             <div className='flex mt-10 flex-wrap w-full justify-center gap-y-5'>
                 {teamMembers.map((data, index) => {
