@@ -64,7 +64,7 @@ export const Container = styled.div`
       width: 50%;
     }
     @media (max-width: 1240px) {
-      width: 90%;
+      width: 100%;
     }
   }
 `;
