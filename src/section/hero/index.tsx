@@ -9,7 +9,7 @@ import DownloadSVG from '../../assets/icons/download';
 const HeroSection = () => {
 
     return <Container id="welcome">
-        <div className='pb-20 px-2 sm:px-24 xl:px-28 w-screen flex pt-20 sm:pt-32 flex-col h-full'>
+        <div className='pb-20 px-2 sm:px-24 xl:px-28 w-screen flex pt-20 flex-col h-full'>
             <div className='hidden md:flex w-full  py-2 gap-x-3 items-center mb-1'>
                 <LogoSVG width="70" height='70' />
                 <p className='text-3xl font-M-Black'>
@@ -46,8 +46,8 @@ const HeroSection = () => {
             <Listing />
             <Buttons />
             <div className='w-full flex justify-center  mt-24'>
-                <div className='w-full flex px-5 font-M-Bold justify-center rounded-3xl md:w-2/3 welcome-box py-12 sm:py-16  '>
-                    <p className="text-2xl  md:text-3xl lg:text-5xl text-center " style={{ color: "#19191B" }}>
+                <div className='w-full flex px-1 sm:px-5 font-M-Bold justify-center rounded-3xl md:w-2/3 welcome-box py-12 sm:py-16  '>
+                    <p className="text-2xl  md:text-3xl lg:text-5xl text-center text-dark" >
                         Welcome To The Future
                     </p>
                 </div>

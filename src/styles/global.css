@@ -5,23 +5,31 @@
 
 @font-face {
     font-family: 'Montserrat-black'; 
-    src: url('../assets/Montserrat/static/Montserrat-Black.ttf');
+    font-display:auto;
+    src: url('../../public/font/Montserrat/static/Montserrat-Black.ttf') ;
+    font-weight:900;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold'; 
+    font-display:auto;
+    src: url('../../public/font/Montserrat/static/Montserrat-Bold.ttf') ;
+    font-weight:700;
 }
 
 @font-face {
     font-family: 'Montserrat-Medium'; 
-    src: url('../assets/Montserrat/static/Montserrat-Medium.ttf');
+    font-display:auto;
+    src: url('../../public/font/Montserrat/static/Montserrat-Medium.ttf') ;
+    font-weight:500;
 }
 
 @font-face {
     font-family: 'Montserrat-Thin'; 
-    src: url('../assets/Montserrat/static/Montserrat-Regular.ttf');
+    font-display:auto;
+    src: url('../../public/font/Montserrat/static/Montserrat-Regular.ttf') ;
+    font-weight:400;
 }
-@font-face {
-    font-family: 'Montserrat-Bold'; 
-    src: url('../assets/Montserrat/static/Montserrat-Bold.ttf');
-}
-
 
 .font-M-Black{
     font-family: 'Montserrat-black'; 
@@ -45,9 +53,10 @@ body {
     scroll-behavior: smooth;
     padding: 0;
     margin: 0;
-    font-family: Montserrat-black;
+    font-family: Montserrat-Medium;
     font-style: normal;
     font-weight: normal;
+    font-display: swap;
 }
 
 .divider {

@@ -1,15 +1,17 @@
 import Layout from '../components/layout'
+import ContentSection from '../section/content'
+import FeatureSection from '../section/features'
 import HeroSection from '../section/hero'
-import HighLight from '../section/highlight'
-import SectionContainer from '../section/sectionContainer'
+import TeamMemberSection from '../section/team'
 
 const Home = () => {
 
     return (
         <Layout>
             <HeroSection />
-            <HighLight />
-            <SectionContainer />
+            <ContentSection />
+            <FeatureSection />
+            <TeamMemberSection />
         </Layout>
     )
 }

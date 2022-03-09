@@ -29,10 +29,10 @@ export default function Layout({ children, background, header = "title" }: any) 
                 if (welcomePosition.top + 250 < window.innerHeight && welcomePosition.bottom >= 0) {
                     updateLeftPanel(0);
                 }
-                if (featurePosition.top + 250 < window.innerHeight && featurePosition.bottom >= 0) {
+                if (contentPosition.top + 250 < window.innerHeight && contentPosition.bottom >= 0) {
                     updateLeftPanel(1);
                 }
-                if (contentPosition.top + 250 < window.innerHeight && contentPosition.bottom >= 0) {
+                if (featurePosition.top + 250 < window.innerHeight && featurePosition.bottom >= 0) {
                     updateLeftPanel(2);
                 }
                 if (teamMemberPosition.top + 250 < window.innerHeight && teamMemberPosition.bottom >= 0) {

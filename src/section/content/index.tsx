@@ -4,62 +4,103 @@ import { Container, ImageContainer } from './style';
 const ContentSection = () => {
     const contents = [
         {
-            image: "/images/feature1.webp",
-            title: "World Building",
-            detail: 'Build and explore incredible ecosystems tied to your smart contracts. Host events, sports, games an online classes. Aute eu reprehenderit duis elit. Sit excepteur eiusmod Lorem elit ea tempor ad esse sit eu proident sint deserunt. Anim eu laborum aliqua Lorem veniam mollit deserunt commodo deserunt labore eu labore adipisicing. Voluptate cillum laborum incididunt aute cupidatat tempor irure. Ullamco non enim enim cupidatat.'
+            image: "/images/content1.webp",
+            title: "Discovery Engine",
+            detail: 'Discover & monetize your virtual world and creativity. Engage & earn from decentralized content sales, ads, digital merchandized and much mor'
         },
         {
-            image: "/images/feature2.webp",
-            title: "Social-Networking",
-            detail: 'Experience life like social interactions. Mint and shared NFT powered content. Monetize your creativity.Pariatur pariatur do cupidatat nostrud velit cupidatat minim fugiat aute duis. Do ipsum veniam id officia. In nostrud labore sit in incididunt qui dolor minim adipisicing. Culpa culpa et non excepteur eiusmod eu magna officia cupidatat.'
+            image: "/images/content2.webp",
+            title: "Interactive Virtual Worlds",
+            detail: 'Go Live on Metaverse instantly. Build interactive stores, play games, attend events and discover a lot more...'
         },
         {
-            image: "/images/feature3.webp",
+            image: "/images/content3.webp",
             title: "Meta-Commerce",
-            detail: 'Trade NFTs, cryptos. Even buy products online from peers and ecosystem vendors. Voluptate esse qui nulla sunt consequat magna ut laboris laborum aute dolore incididunt. Ut qui duis occaecat labore. Qui sit cillum velit anim sit sint nulla fugiat est sunt velit. Consectetur officia quis voluptate enim cillum velit ullamco Lorem id. Minim ex sunt aliquip aliquip.'
+            detail: 'Explore your favorite global brands. Our oracles help bridge real world entities with virtual assets. Anyone can now build meta-stores, trade artifacts and mint digital assets securely.'
+
         },
     ]
 
-    return <Container id="content" className='select-none' >
-        <div>
-            <div className='px-2 sm:px-24 w-screen h-full relative z-20 text-lg'>
-                <div className='w-full '>
-                    <p className='capitalize content-header text-xl text-center' >
-                        content
+    return <Container id="content" className='select-none px-2 sm:px-28 w-screen relative z-20 text-lg'>
+        <div className='flex flex-wrap w-full justify-center gap-y-5 py-2 items-center flex-row'>
+            <div className='overflow-hidden w-full xl:w-1/2  relative rounded-lg content-image-box' >
+                <ImageContainer
+                    src={contents[0].image}
+                    layout='fill'
+                    alt="feature"
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL={contents[0].image}
+                    quality={100}
+                />
+            </div>
+            <div className={`flex h-full flex-col  w-full xl:w-1/2 py-4 px-4 justify-center items-center`}>
+                <div className=' w-full xl:w-10/12 '>
+                    <p className='text-3xl sm:text-5xl font-M-Bold text-center xl:text-left text-dark Font '>
+                        {contents[0].title}
                     </p>
-                    <p className='text-4xl sm:text-6xl uppercase mt-6 font-bold text-center'>
-                        All this in a single platform
+                    <p className='text-md sm:text-xl font-M-Medium  text-center xl:text-left  mt-5 text-midDark'>
+                        {contents[0].detail}
                     </p>
-                    <div className='flex mt-10 md:mt-20 flex-wrap w-full justify-center gap-y-5'>
-                        {contents.map((data, index) => {
-                            return (
-                                <div key={index} className={`w-full flex flex-wrap py-2 items-center ${index % 2 ? "flex-row" : "flex-row-reverse"}`}>
-                                    <div className='overflow-hidden w-full xl:w-1/2 relative rounded-lg content-image-box' >
-                                        <ImageContainer
-                                            src={data.image}
-                                            layout='fill'
-                                            alt="feature"
-                                            loading="lazy"
-                                            placeholder="blur"
-                                            blurDataURL={data.image}
-                                            quality={100}
-                                        />
-                                    </div>
-                                    <div className={`flex h-full flex-col  w-full xl:w-1/2 py-4 px-4`}>
-                                        <p className='text-4xl sm:text-5xl font-bold text-center xl:text-left'>
-                                            {data.title}
-                                        </p>
-                                        <p className='text-lg sm:text-xl font-thin sm:text-justify mt-5'>
-                                            {data.detail}
-                                        </p>
-                                    </div>
-                                </div>
-                            )
-                        })}
-                    </div>
-
                 </div>
+            </div>
+        </div>
 
+        <div className='flex flex-wrap w-full justify-center gap-y-5 py-2 items-center flex-row-reverse'>
+            <div className='overflow-hidden w-full xl:w-7/12 relative rounded-lg content-image-box' >
+                <ImageContainer
+                    src={contents[1].image}
+                    layout='fill'
+                    alt="feature"
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL={contents[1].image}
+                    quality={100}
+                />
+            </div>
+            <div className=' hidden xl:flex  w-full xl:w-5/12 ' />
+            <div className={`flex-col hidden xl:flex absolute h-40 w-full left-40 xl:w-5/12 py-4 px-4 justify-center items-end`}>
+                <div className='flex flex-col '>
+                    <p className='text-3xl md:text-4xl sm:text-5xl font-M-Bold text-left text-dark Font '>
+                        {contents[1].title}
+                    </p>
+                    <p className='w-full md:text-lg xl:w-10/12 text-md sm:text-xl font-M-Medium  text-center xl:text-left  mt-5 text-midDark'>
+                        {contents[1].detail}
+                    </p>
+                </div>
+            </div>
+            <div className={`h-full flex-col flex xl:hidden  w-full xl:w-5/12 py-4 px-4 justify-center items-center`}>
+                <div className='flex flex-col items-center '>
+                    <p className='text-3xl md:text-4xl sm:text-5xl font-M-Bold text-center xl:text-left text-dark Font '>
+                        {contents[1].title}
+                    </p>
+                    <p className='w-full xl:w-10/12 text-md md:text-lg sm:text-xl font-M-Medium  text-center xl:text-left  mt-5 text-midDark'>
+                        {contents[1].detail}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div className='flex flex-wrap w-full justify-center gap-y-5 py-2 items-center flex-row'>
+            <div className='overflow-hidden w-full xl:w-1/2 relative rounded-lg content-image-box' >
+                <ImageContainer
+                    src={contents[2].image}
+                    layout='fill'
+                    alt="feature"
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL={contents[2].image}
+                    quality={100}
+                />
+            </div>
+            <div className={`flex h-full flex-col  w-full xl:w-1/2 py-4 px-4 justify-center items-center`}>
+                <div className=' w-full xl:w-10/12 '>
+                    <p className='text-3xl sm:text-5xl font-M-Bold text-center xl:text-left text-dark Font '>
+                        {contents[2].title}
+                    </p>
+                    <p className='text-md sm:text-xl font-M-Medium  text-center xl:text-left  mt-5 text-midDark'>
+                        {contents[2].detail}
+                    </p>
+                </div>
             </div>
         </div>
 

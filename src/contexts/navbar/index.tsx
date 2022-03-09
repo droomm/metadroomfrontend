@@ -12,20 +12,12 @@ const initialValues: {
         icon: any
     }[],
     leftPanelTab: number,
-    advisor: {
-        id: string,
-        image: string,
-        name: string,
-        position: string,
-    }[],
     teamMembers: {
         id: string,
         image: string,
         name: string,
         position: string,
         aboutMe: string,
-        background: string,
-        interest: string,
     }[],
     selected: string,
     updateLeftPanel: Function,
@@ -33,9 +25,8 @@ const initialValues: {
 } = {
     icons: [],
     leftPanelTab: 0,
-    selected: "",
+    selected: "Preetham_S",
     teamMembers: [],
-    advisor: [],
     updateLeftPanel: () => { },
     updateSelected: () => { },
 };
@@ -54,14 +45,13 @@ const NavBarProvider: React.FC = ({ children }) => {
             icon: <DashboardSVG width="25" height="25" key={0} />,
         },
         {
-            path: "#features",
-            icon: <FeatureSVG width="25" height="25" key={1} />,
-        },
-        {
             path: "#content",
             icon: <ContentSVG width="25" height="25" key={2} />,
         },
-
+        {
+            path: "#features",
+            icon: <FeatureSVG width="25" height="25" key={1} />,
+        },
         {
             path: "#teamMember",
             icon:
@@ -77,55 +67,49 @@ const NavBarProvider: React.FC = ({ children }) => {
 
 
     const advisor = [
-        {
-            id: "Manish_Goyal",
-            image: "/images/avatar.webp",
-            name: "Manish Goyal",
-            position: "Strategic Advisor Ex IDC, F&S",
-        },
-        {
-            id: "Varun_Sharma",
-            image: "/images/avatar.webp",
-            name: "Varun Sharma",
-            position: "Strategic Advisor - BlockChain Investor, Mentor @ ETHDenver",
-        },
     ];
     const teamMembers = [
         {
             id: "Rakesh_S",
-            image: "/images/avatar.webp",
+            image: "/images/avatar1.webp",
             name: "Rakesh S",
             position: "CEO & Co-Founder",
-            aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat. Eu consectetur commodo proident est sunt voluptate proident pariatur magna ut id. Eiusmod irure do minim exercitation nostrud velit fugiat aliqua laboris nostrud aute nulla quis. ",
-            interest: "Pariatur reprehenderit esse sit labore ad consequat laborum. Non laboris quis nisi ipsum nisi id irure eu exercitation consequat consequat duis exercitation. Lorem mollit ea ea minim eiusmod minim eiusmod quis ad consequat. Mollit duis ex esse tempor sint Lorem voluptate Lorem exercitation enim veniam consequat.Id laborum exercitation duis irure aliquip incididunt enim nulla proident. ",
-            background: "Minim dolor laboris aute sunt culpa culpa magna amet. Aliquip anim nostrud laboris ipsum cillum tempor ad mollit do Lorem fugiat nostrud consequat ipsum. Non laboris veniam magna est Lorem elit aliquip exercitation incididunt.Quis pariatur laborum cupidatat aliqua non tempor commodo Lorem proident esse non. In do minim nostrud dolor exercitation ipsum exercitation consectetur deserunt culpa. Ullamco deserunt duis officia excepteur quis ea. "
+            aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
         },
         {
             id: "Preetham_S",
-            image: "/images/avatar.webp",
+            image: "/images/avatar2.webp",
             name: "Preetham S",
             position: "Product & Co-Founder",
-            aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat. Eu consectetur commodo proident est sunt voluptate proident pariatur magna ut id. Eiusmod irure do minim exercitation nostrud velit fugiat aliqua laboris nostrud aute nulla quis. ",
-            interest: "Pariatur reprehenderit esse sit labore ad consequat laborum. Non laboris quis nisi ipsum nisi id irure eu exercitation consequat consequat duis exercitation. Lorem mollit ea ea minim eiusmod minim eiusmod quis ad consequat. Mollit duis ex esse tempor sint Lorem voluptate Lorem exercitation enim veniam consequat.Id laborum exercitation duis irure aliquip incididunt enim nulla proident. ",
-            background: "Minim dolor laboris aute sunt culpa culpa magna amet. Aliquip anim nostrud laboris ipsum cillum tempor ad mollit do Lorem fugiat nostrud consequat ipsum. Non laboris veniam magna est Lorem elit aliquip exercitation incididunt.Quis pariatur laborum cupidatat aliqua non tempor commodo Lorem proident esse non. In do minim nostrud dolor exercitation ipsum exercitation consectetur deserunt culpa. Ullamco deserunt duis officia excepteur quis ea. "
+            aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
         },
         {
             id: "Suvesh",
-            image: "/images/avatar.webp",
+            image: "/images/avatar3.webp",
             name: "Suvesh",
             position: "Tech & Co-Founder",
-            aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat. Eu consectetur commodo proident est sunt voluptate proident pariatur magna ut id. Eiusmod irure do minim exercitation nostrud velit fugiat aliqua laboris nostrud aute nulla quis. ",
-            interest: "Pariatur reprehenderit esse sit labore ad consequat laborum. Non laboris quis nisi ipsum nisi id irure eu exercitation consequat consequat duis exercitation. Lorem mollit ea ea minim eiusmod minim eiusmod quis ad consequat. Mollit duis ex esse tempor sint Lorem voluptate Lorem exercitation enim veniam consequat.Id laborum exercitation duis irure aliquip incididunt enim nulla proident. ",
-            background: "Minim dolor laboris aute sunt culpa culpa magna amet. Aliquip anim nostrud laboris ipsum cillum tempor ad mollit do Lorem fugiat nostrud consequat ipsum. Non laboris veniam magna est Lorem elit aliquip exercitation incididunt.Quis pariatur laborum cupidatat aliqua non tempor commodo Lorem proident esse non. In do minim nostrud dolor exercitation ipsum exercitation consectetur deserunt culpa. Ullamco deserunt duis officia excepteur quis ea. "
+            aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat. "
         },
         {
             id: "Uday_Allu",
-            image: "/images/avatar.webp",
+            image: "/images/avatar3.webp",
             name: "Uday Allu",
             position: "AI & Co-Founder",
-            aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat. Eu consectetur commodo proident est sunt voluptate proident pariatur magna ut id. Eiusmod irure do minim exercitation nostrud velit fugiat aliqua laboris nostrud aute nulla quis. ",
-            interest: "Pariatur reprehenderit esse sit labore ad consequat laborum. Non laboris quis nisi ipsum nisi id irure eu exercitation consequat consequat duis exercitation. Lorem mollit ea ea minim eiusmod minim eiusmod quis ad consequat. Mollit duis ex esse tempor sint Lorem voluptate Lorem exercitation enim veniam consequat.Id laborum exercitation duis irure aliquip incididunt enim nulla proident. ",
-            background: "Minim dolor laboris aute sunt culpa culpa magna amet. Aliquip anim nostrud laboris ipsum cillum tempor ad mollit do Lorem fugiat nostrud consequat ipsum. Non laboris veniam magna est Lorem elit aliquip exercitation incididunt.Quis pariatur laborum cupidatat aliqua non tempor commodo Lorem proident esse non. In do minim nostrud dolor exercitation ipsum exercitation consectetur deserunt culpa. Ullamco deserunt duis officia excepteur quis ea. "
+            aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
+        },
+        {
+            id: "Manish_Goyal",
+            image: "/images/avatar1.webp",
+            name: "Manish Goyal",
+            position: "Strategic Advisor Ex IDC, F&S", aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
+
+        },
+        {
+            id: "Varun_Sharma",
+            image: "/images/avatar2.webp",
+            name: "Varun Sharma",
+            position: "Strategic Advisor - BlockChain Investor, Mentor @ ETHDenver", aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
+
         },
 
     ]
@@ -156,7 +140,6 @@ const NavBarProvider: React.FC = ({ children }) => {
         <NavBarContext.Provider
             value={{
                 icons,
-                advisor,
                 teamMembers,
                 selected,
                 leftPanelTab,
