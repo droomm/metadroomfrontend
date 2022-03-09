@@ -5,11 +5,14 @@ import Image from "next/image";
 import GridSVG from '../../assets/icons/menu';
 
 const HeaderComponent = () => {
-    return <Container className='fixed z-40 px-5 items-center flex overflow-hidden justify-between'>
+    return <Container className='fixed z-40 px-3 items-center flex overflow-hidden justify-between'>
 
-        <div className='flex sm:hidden mobile-panel'>
-            <LogoSVG height="50" width='50' />
-            <GridSVG width="30" height='30' />
+        <div className='flex sm:hidden mobile-panel justify-between items-center  w-full '>
+            <div />
+            <div className=' p-2 menu'>
+
+                <GridSVG width="35" height='35' />
+            </div>
         </div>
     </Container>
 

@@ -18,11 +18,16 @@ export const Container = styled.div`
     backdrop-filter: blur(50px);
   }
   .mobile-panel {
-    svg {
+    .menu {
       cursor: pointer;
-      fill: ${(props) => props.theme.colors.white};
+      svg {
+        transition: stroke 0s ease-in-out;
+        stroke: ${(props) => props.theme.colors.white};
+      }
       :hover {
-        fill: ${(props) => props.theme.colors.primary};
+        svg {
+          stroke: ${(props) => props.theme.colors.primary};
+        }
       }
     }
   }
