@@ -25,7 +25,7 @@ const initialValues: {
 } = {
     icons: [],
     leftPanelTab: 0,
-    selected: "Preetham_S",
+    selected: "",
     teamMembers: [],
     updateLeftPanel: () => { },
     updateSelected: () => { },

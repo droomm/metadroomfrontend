@@ -21,7 +21,7 @@ const ContentSection = () => {
         },
     ]
 
-    return <Container id="content" className='select-none px-2 sm:px-28 w-screen relative z-20 text-lg'>
+    return <Container id="content" className='select-none px-2 sm:pl-28 w-screen relative z-20 text-lg'>
         <div className='flex flex-wrap w-full justify-center gap-y-5 py-2 items-center flex-row'>
             <div className='overflow-hidden w-full xl:w-1/2  relative rounded-lg content-image-box' >
                 <ImageContainer
@@ -47,7 +47,7 @@ const ContentSection = () => {
         </div>
 
         <div className='flex flex-wrap w-full justify-center gap-y-5 py-2 items-center flex-row-reverse'>
-            <div className='overflow-hidden w-full xl:w-7/12 relative rounded-lg content-image-box' >
+            <div className='overflow-hidden w-full xl:w-7/12 relative rounded-lg content-image-box-1' >
                 <ImageContainer
                     src={contents[1].image}
                     layout='fill'

@@ -32,6 +32,26 @@ export const Container = styled.div`
       max-width: 340px;
     }
   }
+  .content-image-box-1 {
+    height: 900px;
+    max-width: 1100px;
+    @media (max-width: 2024px) {
+      height: 700px;
+      max-width: 940px;
+    }
+    @media (max-width: 1524px) {
+      height: 600px;
+      max-width: 840px;
+    }
+    @media (max-width: 820px) {
+      height: 400px;
+      max-width: 540px;
+    }
+    @media (max-width: 420px) {
+      height: 300px;
+      max-width: 400px;
+    }
+  }
   .detail {
     /* max-width: 800px; */
   }
