@@ -10,7 +10,21 @@ module.exports = {
                 primary: "#6016FC",
                 secondary: "#EF5DA8",
                 third: "#161629"
+            },
+            screens: {
+                'xsm': '420px',
+                'sm': '640px',
+
+                'md': '768px',
+
+                'lg': '1024px',
+
+                'xl': '1280px',
+
+                '2xl': '1536px',
+                '3xl': '1836px',
             }
+
         },
     },
     plugins: [],

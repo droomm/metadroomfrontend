@@ -9,8 +9,8 @@ import DownloadSVG from '../../assets/icons/download';
 const HeroSection = () => {
 
     return <Container id="welcome">
-        <div className='pb-20 px-2 sm:px-24 xl:px-28 w-screen flex pt-20 flex-col h-full'>
-            <div className='hidden md:flex w-full  py-2 gap-x-3 items-center mb-1'>
+        <div className='pb-10 px-2 sm:pl-24 xl:px-28 w-screen flex pt-2 sm:pt-16 flex-col h-full'>
+            <div className='hidden md:flex w-full py-2 gap-x-3 items-center mb-1'>
                 <LogoSVG width="70" height='70' />
                 <p className='text-3xl font-M-Black'>
                     VirtualWide
@@ -38,7 +38,7 @@ const HeroSection = () => {
                 </div>
             </div>
 
-            <div className='w-5/12 mt-6 sm:mt-10 xl:ml-5 minor-text'>
+            <div className='w-5/12 mt-8  xl:ml-5 minor-text '>
                 <p className='font-M-Medium text-xl sm:text-justify'>
                     Build your social network on web3. Search and interact in virtual worlds. Play games, attend events, crash parties with friends and shop with your favourite global brands.
                 </p>
@@ -64,8 +64,8 @@ export default HeroSection;
 
 const Buttons = () => {
     return (
-        <div className='flex flex-wrap justify-center md:justify-start mt-10 sm:mt-16  gap-x-4 gap-y-6'>
-            <button className='w-11/12 md:w-5/12 xl:w-4/12 py-1 sm:py-2 px-2 h-16 sm:h-20 items-center flex justify-center gap-x-5  left-button relative'>
+        <div className='flex flex-wrap justify-center md:justify-start mt-8 sm:mt-10 xl:mt-8 3xl:mt-16  gap-x-4 gap-y-6'>
+            <button className='w-11/12 sm:w-5/12 lg:w-6/12 xl:w-4/12 py-1 sm:py-2 px-2 h-16 sm:h-20 items-center flex justify-center gap-x-5  left-button relative'>
                 <p className='text-center text-xl xl:text-3xl font-M-Bold'>
                     Join Wait list
                 </p>
@@ -87,10 +87,10 @@ const Buttons = () => {
 }
 const Listing = () => {
     return (
-        <div className='flex mt-10 sm:mt-16 xl:ml-4  justify-evenly  md:justify-start gap-x-1 md:gap-x-4'>
+        <div className='flex mt-8 sm:mt-10 xl:mt-8 3xl:mt-16  xl:ml-4  justify-evenly  md:justify-start gap-x-1 md:gap-x-4'>
             <div className='flex flex-col gap-y-3 justify-center items-center'>
                 <div className='h-12 sm:h-16 flex items-center justify-center w-full'>
-                    <p className=' text-3xl md:text-6xl text-center'>
+                    <p className=' text-3xl md:text-6xl text-center font-M-Black'>
                         15+
                     </p>
 
@@ -111,7 +111,7 @@ const Listing = () => {
             <div className='h-12 mt-2 bg-white/25 rounded-full mx-0 sm:mx-2 md:mx-4' style={{ width: 4 }} />
             <div className=' flex flex-col gap-y-3 justify-center items-center'>
                 <div className='h-12 sm:h-16  flex items-center justify-center'>
-                    <p className=' text-3xl md:text-5xl text-center'>
+                    <p className=' text-3xl md:text-5xl text-center '>
                         1000+
                     </p>
 

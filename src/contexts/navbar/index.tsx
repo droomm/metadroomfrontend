@@ -25,7 +25,7 @@ const initialValues: {
 } = {
     icons: [],
     leftPanelTab: 0,
-    selected: "Preetham_S",
+    selected: "",
     teamMembers: [],
     updateLeftPanel: () => { },
     updateSelected: () => { },
@@ -42,25 +42,25 @@ const NavBarProvider: React.FC = ({ children }) => {
     const icons = [
         {
             path: "#welcome",
-            icon: <DashboardSVG width="25" height="25" key={0} />,
+            icon: <DashboardSVG width="27" height="27" key={0} />,
         },
         {
             path: "#content",
-            icon: <ContentSVG width="25" height="25" key={2} />,
+            icon: <ContentSVG width="27" height="27" key={2} />,
         },
         {
             path: "#features",
-            icon: <FeatureSVG width="25" height="25" key={1} />,
+            icon: <FeatureSVG width="27" height="27" key={1} />,
         },
         {
             path: "#teamMember",
             icon:
-                <TeamSVG width="25" height="25" key={3} />,
+                <TeamSVG width="27" height="27" key={3} />,
         },
         {
             path: "#whitelist",
             icon:
-                <WhiteListSVG width="25" height="25" key={4} />,
+                <WhiteListSVG width="27" height="27" key={4} />,
         },
 
     ]

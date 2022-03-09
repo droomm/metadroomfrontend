@@ -16,7 +16,7 @@ const LeftSidePanel = () => {
                             // updateLeftPanel(index)
                             router.push(`/${data.path}`, undefined, { shallow: true });
                         }}
-                        className='cursor-pointer w-full flex justify-center py-3' active={index === leftPanelTab} key={index}>
+                        className='z-20 cursor-pointer w-full flex justify-center py-3' active={index === leftPanelTab} key={index}>
                         {data.icon}
                     </SVGContainer>
                 })}

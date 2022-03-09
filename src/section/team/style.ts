@@ -3,15 +3,7 @@ import Image from "next/image";
 interface MemberContainerType {
   selected: boolean;
 }
-export const MemberContainer = styled.div<MemberContainerType>`
-  ${(props) => {
-    if (props.selected)
-      return "background: linear-gradient(180deg, #382bd5 0%,  rgba(37, 25, 172, 0) 99.99%,  rgba(40, 28, 179, 0.160576) 100% );";
-    else
-      return `background-color: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(5px);`;
-  }}
-`;
+
 export const Container = styled.div`
   min-width: 320px;
   padding-bottom: 50px;
@@ -54,6 +46,10 @@ export const Container = styled.div`
       padding-right: 40px;
     }
     @media (min-width: 1000px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @media (max-width: 600px) {
       padding-left: 20px;
       padding-right: 20px;
     }
