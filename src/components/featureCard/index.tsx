@@ -2,7 +2,7 @@ import React, { } from "react";
 import { Container } from './style';
 import Image from "next/image";
 import CallSVG from '../../assets/icons/call';
-import LeftArrowSVG from '../../assets/icons/leftArrow';
+import LeftArrowSVG from '../../assets/icons/left';
 import RightArrowSVG from '../../assets/icons/rightArrow';
 
 const DetailCard = ({ leftAction, rightAction, title, detail }: { title: string, detail: string, leftAction: Function, rightAction: Function }) => {

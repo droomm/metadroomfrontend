@@ -9,7 +9,8 @@ module.exports = {
                 midDark: "#696871",
                 primary: "#6016FC",
                 secondary: "#EF5DA8",
-                third: "#161629"
+                third: "#161629",
+                shadow: "#79BCCF"
             },
             screens: {
                 'xsm': '420px',
@@ -23,6 +24,7 @@ module.exports = {
 
                 '2xl': '1536px',
                 '3xl': '1836px',
+                '4xl': '2000px',
             }
 
         },

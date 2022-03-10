@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import QuoteSVG from '../../assets/icons/quote';
 import OverViewSection from '../../components/overView';
 import { useNavBar } from '../../contexts/navbar';
@@ -11,8 +11,10 @@ const TeamMemberSection = () => {
     const { teamMembers, updateSelected, selected } = useNavBar();
     const [currentSlide, setCurrentSlide] = React.useState(0)
     const [loaded, setLoaded] = useState(false);
-    useLayoutEffect(() => {
-        updateSelected(teamMembers[1].id)
+    useEffect(() => {
+        let addData = 1;
+        if (1408 >= window.innerWidth) addData = 0;
+        updateSelected(teamMembers[0 + addData].id)
     }, []);
     const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
         initial: 0,

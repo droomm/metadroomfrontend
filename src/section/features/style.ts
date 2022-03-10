@@ -3,12 +3,16 @@ import Image from "next/image";
 
 export const Container = styled.div`
   min-width: 320px;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
-  .top-padding {
-    height: 25vh;
-    @media (min-width: 630px) {
-      height: 45vh;
+  background: linear-gradient(287.15deg, #efafbc 0%, #c3e3fa 100%);
+
+  .controller {
+    svg {
+      stroke: ${(props) => props.theme.colors.secondly};
+    }
+    .arrow {
+      border-width: 2px;
     }
   }
 `;
