@@ -9,7 +9,11 @@ import DownloadSVG from '../../assets/icons/download';
 const HeroSection = () => {
 
     return <Container id="welcome">
-        <div className='pb-10 px-2 sm:pl-24 xl:px-28 w-screen flex pt-2 sm:pt-16 flex-col h-full'>
+        {/* <iframe
+            className='absolute w-full h-full z-0'
+            src="https://my.spline.design/buildingsunsetcopy-faea046ed6894bafc0e09f4979f6eaf9" /> */}
+
+        <div className='z-10 relative pb-10 px-2 sm:pl-24 xl:px-28 w-screen flex pt-2 sm:pt-16 flex-col h-full'>
             <div className='hidden md:flex w-full py-2 gap-x-3 items-center mb-1'>
                 <LogoSVG width="70" height='70' />
                 <p className='text-3xl font-M-Black'>
