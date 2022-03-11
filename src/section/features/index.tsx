@@ -23,7 +23,20 @@ const FeatureSection = () => {
     const [tab, setTabs] = useState<number>(0);
     return <Container id="features"
     >
-        <div className='px-2 pr-4 sm:pl-24 sm:pr-4 pb-10 w-screen min-h-screen pt-5 flex flex-col'>
+
+        <div className=' w-full h-full absolute z-0'>
+
+            <video
+                style={{ width: "99.6vw", height: "100vh", objectFit: "cover" }}
+                autoPlay loop muted preload="auto"
+            >
+                <source src='/videos/feature.mp4' type="video/mp4" />
+            </video>
+        </div>
+        <div className='glass w-full h-full absolute z-10'>
+
+        </div>
+        <div className='px-2 pr-4 sm:pl-24 sm:pr-4 pb-10 w-screen min-h-screen pt-5 flex flex-col relative  z-20'>
             <div className='w-full flex justify-center h-16 mb-4 sm:mb-16 py-2'>
                 <p className='text-3xl sm:text-4xl md:text-5xl font-M-Bold text-center xl:text-left text-dark Font '>
                     All this in a single platform :)
@@ -104,11 +117,11 @@ const Feature1 = () => {
                 <p className=' text-6xl sm:text-7xl md:text-8xl 4xl:text-8xl   font-M-Bold text-left text-dark'>
                     World Building
                 </p>
-                <p className='text-md sm:w-2/3 2xl:w-6/12 font-M-Medium mt-5  text-midDark'>
+                <p className='text-md sm:w-2/3 2xl:w-6/12 font-M-Medium mt-5  text-white'>
                     Build and explore incredible ecosystems tied to your smart contracts. Host events, sports, games an online classes.
                 </p>
             </div>
-            <div className='absolute right-0 w-full h-full py-20 lg:py-10 flex  lg:justify-end items-center'>
+            <div className='absolute right-0 w-full h-full py-20 lg:py-10 hidden sm:flex  lg:justify-end items-center'>
                 <div className={'w-full lg:w-5/12 2xl:w-4/12  relative lg:mr-10 2xl:mr-20 h-full '}>
                     <Image
                         src={"/images/feature1.webp"}
@@ -135,11 +148,11 @@ const Feature2 = () => {
                 <p className=' text-5xl sm:text-7xl md:text-8xl 4xl:text-8xl   font-M-Bold text-left text-dark'>
                     Social-Networking
                 </p>
-                <p className='text-md sm:w-2/3 2xl:w-6/12 font-M-Medium mt-5  text-midDark'>
+                <p className='text-md sm:w-2/3 2xl:w-6/12 font-M-Medium mt-5  text-white'>
                     Experience life like social interactions. Mint and shared NFT powered content. Monetize your creativity.
                 </p>
             </div>
-            <div className='absolute right-5 w-full xl:w-6/12  h-full  flex justify-center lg:justify-end items-center'>
+            <div className='absolute right-5 w-full xl:w-6/12  h-full   justify-center lg:justify-end items-center hidden sm:flex'>
                 <div className={'w-full relative  h-full'}>
                     <Image
                         src={"/images/feature2.webp"}
@@ -165,11 +178,11 @@ const Feature3 = () => {
                 <p className=' text-5xl sm:text-7xl md:text-8xl 4xl:text-8xl  font-M-Bold text-left text-dark'>
                     Social-Networking
                 </p>
-                <p className='text-md sm:w-2/3 2xl:w-6/12 font-M-Medium mt-5  text-midDark'>
+                <p className='text-md sm:w-2/3 2xl:w-6/12 font-M-Medium mt-5  text-white'>
                     Shop from your favorite brands on metaverse. Gather the assets powering the future.Trade NFTs, crypto tokens and much more. Even buy digital assets online from peers and ecosystem vendors.
                 </p>
             </div>
-            <div className='absolute right-0 w-full h-full py-20 lg:py-10 flex  sm:justify-end items-center'>
+            <div className='absolute right-0 w-full h-full py-20 lg:py-10 hidden sm:flex  sm:justify-end items-center'>
                 <div className={'w-full sm:w-8/12 md:w-5/12 2xl:w-4/12  relative lg:mr-10 2xl:mr-20 h-full '}>
                     <Image
                         src={"/images/feature3.webp"}

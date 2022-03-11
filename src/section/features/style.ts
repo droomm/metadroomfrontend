@@ -15,6 +15,11 @@ export const Container = styled.div`
       border-width: 2px;
     }
   }
+
+  .glass {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(4px) saturate(110%);
+  }
 `;
 
 export const ImageContainer = styled(Image)`
