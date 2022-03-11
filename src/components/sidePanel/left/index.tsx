@@ -9,7 +9,7 @@ const LeftSidePanel = () => {
     const { icons, leftPanelTab } = useNavBar();
     return (
         <SidePanelStructure left={true}>
-            <div className='relative h-full flex flex-col gap-y-4 py-5 '>
+            <div className='relative h-full flex flex-col gap-y-4 py-5 items-center justify-center'>
                 {icons.map((data, index) => {
                     return <SVGContainer
                         onClick={() => {

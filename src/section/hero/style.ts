@@ -5,7 +5,79 @@ export const Container = styled.div`
   min-width: 320px;
   position: relative;
   color: ${(props) => props.theme.colors.white}ff;
-
+  .customHeroImage {
+    top: 7rem;
+    right: 15%;
+    width: 450px;
+    height: 450px;
+    transition: all 0.8s ease-in-out;
+    @media (min-width: 2350px) {
+      width: 600px;
+      height: 600px;
+      right: 30%;
+    }
+    @media (max-width: 2350px) {
+      width: 600px;
+      height: 600px;
+      right: 25%;
+    }
+    @media (max-width: 2200px) {
+      width: 600px;
+      height: 600px;
+      right: 20%;
+    }
+    @media (max-width: 2000px) {
+      width: 500px;
+      height: 500px;
+      right: 20%;
+      top: 8.5rem;
+    }
+    @media (max-width: 1900px) {
+      width: 500px;
+      height: 500px;
+      right: 15%;
+      top: 8.5rem;
+    }
+    @media (max-width: 1800px) {
+      width: 500px;
+      height: 500px;
+      right: 12.5%;
+      top: 8.5rem;
+    }
+    @media (max-width: 1700px) {
+      width: 475px;
+      height: 475px;
+      right: 7.5%;
+      top: 9rem;
+    }
+    @media (max-width: 1600px) {
+      width: 450px;
+      height: 450px;
+      right: 3.5%;
+      top: 9rem;
+    }
+    @media (max-width: 1500px) {
+      width: 400px;
+      height: 400px;
+      right: 2.5%;
+      top: 11rem;
+    }
+    @media (max-width: 1400px) {
+      width: 550px;
+      height: 550px;
+      right: 2.5%;
+      top: 10rem;
+    }
+    @media (max-width: 700px) {
+      width: 450px;
+      height: 450px;
+      right: 2.5%;
+      top: 20rem;
+    }
+    @media (max-width: 500px) {
+      display: none;
+    }
+  }
   .motdGradient {
     background: -webkit-linear-gradient(
       45.05deg,
@@ -230,6 +302,16 @@ export const Container = styled.div`
       stroke: ${(props) => props.theme.colors.black};
     }
     max-width: 450px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0px 0.5px 2.5px #6016fc77;
+    :hover {
+      box-shadow: 0px 0.5px 10px #6016fc55;
+    }
+    :active {
+      box-shadow: 0px 0.5px 10px #6016fc99;
+    }
+
+    /* image-source: ; */
   }
   .right-button {
     background-color: rgba(0, 0, 0, 0.05);
@@ -239,6 +321,14 @@ export const Container = styled.div`
       fill: ${(props) => props.theme.colors.white};
     }
     max-width: 450px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0px 0.5px 2.5px #6016fc77;
+    :hover {
+      box-shadow: 0px 0.5px 10px #6016fc55;
+    }
+    :active {
+      box-shadow: 0px 0.5px 10px #6016fc99;
+    }
   }
 `;
 

@@ -10,7 +10,8 @@ module.exports = {
                 primary: "#6016FC",
                 secondary: "#EF5DA8",
                 third: "#161629",
-                shadow: "#79BCCF"
+                shadow: "#79BCCF",
+                waitingList: "#DFD7F955",
             },
             screens: {
                 'xsm': '420px',

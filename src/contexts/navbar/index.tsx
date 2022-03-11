@@ -58,7 +58,7 @@ const NavBarProvider: React.FC = ({ children }) => {
                 <TeamSVG width="27" height="27" key={3} />,
         },
         {
-            path: "#whitelist",
+            path: "#waitingList",
             icon:
                 <WhiteListSVG width="27" height="27" key={4} />,
         },
@@ -78,7 +78,7 @@ const NavBarProvider: React.FC = ({ children }) => {
         },
         {
             id: "Preetham_S",
-            image: "/images/avatar2.webp",
+            image: "/images/Preetham.webp",
             name: "Preetham S",
             position: "Product & Co-Founder",
             aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."

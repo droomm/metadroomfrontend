@@ -18,6 +18,23 @@ export const Container = styled.div`
     svg {
       stroke: ${(props) => props.theme.colors.black};
     }
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0px 0.5px 2.5px #6016fc77;
+    :hover {
+      box-shadow: 0px 0.5px 10px #6016fc55;
+    }
+    :active {
+      box-shadow: 0px 0.5px 10px #6016fc99;
+    }
+  }
+  .waitingListBackground {
+    border-top-left-radius: 125px;
+    @media (max-width: 770px) {
+      border-top-left-radius: 1rem;
+    }
+    height: 95%;
+    width: 96.5%;
+    margin-left: 1.5%;
   }
 `;
 

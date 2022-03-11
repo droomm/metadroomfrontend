@@ -57,7 +57,7 @@ const TeamMemberSection = () => {
                     >
                         <div className={(data.id === selected ? "gradient mt-0" : " glass md:mt-14 ") + ' cursor-move rounded-lg w-full  duration-500 flex flex-col items-center py-16'}>
                             <div className='w-24 h-24 bg-slate-600 rounded-full  relative'>
-                                <div className='relative h-24 w-24'>
+                                <div className='relative h-24 w-24 rounded-full overflow-hidden'>
                                     <ImageContainer
                                         src={data.image}
                                         alt="feature"

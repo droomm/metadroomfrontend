@@ -4,15 +4,30 @@ import LogoSVG from '../../assets/icons/logo';
 import InfinitySVG from '../../assets/icons/infinity';
 import RightArrowSVG from '../../assets/icons/rightArrow';
 import DownloadSVG from '../../assets/icons/download';
-
+import Image from "next/image";
 
 const HeroSection = () => {
 
     return <Container id="welcome">
-        {/* <iframe
-            className='absolute w-full h-full z-0'
-            src="https://my.spline.design/buildingsunsetcopy-faea046ed6894bafc0e09f4979f6eaf9" /> */}
+        <div className='w-full h-full absolute  z-10'>
+            <div className='relative w-full h-full'>
+                <div className='absolute customHeroImage'>
 
+                    <div className='rounded-full overflow-hidden w-full h-full relative'>
+                        <Image
+                            src={"/icons/hero.svg"}
+                            layout='fill'
+                            alt="hero"
+                            loading="lazy"
+                            placeholder="blur"
+                            blurDataURL={"/icons/hero.svg"}
+                            quality={100}
+                        />
+                    </div>
+                </div>
+            </div>
+
+        </div>
         <div className='z-10 relative pb-10 px-2 sm:pl-24 xl:px-28 w-screen flex pt-2 sm:pt-16 flex-col h-full'>
             <div className='hidden md:flex w-full py-2 gap-x-3 items-center mb-1'>
                 <LogoSVG width="70" height='70' />
@@ -68,8 +83,17 @@ export default HeroSection;
 
 const Buttons = () => {
     return (
-        <div className='flex flex-wrap justify-center md:justify-start mt-8 sm:mt-10 xl:mt-8 3xl:mt-16  gap-x-4 gap-y-6'>
-            <button className='w-11/12 sm:w-5/12 lg:w-6/12 xl:w-4/12 py-1 sm:py-2 px-2 h-16 sm:h-20 items-center flex justify-center gap-x-5  left-button relative'>
+        <div className='flex flex-wrap justify-center md:justify-start mt-14 sm:mt-10 xl:mt-8 3xl:mt-16  gap-x-4 gap-y-6'>
+            <button
+                onClick={() => {
+
+                    let waitingList = document.getElementById("waitingListInput");
+                    if (waitingList) {
+                        waitingList.scrollIntoView();
+                        waitingList.focus();
+                    }
+                }}
+                className='w-11/12 sm:w-5/12 lg:w-6/12 xl:w-4/12 py-1 sm:py-2 px-2 h-16 sm:h-20 items-center flex justify-center gap-x-5 left-button relative'>
                 <p className='text-center text-xl xl:text-3xl font-M-Bold'>
                     Join Wait list
                 </p>
@@ -91,7 +115,7 @@ const Buttons = () => {
 }
 const Listing = () => {
     return (
-        <div className='flex mt-8 sm:mt-10 xl:mt-8 3xl:mt-16  xl:ml-4  justify-evenly  md:justify-start gap-x-1 md:gap-x-4'>
+        <div className='flex mt-14 sm:mt-10 xl:mt-8 3xl:mt-16  xl:ml-4  justify-evenly  md:justify-start gap-x-1 md:gap-x-4'>
             <div className='flex flex-col gap-y-3 justify-center items-center'>
                 <div className='h-12 sm:h-16 flex items-center justify-center w-full'>
                     <p className=' text-3xl md:text-6xl text-center font-M-Black'>

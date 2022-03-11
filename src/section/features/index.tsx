@@ -101,7 +101,7 @@ const Feature1 = () => {
                 <p className='text-2xl sm:text-4xl font-M-Medium text-left'>
                     Engage in
                 </p>
-                <p className=' text-6xl sm:text-7xl md:text-8xl 4xl:text-9xl   font-M-Bold text-left text-dark'>
+                <p className=' text-6xl sm:text-7xl md:text-8xl 4xl:text-8xl   font-M-Bold text-left text-dark'>
                     World Building
                 </p>
                 <p className='text-md sm:w-2/3 2xl:w-6/12 font-M-Medium mt-5  text-midDark'>
@@ -132,14 +132,14 @@ const Feature2 = () => {
                 <p className='text-lg  md:text-3xl lg:text-4xl font-M-Medium text-left'>
                     Harness the all new Crypto powered
                 </p>
-                <p className=' text-5xl sm:text-7xl md:text-8xl 4xl:text-9xl   font-M-Bold text-left text-dark'>
+                <p className=' text-5xl sm:text-7xl md:text-8xl 4xl:text-8xl   font-M-Bold text-left text-dark'>
                     Social-Networking
                 </p>
                 <p className='text-md sm:w-2/3 2xl:w-6/12 font-M-Medium mt-5  text-midDark'>
                     Experience life like social interactions. Mint and shared NFT powered content. Monetize your creativity.
                 </p>
             </div>
-            <div className='absolute right-5 w-full xl:w-9/12 2xl:w-8/12 h-full  flex justify-center lg:justify-end items-center'>
+            <div className='absolute right-5 w-full xl:w-6/12  h-full  flex justify-center lg:justify-end items-center'>
                 <div className={'w-full relative  h-full'}>
                     <Image
                         src={"/images/feature2.webp"}
@@ -162,7 +162,7 @@ const Feature3 = () => {
                 <p className='text-xl  md:text-3xl lg:text-4xl font-M-Medium text-left'>
                     Pioneer in Web3.0 economy
                 </p>
-                <p className=' text-5xl sm:text-7xl md:text-8xl 4xl:text-9xl  font-M-Bold text-left text-dark'>
+                <p className=' text-5xl sm:text-7xl md:text-8xl 4xl:text-8xl  font-M-Bold text-left text-dark'>
                     Social-Networking
                 </p>
                 <p className='text-md sm:w-2/3 2xl:w-6/12 font-M-Medium mt-5  text-midDark'>
