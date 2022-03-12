@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import QuoteSVG from '../../assets/icons/quote';
-import OverViewSection from '../../components/overView';
 import { useNavBar } from '../../contexts/navbar';
 import { Container, ImageContainer } from './style';
 import { useKeenSlider } from "keen-slider/react"
@@ -60,7 +59,7 @@ const TeamMemberSection = () => {
                                 <div className='relative h-24 w-24 rounded-full overflow-hidden'>
                                     <ImageContainer
                                         src={data.image}
-                                        alt="feature"
+                                        alt="team member"
                                         loading="lazy"
                                         placeholder="blur"
                                         blurDataURL={data.image}
@@ -101,19 +100,62 @@ const TeamMemberSection = () => {
                     )
                 })}
             </div>
-            <div className='flex gap-x-10 gap-y-4 justify-evenly flex-wrap px-10 mt-12'>
+            <div className='flex lg:px-14 2xl:px-52 gap-x-8  sm:gap-x-20  gap-y-14 sm:gap-y-10 justify-center items-center flex-wrap px-10 mt-12'>
                 {Array(5).fill(0).map((data, index) => {
-                    return <div className='relative h-24 w-5/12 sm:w-36' key={index}>
-                        <ImageContainer
-                            src={`/icons/logo${index + 1}.svg`}
-                            alt="feature"
-                            loading="lazy"
-                            placeholder="blur"
-                            blurDataURL={`/icons/logo${index + 1}.svg`}
-                            quality={100}
-                            layout="fill"
-                        />
-                    </div>
+                    if (index === 0)
+                        return <div className='flex logo0' key={index}>
+                            <img
+                                src={`/images/logo${index + 1}.webp`}
+                                alt="logo"
+                                loading="lazy"
+                                placeholder="blur"
+                            />
+                        </div>
+                    else if (index === 1)
+                        return <div className='flex logo1' key={index}>
+                            <img
+                                src={`/images/logo${index + 1}.webp`}
+                                alt="logo"
+                                loading="lazy"
+                                placeholder="blur"
+                            />
+                        </div>
+                    else if (index === 3)
+                        return <div className='flex logo2' key={index}>
+                            <img
+                                src={`/images/logo${index + 1}.webp`}
+                                alt="logo"
+                                loading="lazy"
+                                placeholder="blur"
+                            />
+                        </div>
+                    else if (index === 5)
+                        return <div className='flex logo4' key={index}>
+                            <img
+                                src={`/images/logo${index + 1}.webp`}
+                                alt="logo"
+                                loading="lazy"
+                                placeholder="blur"
+                            />
+                        </div>
+                    else if (index === 7)
+                        return <div className='flex logo6' key={index}>
+                            <img
+                                src={`/images/logo${index + 1}.webp`}
+                                alt="logo"
+                                loading="lazy"
+                                placeholder="blur"
+                            />
+                        </div>
+                    else
+                        return <div className='flex logo' key={index}>
+                            <img
+                                src={`/images/logo${index + 1}.webp`}
+                                alt="logo"
+                                loading="lazy"
+                                placeholder="blur"
+                            />
+                        </div>
                 })
                 }
 

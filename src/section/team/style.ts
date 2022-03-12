@@ -11,6 +11,84 @@ export const Container = styled.div`
   min-height: 700px;
   height: 100%;
   position: relative;
+
+  .logo {
+    max-width: 250px;
+    max-height: 100px;
+    @media (max-width: 670px) {
+      max-width: 125px;
+      max-height: 50px;
+    }
+    @media (max-width: 420px) {
+      max-width: 115px;
+      max-height: 75px;
+    }
+  }
+  .logo0 {
+    max-width: 300px;
+    max-height: 200px;
+    @media (max-width: 670px) {
+      max-width: 150px;
+      max-height: 100px;
+    }
+    @media (max-width: 420px) {
+      max-width: 125px;
+      max-height: 100px;
+    }
+  }
+
+  .logo1 {
+    max-width: 300px;
+    max-height: 75px;
+    @media (max-width: 670px) {
+      max-width: 125px;
+      max-height: 45px;
+    }
+    @media (max-width: 420px) {
+      max-width: 120px;
+      max-height: 100px;
+    }
+  }
+
+  .logo2 {
+    max-width: 200px;
+    max-height: 65px;
+    @media (max-width: 670px) {
+      max-width: 100px;
+      max-height: 50px;
+    }
+    @media (max-width: 420px) {
+      max-width: 75px;
+      max-height: 100px;
+    }
+  }
+
+  .logo4 {
+    max-width: 125px;
+    max-height: 125px;
+    @media (max-width: 670px) {
+      max-width: 65px;
+      max-height: 65px;
+    }
+    @media (max-width: 420px) {
+      max-width: 45px;
+      max-height: 45px;
+    }
+  }
+
+  .logo6 {
+    max-width: 250px;
+    max-height: 100px;
+    @media (max-width: 670px) {
+      max-width: 125px;
+      max-height: 50px;
+    }
+    @media (max-width: 420px) {
+      max-width: 100px;
+      max-height: 50px;
+    }
+  }
+
   .quote {
     svg {
       fill: #fff;

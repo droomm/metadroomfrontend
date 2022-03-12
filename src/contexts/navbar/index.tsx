@@ -71,44 +71,46 @@ const NavBarProvider: React.FC = ({ children }) => {
     const teamMembers = [
         {
             id: "Rakesh_S",
-            image: "/images/avatar1.webp",
+            image: "/images/Rakesh.jfif",
             name: "Rakesh S",
             position: "CEO & Co-Founder",
             aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
         },
         {
             id: "Preetham_S",
-            image: "/images/Preetham.webp",
+            image: "/images/Preetham.jpg",
             name: "Preetham S",
             position: "Product & Co-Founder",
             aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
         },
         {
             id: "Suvesh",
-            image: "/images/avatar3.webp",
+            image: "/images/Suvesh.jpg",
             name: "Suvesh",
             position: "Tech & Co-Founder",
             aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat. "
         },
         {
             id: "Uday_Allu",
-            image: "/images/avatar3.webp",
+            image: "/images/UdayAllu.jpg",
             name: "Uday Allu",
             position: "AI & Co-Founder",
             aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
         },
         {
             id: "Manish_Goyal",
-            image: "/images/avatar1.webp",
+            image: "/images/ManishGoyal.jpg",
             name: "Manish Goyal",
-            position: "Strategic Advisor Ex IDC, F&S", aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
+            position: "Strategic Advisor Ex IDC, F&S",
+            aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
 
         },
         {
             id: "Varun_Sharma",
-            image: "/images/avatar2.webp",
+            image: "/images/VarunSharma.jpg",
             name: "Varun Sharma",
-            position: "Strategic Advisor - BlockChain Investor, Mentor @ ETHDenver", aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
+            position: "Strategic Advisor - BlockChain Investor, Mentor @ ETHDenver",
+            aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
 
         },
 

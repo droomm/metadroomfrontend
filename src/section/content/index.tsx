@@ -27,7 +27,7 @@ const ContentSection = () => {
                 <ImageContainer
                     src={contents[0].image}
                     layout='fill'
-                    alt="feature"
+                    alt="content"
                     loading="lazy"
                     placeholder="blur"
                     blurDataURL={contents[0].image}
@@ -51,7 +51,7 @@ const ContentSection = () => {
                 <ImageContainer
                     src={contents[1].image}
                     layout='fill'
-                    alt="feature"
+                    alt="content"
                     loading="lazy"
                     placeholder="blur"
                     blurDataURL={contents[1].image}
@@ -85,7 +85,7 @@ const ContentSection = () => {
                 <ImageContainer
                     src={contents[2].image}
                     layout='fill'
-                    alt="feature"
+                    alt="content"
                     loading="lazy"
                     placeholder="blur"
                     blurDataURL={contents[2].image}
@@ -109,21 +109,3 @@ const ContentSection = () => {
 }
 
 export default ContentSection;
-
-
-
-{/* <div className='w-full md:w-1/2 lg:w-1/3 rounded-md overflow-hidden px-4 content-card ' key={index}>
-<div className=' background rounded-md flex flex-col p-4 justify-center  py-5' style={{ background: "#00000066" }}>
-    
-    <div className='h-14 flex justify-center  w-full'>
-        <p className='text-3xl md:text-2xl xl:text-3xl my-3'>
-            {data.title}
-        </p>
-    </div>
-    <div className=' flex justify-center  items-start  w-full'>
-        <p className='text-mg md:text-sm text-center'>
-            {data.detail}
-        </p>
-    </div>
-</div>
-</div> */}
