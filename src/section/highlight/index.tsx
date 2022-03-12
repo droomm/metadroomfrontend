@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import CallSVG from '../../assets/icons/call';
-import OverViewSection from '../../components/overView';
-import { useNavBar } from '../../contexts/navbar';
-import { Container, ImageContainer } from './style';
+import { Container } from './style';
 
 const HighLight = () => {
     const highLight = [
