@@ -3,7 +3,8 @@ import Image from "next/image";
 import { Container } from './style';
 import LeftArrowSVG from '../../assets/icons/left';
 import gsap from 'gsap';
-const BackGroundVideo = lazy(() => import('./backgroundVideo'));
+import dynamic from 'next/dynamic';
+const BackGroundVideo = dynamic(() => import('./backgroundVideo'));
 
 const FeatureSection = () => {
 
