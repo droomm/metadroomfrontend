@@ -10,8 +10,8 @@ const Home = () => {
     return (
         <Layout>
             <HeroSection />
-            <ContentSection />
             <FeatureSection />
+            <ContentSection />
             <TeamMemberSection />
             <WaitingList />
         </Layout>

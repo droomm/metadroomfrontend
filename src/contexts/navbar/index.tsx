@@ -16,6 +16,7 @@ const initialValues: {
         id: string,
         image: string,
         name: string,
+        link: string,
         position: string,
         aboutMe: string,
     }[],
@@ -45,12 +46,12 @@ const NavBarProvider: React.FC = ({ children }) => {
             icon: <DashboardSVG width="27" height="27" key={0} />,
         },
         {
-            path: "#content",
-            icon: <ContentSVG width="27" height="27" key={2} />,
-        },
-        {
             path: "#features",
             icon: <FeatureSVG width="27" height="27" key={1} />,
+        },
+        {
+            path: "#content",
+            icon: <ContentSVG width="27" height="27" key={2} />,
         },
         {
             path: "#teamMember",
@@ -65,15 +66,13 @@ const NavBarProvider: React.FC = ({ children }) => {
 
     ]
 
-
-    const advisor = [
-    ];
     const teamMembers = [
         {
             id: "Rakesh_S",
             image: "/images/Rakesh.jfif",
             name: "Rakesh S",
             position: "CEO & Co-Founder",
+            link: "https://www.linkedin.com/in/s-rakesh07/",
             aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
         },
         {
@@ -81,6 +80,7 @@ const NavBarProvider: React.FC = ({ children }) => {
             image: "/images/Preetham.jpg",
             name: "Preetham S",
             position: "Product & Co-Founder",
+            link: "https://www.linkedin.com/in/preetham-sathyamurthy/",
             aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
         },
         {
@@ -88,6 +88,7 @@ const NavBarProvider: React.FC = ({ children }) => {
             image: "/images/Suvesh.jpg",
             name: "Suvesh",
             position: "Tech & Co-Founder",
+            link: "https://www.linkedin.com/in/suvesh-baskar-3a8a8b108/",
             aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat. "
         },
         {
@@ -95,6 +96,7 @@ const NavBarProvider: React.FC = ({ children }) => {
             image: "/images/UdayAllu.jpg",
             name: "Uday Allu",
             position: "AI & Co-Founder",
+            link: "https://www.linkedin.com/in/udayallu/",
             aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
         },
         {
@@ -102,6 +104,7 @@ const NavBarProvider: React.FC = ({ children }) => {
             image: "/images/ManishGoyal.jpg",
             name: "Manish Goyal",
             position: "Strategic Advisor Ex IDC, F&S",
+            link: "https://www.linkedin.com/in/manishgoyal2222/",
             aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
 
         },
@@ -110,6 +113,16 @@ const NavBarProvider: React.FC = ({ children }) => {
             image: "/images/VarunSharma.jpg",
             name: "Varun Sharma",
             position: "Strategic Advisor - BlockChain Investor, Mentor @ ETHDenver",
+            link: "https://www.linkedin.com/in/varun-sharma-74b6b013a/",
+            aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
+
+        },
+        {
+            id: "Nav Sangameswaran",
+            image: "/images/NavSangameswaran.jpg",
+            name: "Nav Sangameswaran",
+            position: "Co-Founder",
+            link: "https://www.linkedin.com/in/navsang/",
             aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
 
         },
@@ -120,9 +133,6 @@ const NavBarProvider: React.FC = ({ children }) => {
         let count = 0;
         for (let icon of icons) {
             if (window.location.hash === icon.path) {
-                // setTimeout(() => {
-                //     router.push(`/${icon.path}`, undefined, { shallow: true });
-                // }, 500)
                 setLeftPanelTab(count);
             }
             count++;

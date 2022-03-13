@@ -310,7 +310,11 @@ export const Container = styled.div`
     :active {
       box-shadow: 0px 0.5px 10px #6016fc99;
     }
-
+    .shadow {
+      box-shadow: 0px 0px 6.592983722686768px 0px #ffffff inset;
+      box-shadow: 0px 0px 65.92984771728516px 0px #ffffff80;
+      box-shadow: 0px 0px 17.03032875061035px 0px #ffffff80;
+    }
     /* image-source: ; */
   }
   .right-button {

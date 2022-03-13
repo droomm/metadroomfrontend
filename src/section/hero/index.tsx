@@ -9,6 +9,7 @@ import Image from "next/image";
 const HeroSection = () => {
 
     return <Container id="welcome">
+
         <div className='w-full h-full absolute  z-10'>
             <div className='relative w-full h-full'>
                 <div className='absolute customHeroImage'>
@@ -94,10 +95,10 @@ const Buttons = () => {
                     }
                 }}
                 className='w-11/12 sm:w-5/12 lg:w-6/12 xl:w-4/12 py-1 sm:py-2 px-2 h-16 sm:h-20 items-center flex justify-center gap-x-5 left-button relative'>
-                <p className='text-center text-xl xl:text-3xl font-M-Bold'>
+                <p className='text-center text-xl xl:text-3xl font-M-Bold textShadow'>
                     Join Wait list
                 </p>
-                <div className='bg-white rounded-full p-3'>
+                <div className='bg-white rounded-full shadow p-3'>
 
                     <RightArrowSVG width="26" height="26" />
                 </div>
@@ -115,10 +116,10 @@ const Buttons = () => {
 }
 const Listing = () => {
     return (
-        <div className='flex mt-14 sm:mt-10 xl:mt-8 3xl:mt-16  xl:ml-4  justify-evenly  md:justify-start gap-x-1 md:gap-x-4'>
-            <div className='flex flex-col gap-y-3 justify-center items-center'>
+        <div className='flex mt-14 sm:mt-10 xl:mt-8 3xl:mt-12  xl:ml-4  justify-evenly  md:justify-start gap-x-1 md:gap-x-4'>
+            <div className='flex flex-col gap-y-0 justify-center items-center'>
                 <div className='h-12 sm:h-16 flex items-center justify-center w-full'>
-                    <p className=' text-3xl md:text-6xl text-center font-M-Black'>
+                    <p className=' text-3xl md:text-4xl text-center font-M-Black'>
                         15+
                     </p>
 
@@ -128,7 +129,7 @@ const Listing = () => {
                 </p>
             </div>
             <div className='h-12 mt-2 bg-white/25 rounded-full mx-0 sm:mx-2 md:mx-4' style={{ width: 4 }} />
-            <div className='h-full flex flex-col gap-y-3 items-center'>
+            <div className='h-full flex flex-col gap-y-0 items-center'>
                 <div className='h-12 sm:h-16  flex items-center '>
                     <InfinitySVG width='80' height='25' />
                 </div>
@@ -137,9 +138,9 @@ const Listing = () => {
                 </p>
             </div>
             <div className='h-12 mt-2 bg-white/25 rounded-full mx-0 sm:mx-2 md:mx-4' style={{ width: 4 }} />
-            <div className=' flex flex-col gap-y-3 justify-center items-center'>
+            <div className=' flex flex-col gap-y-0 justify-center items-center'>
                 <div className='h-12 sm:h-16  flex items-center justify-center'>
-                    <p className=' text-3xl md:text-5xl text-center '>
+                    <p className=' text-3xl md:text-4xl text-center font-M-Black'>
                         1000+
                     </p>
 

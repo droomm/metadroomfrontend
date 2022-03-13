@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { Container, ImageContainer } from './style';
+import { Container } from './style';
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
-import RightArrowSVG from '../../assets/icons/rightArrow';
 import LeftArrowSVG from '../../assets/icons/left';
 import gsap from 'gsap';
 
@@ -33,6 +32,7 @@ const FeatureSection = () => {
                 <source src='/videos/feature.mp4' type="video/mp4" />
             </video>
         </div>
+
         <div className='glass w-full h-full absolute z-10'>
 
         </div>
@@ -70,7 +70,7 @@ const FeatureSection = () => {
                             setTabs(1)
                         }
                     }}
-                    className='arrow w-1/2 flex justify-center cursor-pointer py-3 hover:border-shadow border-white transition-all duration-500  rounded-l-full'>
+                    className='arrow w-1/2 flex justify-center cursor-pointer py-3 active:border-shadow md:hover:border-black/25 border-white transition-all duration-500  rounded-l-full'>
                     <div className='rotate-180'>
                         <LeftArrowSVG width="22" height="22" />
                     </div>
@@ -93,8 +93,7 @@ const FeatureSection = () => {
                             setTabs(0)
                         }
                     }}
-                    className='arrow w-1/2 flex justify-center cursor-pointer py-3 
-hover:border-black/25 active:border-shadow border-white transition-all duration-500  rounded-r-full'>
+                    className='arrow w-1/2 flex justify-center cursor-pointer py-3 active:border-shadow md:hover:border-black/25 border-white transition-all duration-500  rounded-r-full'>
                     <LeftArrowSVG width="22" height="22" />
                 </div>
             </div>
@@ -152,7 +151,7 @@ const Feature2 = () => {
                     Experience life like social interactions. Mint and shared NFT powered content. Monetize your creativity.
                 </p>
             </div>
-            <div className='absolute right-5 w-full xl:w-6/12  h-full   justify-center lg:justify-end items-center hidden sm:flex'>
+            <div className='absolute right-5 w-full xl:w-5/12  h-full   justify-center lg:justify-end items-center hidden sm:flex'>
                 <div className={'w-full relative  h-full'}>
                     <Image
                         src={"/images/feature2.webp"}

@@ -12,6 +12,12 @@ export const LayoutContainer = styled.div<LayoutContainerData>`
   scroll-margin-top: 50px;
   scroll-behavior: smooth;
 
+  .textShadow {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .boxShadow {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
   /* width */
   ::-webkit-scrollbar {
     width: 7.5px;

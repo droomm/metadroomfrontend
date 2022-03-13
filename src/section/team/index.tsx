@@ -1,19 +1,25 @@
 import React, { useEffect, useState } from "react";
-import QuoteSVG from '../../assets/icons/quote';
 import { useNavBar } from '../../contexts/navbar';
-import { Container, ImageContainer } from './style';
+import { Container, ImageContainer, MarqueeContainer } from './style';
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
+import LinkedinSVG from '../../assets/icons/linkedin';
 
 
 const TeamMemberSection = () => {
     const { teamMembers, updateSelected, selected } = useNavBar();
+    let team = teamMembers;
     const [currentSlide, setCurrentSlide] = React.useState(0)
     const [loaded, setLoaded] = useState(false);
     useEffect(() => {
         let addData = 1;
-        if (1408 >= window.innerWidth) addData = 0;
-        updateSelected(teamMembers[0 + addData].id)
+        if (1408 >= window.innerWidth) {
+            updateSelected(teamMembers[0].id)
+        }
+        if (1408 < window.innerWidth) {
+            instanceRef.current?.moveToIdx(teamMembers.length - 1)
+            updateSelected(teamMembers[0].id)
+        };
     }, []);
     const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
         initial: 0,
@@ -54,7 +60,7 @@ const TeamMemberSection = () => {
                 return (
                     <div className={'keen-slider__slide member sm:px-2 '} id={data.id} key={index}
                     >
-                        <div className={(data.id === selected ? "gradient mt-0" : " glass md:mt-14 ") + ' cursor-move rounded-lg w-full  duration-500 flex flex-col items-center py-16'}>
+                        <div className={(data.id === selected ? "gradient mt-0" : " glass md:mt-14 ") + ' rounded-lg w-full  duration-500 flex flex-col items-center py-16'}>
                             <div className='w-24 h-24 bg-slate-600 rounded-full  relative'>
                                 <div className='relative h-24 w-24 rounded-full overflow-hidden'>
                                     <ImageContainer
@@ -67,8 +73,13 @@ const TeamMemberSection = () => {
                                         layout="fill"
                                     />
                                 </div>
-                                <div className={(data.id === selected ? "bg-secondary" : "bg-primary") + ' transition-all duration-500 border-2 border-third quote flex justify-center items-center absolute right-0 bottom-0 w-8 h-8 rounded-full'}>
-                                    <QuoteSVG width="12" height='10' />
+                                <div
+                                    onClick={() => {
+
+                                        window.open(data.link, "_blank")
+                                    }}
+                                    className={(data.id === selected ? "bg-secondary" : "bg-primary") + ' cursor-pointer transition-all duration-500 border-2 border-third quote flex justify-center items-center absolute right-0 bottom-0 w-8 h-8 rounded-full'}>
+                                    <LinkedinSVG width="18" height='18' />
                                 </div>
                             </div>
                             <div className='mt-10 w-full flex flex-col items-center'>
@@ -100,69 +111,58 @@ const TeamMemberSection = () => {
                     )
                 })}
             </div>
-            <div className='flex lg:px-14 2xl:px-52 gap-x-8  sm:gap-x-20  gap-y-14 sm:gap-y-10 justify-center items-center flex-wrap px-10 mt-12'>
-                {Array(5).fill(0).map((data, index) => {
-                    if (index === 0)
-                        return <div className='flex logo0' key={index}>
-                            <img
-                                src={`/images/logo${index + 1}.webp`}
-                                alt="logo"
-                                loading="lazy"
-                                placeholder="blur"
-                            />
-                        </div>
-                    else if (index === 1)
-                        return <div className='flex logo1' key={index}>
-                            <img
-                                src={`/images/logo${index + 1}.webp`}
-                                alt="logo"
-                                loading="lazy"
-                                placeholder="blur"
-                            />
-                        </div>
-                    else if (index === 3)
-                        return <div className='flex logo2' key={index}>
-                            <img
-                                src={`/images/logo${index + 1}.webp`}
-                                alt="logo"
-                                loading="lazy"
-                                placeholder="blur"
-                            />
-                        </div>
-                    else if (index === 5)
-                        return <div className='flex logo4' key={index}>
-                            <img
-                                src={`/images/logo${index + 1}.webp`}
-                                alt="logo"
-                                loading="lazy"
-                                placeholder="blur"
-                            />
-                        </div>
-                    else if (index === 7)
-                        return <div className='flex logo6' key={index}>
-                            <img
-                                src={`/images/logo${index + 1}.webp`}
-                                alt="logo"
-                                loading="lazy"
-                                placeholder="blur"
-                            />
-                        </div>
-                    else
-                        return <div className='flex logo' key={index}>
-                            <img
-                                src={`/images/logo${index + 1}.webp`}
-                                alt="logo"
-                                loading="lazy"
-                                placeholder="blur"
-                            />
-                        </div>
-                })
-                }
-
-            </div>
         </div>
 
 
+        <MarqueeContainer >
+            <div className='track1 flex gap-x-10'>
+
+                {Array(12).fill(0).map((data, index) => {
+                    return <img
+                        key={index}
+                        className="logo"
+                        src={`/images/logo${index + 1}.webp`}
+                        alt="logo"
+                        loading="lazy"
+                        placeholder="blur"
+                    />
+                })
+                }
+                {Array(12).fill(0).map((data, index) => {
+                    return <img
+                        key={index}
+                        className="logo"
+                        src={`/images/logo${index + 1}.webp`}
+                        alt="logo"
+                        loading="lazy"
+                        placeholder="blur"
+                    />
+                })
+                }
+                {Array(12).fill(0).map((data, index) => {
+                    return <img
+                        key={index}
+                        className="logo"
+                        src={`/images/logo${index + 1}.webp`}
+                        alt="logo"
+                        loading="lazy"
+                        placeholder="blur"
+                    />
+                })
+                }
+                {Array(12).fill(0).map((data, index) => {
+                    return <img
+                        key={index}
+                        className="logo"
+                        src={`/images/logo${index + 1}.webp`}
+                        alt="logo"
+                        loading="lazy"
+                        placeholder="blur"
+                    />
+                })
+                }
+            </div>
+        </MarqueeContainer>
 
     </Container >
 

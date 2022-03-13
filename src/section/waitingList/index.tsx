@@ -18,49 +18,58 @@ const WaitingList = () => {
         <div className='w-full sm:w-11/12 lg:w-5/6 3xl:w-8/12 h-96 sm:max-h-80 absolute z-0 '>
             <div className=' absolute bg-waitingList rounded-2xl mx-auto waitingListBackground' >
                 <div className='absolute w-72 h-2/3 bottom-0 left-0 z-10 '>
-                    <ImageContainer
-                        src={`/images/waitingList1.webp`}
-                        alt="waitingList"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={`/images/waitingList1.webp`}
-                        quality={100}
-                        layout="fill"
-                    />
+                    <div className='relative w-full h-full'>
+                        <ImageContainer
+                            src={`/images/waitingList1.webp`}
+                            alt="waitingList"
+                            loading="lazy"
+                            placeholder="blur"
+                            blurDataURL={`/images/waitingList1.webp`}
+                            quality={100}
+                            layout="fill"
+                        />
+                    </div>
                 </div>
                 <div className='absolute w-40 h-2/3 top-0 right-0 z-10 '>
+                    <div className='relative w-full h-full'>
+                        <ImageContainer
+                            src={`/images/waitingList2.webp`}
+                            alt="waitingList"
+                            loading="lazy"
+                            placeholder="blur"
+                            blurDataURL={`/images/waitingList2.webp`}
+                            quality={100}
+                            layout="fill"
+                        />
+                    </div>
+                </div>
+
+            </div>
+            <div className='absolute w-40 h-40 top-5 left-5 hidden md:flex'>
+                <div className='relative w-full h-full'>
                     <ImageContainer
-                        src={`/images/waitingList2.webp`}
-                        alt="waitingList"
+                        src={`/images/open.webp`}
+                        alt="open"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={`/images/waitingList2.webp`}
+                        blurDataURL={`/images/open.webp`}
                         quality={100}
                         layout="fill"
                     />
                 </div>
             </div>
-            <div className='absolute w-40 h-40 top-5 left-5 hidden md:flex'>
-                <ImageContainer
-                    src={`/images/open.webp`}
-                    alt="open"
-                    loading="lazy"
-                    placeholder="blur"
-                    blurDataURL={`/images/open.webp`}
-                    quality={100}
-                    layout="fill"
-                />
-            </div>
             <div className='absolute w-14 h-14 bottom-0 right-0 z-10 '>
-                <ImageContainer
-                    src={`/icons/send.svg`}
-                    alt="send"
-                    loading="lazy"
-                    placeholder="blur"
-                    blurDataURL={`/icons/send.svg`}
-                    quality={100}
-                    layout="fill"
-                />
+                <div className='relative w-full h-full'>
+                    <ImageContainer
+                        src={`/icons/send.svg`}
+                        alt="send"
+                        loading="lazy"
+                        placeholder="blur"
+                        blurDataURL={`/icons/send.svg`}
+                        quality={100}
+                        layout="fill"
+                    />
+                </div>
             </div>
         </div>
         <div className='w-full sm:w-11/12 lg:w-5/6 3xl:w-8/12 h-96 sm:max-h-80 flex  justify-center items-center flex-col px-4 sm:px-8 md:px-16 xl:px-28 z-20'>
@@ -109,6 +118,11 @@ const WaitingList = () => {
                         }
                         setLoading(true);
                         try {
+                            setEmail({
+                                value: email.value,
+                                error: false,
+                                errorMessage: ""
+                            })
                             let res = await axios(
                                 {
                                     method: 'post',
@@ -125,9 +139,14 @@ const WaitingList = () => {
                         catch (e) {
                             console.error(e);
                             setLoading(false);
+                            setEmail({
+                                value: email.value,
+                                error: true,
+                                errorMessage: "Some thing went wrong. Please try again"
+                            })
                         }
                     }}
-                    className='w-full flex sm:w-48 items-center justify-center join-button text-white  font-M-Medium h-12 text-md rounded-full'>
+                    className='w-full flex sm:w-48 items-center justify-center join-button text-white  font-M-Medium h-12 text-md rounded-full textShadow'>
 
                     {loading && <div className='relative w-10 h-10'>
                         <Image src="/icons/spinner.svg" alt="icon" layout='fill' />

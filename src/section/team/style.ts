@@ -13,80 +13,8 @@ export const Container = styled.div`
   position: relative;
 
   .logo {
-    max-width: 250px;
-    max-height: 100px;
-    @media (max-width: 670px) {
-      max-width: 125px;
-      max-height: 50px;
-    }
-    @media (max-width: 420px) {
-      max-width: 115px;
-      max-height: 75px;
-    }
-  }
-  .logo0 {
-    max-width: 300px;
-    max-height: 200px;
-    @media (max-width: 670px) {
-      max-width: 150px;
-      max-height: 100px;
-    }
-    @media (max-width: 420px) {
-      max-width: 125px;
-      max-height: 100px;
-    }
-  }
-
-  .logo1 {
-    max-width: 300px;
+    max-width: 225px;
     max-height: 75px;
-    @media (max-width: 670px) {
-      max-width: 125px;
-      max-height: 45px;
-    }
-    @media (max-width: 420px) {
-      max-width: 120px;
-      max-height: 100px;
-    }
-  }
-
-  .logo2 {
-    max-width: 200px;
-    max-height: 65px;
-    @media (max-width: 670px) {
-      max-width: 100px;
-      max-height: 50px;
-    }
-    @media (max-width: 420px) {
-      max-width: 75px;
-      max-height: 100px;
-    }
-  }
-
-  .logo4 {
-    max-width: 125px;
-    max-height: 125px;
-    @media (max-width: 670px) {
-      max-width: 65px;
-      max-height: 65px;
-    }
-    @media (max-width: 420px) {
-      max-width: 45px;
-      max-height: 45px;
-    }
-  }
-
-  .logo6 {
-    max-width: 250px;
-    max-height: 100px;
-    @media (max-width: 670px) {
-      max-width: 125px;
-      max-height: 50px;
-    }
-    @media (max-width: 420px) {
-      max-width: 100px;
-      max-height: 50px;
-    }
   }
 
   .quote {
@@ -145,4 +73,29 @@ export const Container = styled.div`
 
 export const ImageContainer = styled(Image)`
   object-fit: fill;
+`;
+
+export const MarqueeContainer = styled.div`
+  position: relative;
+  width: 99vw;
+  display: flex;
+
+  align-items: center;
+  height: 150px;
+  overflow-x: hidden;
+  margin-top: 50px;
+  .track1 {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 120s linear infinite;
+  }
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-51%);
+    }
+  }
 `;
