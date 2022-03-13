@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { Container, ImageContainer } from './style';
+import axios from "axios";
+import Image from "next/image";
+
 
 const WaitingList = () => {
     const [email, setEmail] = useState<any>({
@@ -7,6 +10,9 @@ const WaitingList = () => {
         error: false,
         errorMessage: ""
     });
+
+    const [successful, setSuccessful] = useState<boolean>(false);
+    const [loading, setLoading] = useState<boolean>(false);
 
     return <Container className='flex justify-center  px-2 sm:pl-16 lg:pl-24 sm:pr-4  '>
         <div className='w-full sm:w-11/12 lg:w-5/6 3xl:w-8/12 h-96 sm:max-h-80 absolute z-0 '>
@@ -69,10 +75,17 @@ const WaitingList = () => {
                     <input
                         id="waitingListInput"
                         onChange={(event: any) => {
-                            setEmail({
+                            setSuccessful(false);
+                            if (email.error && (!email.value.includes("@") || !email.value.includes(".")))
+                                setEmail({
+                                    value: event.target.value,
+                                    error: email.error,
+                                    errorMessage: email.errorMessage
+                                })
+                            else setEmail({
                                 value: event.target.value,
                                 error: false,
-                                errorMessage: "firstName.errorMessage"
+                                errorMessage: ""
                             })
                         }}
                         value={email.value}
@@ -83,18 +96,49 @@ const WaitingList = () => {
                     />
 
                 </div>
-                <button className='w-full sm:w-48 join-button px-5 text-white sm:px-10 font-M-Bold h-12 text-lg rounded-full'>
+                <button
+                    disabled={loading}
+                    onClick={async () => {
+                        if (!email.value.includes("@") || !email.value.includes(".")) {
+                            setEmail({
+                                value: email.value,
+                                error: true,
+                                errorMessage: "Please provide a valid email."
+                            })
+                            return;
+                        }
+                        setLoading(true);
+                        try {
+                            let res = await axios(
+                                {
+                                    method: 'post',
+                                    url: 'https://197d1dc0.sibforms.com/serve/MUIEADhkGNeXbzlo2_-VeFgTz0MCwF2kADbNA2bKzHkRWiEZOqF2bAQ2aT-QwKEMk5XveHh8sGrfa4zXXxCjPiRTBXZXTBc_QndgjtkUnJsqs_ZULheacTVUgDhv0QHN6O9HJrep-pmtrCRlhyDErc_Nb6FC_AJN0OXJWiR184pbXNwMkNuBmM-6eq19i-YL20pHoeB6U0yKm0Sy?isAjax=1',
+                                    headers: {
+                                        'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+                                    },
+                                    data: `EMAIL=${email.value}`
+                                }
+                            );
+                            if (res.data.body.success) setSuccessful(true);
+                            setLoading(false);
+                        }
+                        catch (e) {
+                            console.error(e);
+                            setLoading(false);
+                        }
+                    }}
+                    className='w-full flex sm:w-48 items-center gap-x-1 justify-center join-button px-5 text-white sm:px-10 font-M-Bold h-12 text-lg rounded-full'>
+
+                    {loading && <div className='relative w-12 h-12'>
+                        <Image src="/icons/spinner.svg" alt="icon" layout='fill' />
+                    </div>}
                     Contact Us
                 </button>
 
             </div>
             {email.error && <p className="text-red-500 text-xs">{email.errorMessage}</p>}
+            {successful && <p className="text-success text-xs">Your subscription has been successful.</p>}
         </div>
-        {/* <div className='w-full px-5 sm:px-0 relative z-10 text-white  py-10 flex flex-col gap-2 pb-20'>
-            <div className='w-full lg:w-10/12 2xl:w-1/2 3xl:w-7/2 flex flex-col justify-center gap-y-5 '>
-                
-            </div>
-        </div> */}
     </Container >
 }
 
