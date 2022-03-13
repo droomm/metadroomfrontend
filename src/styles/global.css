@@ -8,6 +8,7 @@
     font-display:auto;
     src: url('../../public/font/Montserrat/static/Montserrat-Black.ttf') ;
     font-weight:900;
+    font-display: swap;
 }
 
 @font-face {
@@ -15,6 +16,7 @@
     font-display:auto;
     src: url('../../public/font/Montserrat/static/Montserrat-Bold.ttf') ;
     font-weight:700;
+    font-display: swap;
 }
 
 @font-face {
@@ -22,6 +24,7 @@
     font-display:auto;
     src: url('../../public/font/Montserrat/static/Montserrat-Medium.ttf') ;
     font-weight:500;
+    font-display: swap;
 }
 
 @font-face {
@@ -29,6 +32,7 @@
     font-display:auto;
     src: url('../../public/font/Montserrat/static/Montserrat-Regular.ttf') ;
     font-weight:400;
+    font-display: swap;
 }
 
 .font-M-Black{
@@ -67,7 +71,7 @@ body {
     font-family: Montserrat-Medium;
     font-style: normal;
     font-weight: normal;
-    font-display: swap;
+    font-display: optional;
 }
 
 .divider {

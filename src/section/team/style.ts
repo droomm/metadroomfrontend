@@ -77,7 +77,7 @@ export const ImageContainer = styled(Image)`
 
 export const MarqueeContainer = styled.div`
   position: relative;
-  width: 99vw;
+  width: 100vw;
   display: flex;
 
   align-items: center;

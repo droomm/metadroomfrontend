@@ -12,6 +12,7 @@ export default function Layout({ children, background, header = "title" }: any) 
             <Head>
                 <title>VirtualWide</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <meta name="description" content='The Social Passport to Metaverse' />
                 <meta property="og:title" content="VirtualWide" />
                 <meta property="og:description" content="Play games, party hard & meet your favorite people in life-like virtual worlds" />
                 {/* <meta property="og:image" content={url} /> */}

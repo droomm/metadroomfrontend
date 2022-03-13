@@ -4,6 +4,7 @@ import { Container, ImageContainer, MarqueeContainer } from './style';
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 import LinkedinSVG from '../../assets/icons/linkedin';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 
 const TeamMemberSection = () => {
@@ -118,57 +119,42 @@ const TeamMemberSection = () => {
             <div className='track1 flex gap-x-10'>
 
                 {Array(12).fill(0).map((data, index) => {
-                    return <img
-                        key={index}
+                    return <LazyLoadImage
                         className="logo"
+                        key={index}
                         src={`/images/logo${index + 1}.webp`}
                         alt="logo"
                         loading="lazy"
-                        placeholder="blur"
                     />
                 })
                 }
                 {Array(12).fill(0).map((data, index) => {
-                    return <img
-                        key={index}
+                    return <LazyLoadImage
                         className="logo"
+                        key={index}
                         src={`/images/logo${index + 1}.webp`}
                         alt="logo"
                         loading="lazy"
-                        placeholder="blur"
                     />
                 })
                 }
                 {Array(12).fill(0).map((data, index) => {
-                    return <img
-                        key={index}
+                    return <LazyLoadImage
                         className="logo"
+                        key={index}
                         src={`/images/logo${index + 1}.webp`}
                         alt="logo"
                         loading="lazy"
-                        placeholder="blur"
                     />
                 })
                 }
                 {Array(12).fill(0).map((data, index) => {
-                    return <img
-                        key={index}
+                    return <LazyLoadImage
                         className="logo"
+                        key={index}
                         src={`/images/logo${index + 1}.webp`}
                         alt="logo"
                         loading="lazy"
-                        placeholder="blur"
-                    />
-                })
-                }
-                {Array(12).fill(0).map((data, index) => {
-                    return <img
-                        key={index}
-                        className="logo"
-                        src={`/images/logo${index + 1}.webp`}
-                        alt="logo"
-                        loading="lazy"
-                        placeholder="blur"
                     />
                 })
                 }
