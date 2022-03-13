@@ -69,7 +69,7 @@ const NavBarProvider: React.FC = ({ children }) => {
     const teamMembers = [
         {
             id: "Rakesh_S",
-            image: "/images/Rakesh.jfif",
+            image: "/images/Rakesh.webp",
             name: "Rakesh S",
             position: "CEO & Co-Founder",
             link: "https://www.linkedin.com/in/s-rakesh07/",
@@ -77,7 +77,7 @@ const NavBarProvider: React.FC = ({ children }) => {
         },
         {
             id: "Preetham_S",
-            image: "/images/Preetham.jpg",
+            image: "/images/Preetham.webp",
             name: "Preetham S",
             position: "Product & Co-Founder",
             link: "https://www.linkedin.com/in/preetham-sathyamurthy/",
@@ -85,7 +85,7 @@ const NavBarProvider: React.FC = ({ children }) => {
         },
         {
             id: "Suvesh",
-            image: "/images/Suvesh.jpg",
+            image: "/images/Suvesh.webp",
             name: "Suvesh",
             position: "Tech & Co-Founder",
             link: "https://www.linkedin.com/in/suvesh-baskar-3a8a8b108/",
@@ -93,7 +93,7 @@ const NavBarProvider: React.FC = ({ children }) => {
         },
         {
             id: "Uday_Allu",
-            image: "/images/UdayAllu.jpg",
+            image: "/images/UdayAllu.webp",
             name: "Uday Allu",
             position: "AI & Co-Founder",
             link: "https://www.linkedin.com/in/udayallu/",
@@ -101,7 +101,7 @@ const NavBarProvider: React.FC = ({ children }) => {
         },
         {
             id: "Manish_Goyal",
-            image: "/images/ManishGoyal.jpg",
+            image: "/images/ManishGoyal.webp",
             name: "Manish Goyal",
             position: "Strategic Advisor Ex IDC, F&S",
             link: "https://www.linkedin.com/in/manishgoyal2222/",
@@ -110,7 +110,7 @@ const NavBarProvider: React.FC = ({ children }) => {
         },
         {
             id: "Varun_Sharma",
-            image: "/images/VarunSharma.jpg",
+            image: "/images/VarunSharma.webp",
             name: "Varun Sharma",
             position: "Strategic Advisor - BlockChain Investor, Mentor @ ETHDenver",
             link: "https://www.linkedin.com/in/varun-sharma-74b6b013a/",
@@ -119,7 +119,7 @@ const NavBarProvider: React.FC = ({ children }) => {
         },
         {
             id: "Nav Sangameswaran",
-            image: "/images/NavSangameswaran.jpg",
+            image: "/images/NavSangameswaran.webp",
             name: "Nav Sangameswaran",
             position: "Co-Founder",
             link: "https://www.linkedin.com/in/navsang/",
