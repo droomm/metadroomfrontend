@@ -119,7 +119,7 @@ const WaitingList = () => {
                                     data: `EMAIL=${email.value}`
                                 }
                             );
-                            if (res.data.body.success) setSuccessful(true);
+                            if (res.data.success) setSuccessful(true);
                             setLoading(false);
                         }
                         catch (e) {
@@ -127,17 +127,17 @@ const WaitingList = () => {
                             setLoading(false);
                         }
                     }}
-                    className='w-full flex sm:w-48 items-center gap-x-1 justify-center join-button px-5 text-white sm:px-10 font-M-Bold h-12 text-lg rounded-full'>
+                    className='w-full flex sm:w-48 items-center justify-center join-button text-white  font-M-Medium h-12 text-md rounded-full'>
 
-                    {loading && <div className='relative w-12 h-12'>
+                    {loading && <div className='relative w-10 h-10'>
                         <Image src="/icons/spinner.svg" alt="icon" layout='fill' />
                     </div>}
                     Contact Us
                 </button>
 
             </div>
-            {email.error && <p className="text-red-500 text-xs">{email.errorMessage}</p>}
-            {successful && <p className="text-success text-xs">Your subscription has been successful.</p>}
+            {email.error && <p className="text-red-500 text-md mt-5">{email.errorMessage}</p>}
+            {successful && <p className="text-success text-md mt-5 font-M-Bold">Your subscription has been successful.</p>}
         </div>
     </Container >
 }
