@@ -121,7 +121,7 @@ const NavBarProvider: React.FC = ({ children }) => {
             id: "Nav Sangameswaran",
             image: "/images/NavSangameswaran.webp",
             name: "Nav Sangameswaran",
-            position: "Co-Founder",
+            position: "Co-founder Strategy at Lloyds, Ex VP of Product at Oracle",
             link: "https://www.linkedin.com/in/navsang/",
             aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
 

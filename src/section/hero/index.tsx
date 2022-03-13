@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
 
-    return <Container id="welcome">
+    return <Container id="welcome" className='pb-32'>
 
         <div className='w-full h-full absolute  z-10'>
             <div className='relative w-full h-full'>
@@ -65,13 +65,6 @@ const HeroSection = () => {
             </div>
             <Listing />
             <Buttons />
-            <div className='w-full flex justify-center  mt-24'>
-                <div className='w-full flex px-1 sm:px-5 font-M-Bold justify-center rounded-3xl sm:w-10/12 2xl:w-2/3 welcome-box py-12 sm:py-16  '>
-                    <p className="text-2xl  md:text-3xl lg:text-5xl text-center text-dark" >
-                        Welcome To The Future
-                    </p>
-                </div>
-            </div>
 
         </div>
     </Container>
@@ -106,7 +99,11 @@ const Buttons = () => {
                     <RightArrowSVG width="26" height="26" />
                 </div>
             </button>
-            <button className='w-11/12 md:w-5/12 lg:w-5/12 xl:w-4/12 py-1 sm:py-2 px-2 h-16  sm:h-20 items-center flex justify-center gap-x-5 right-button relative'>
+            <button
+                onClick={() => {
+                    window.open("https://www.dropbox.com/s/wp4adx0mesfrj4m/MVP%20Pitch%20Deck.pdf?dl=0");
+                }}
+                className='w-11/12 md:w-5/12 lg:w-5/12 xl:w-4/12 py-1 sm:py-2 px-2 h-16  sm:h-20 items-center flex justify-center gap-x-5 right-button relative'>
                 <p className='text-center text-xl xl:text-3xl font-M-Bold'>
                     Pitch Deck
                 </p>

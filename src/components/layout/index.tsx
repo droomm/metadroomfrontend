@@ -15,7 +15,7 @@ export default function Layout({ children, background, header = "title" }: any) 
                 <meta name="description" content='The Social Passport to Metaverse' />
                 <meta property="og:title" content="VirtualWide" />
                 <meta property="og:description" content="Play games, party hard & meet your favorite people in life-like virtual worlds" />
-                {/* <meta property="og:image" content={url} /> */}
+                <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/virtualwide-2426e.appspot.com/o/virtualWide.webp?alt=media&token=f9131f68-8741-4446-907e-66ca95737277" />
             </Head>
             <LayoutContainer background={background} id="layout" onScroll={(event: any) => {
                 const welcome: any = document.querySelector('#welcome');

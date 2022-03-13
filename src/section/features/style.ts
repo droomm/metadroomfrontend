@@ -16,8 +16,13 @@ export const Container = styled.div`
   }
 
   .glass {
-    background-color: rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(4px) saturate(110%);
+    background-color: #87c2e599;
+    backdrop-filter: blur(7px) saturate(110%);
+  }
+
+  .welcome-box {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(16px) saturate(110%);
   }
 `;
 

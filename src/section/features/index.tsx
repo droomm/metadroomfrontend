@@ -12,16 +12,19 @@ const FeatureSection = () => {
     const [tab, setTabs] = useState<number>(0);
     return <Container id="features"
     >
+        <div className='w-full flex justify-center absolute z-20 -top-20 mt-4'>
+            <div className='w-full flex px-1 sm:px-5 font-M-Bold justify-center rounded-3xl sm:w-10/12 2xl:w-2/3 welcome-box py-12 sm:py-16  '>
+                <p className="text-2xl  md:text-3xl lg:text-5xl text-center text-dark" >
+                    Welcome To The Future
+                </p>
+            </div>
+        </div>
         <BackGroundVideo />
         <div className='glass w-full h-full absolute z-10'>
 
         </div>
         <div className='px-2 pr-4 sm:pl-24 sm:pr-4 pb-10 w-screen min-h-screen pt-5 flex flex-col relative  z-20'>
-            <div className='w-full flex justify-center h-16 mb-4 sm:mb-16 py-2'>
-                <p className='text-3xl sm:text-4xl md:text-5xl font-M-Bold text-center xl:text-left text-dark Font '>
-                    All this in a single platform :)
-                </p>
-            </div>
+
             <div className='flex flex-1 relative h-full '>
                 <Feature1 />
                 <Feature2 />

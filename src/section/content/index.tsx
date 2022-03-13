@@ -22,6 +22,11 @@ const ContentSection = () => {
     ]
 
     return <Container id="content" className='select-none px-2 sm:pl-28 w-screen relative z-20 text-lg'>
+        <div className='w-full flex justify-center h-16 mb-4 sm:mb-16 mt-10 py-2'>
+            <p className='text-3xl sm:text-4xl md:text-5xl font-M-Bold text-center xl:text-left text-dark Font '>
+                All this in a single platform :)
+            </p>
+        </div>
         <div className='flex flex-wrap w-full justify-center gap-y-5 py-2 items-center flex-row'>
             <div className='overflow-hidden w-full xl:w-1/2  relative rounded-lg content-image-box' >
                 <ImageContainer

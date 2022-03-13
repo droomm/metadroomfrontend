@@ -22,7 +22,7 @@ const Footer = () => <Container className='flex w-screen px-2 sm:px-10 '>
             Powered by {" "}
             <span
                 onClick={() => {
-                    // window.open("https://akn.et", "_blank");
+                    window.open("https://akn.et", "_blank");
                 }}
                 className=' cursor-pointer hover:text-gray-900 transition-all duration-1000 text-gray-800 underline underline-offset-2 hover:underline-offset-4'>
                 Akn.et
