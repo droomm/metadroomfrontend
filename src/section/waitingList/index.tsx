@@ -137,7 +137,7 @@ const WaitingList = () => {
 
             </div>
             {email.error && <p className="text-red-500 text-md mt-5">{email.errorMessage}</p>}
-            {successful && <p className="text-success text-md mt-5 font-M-Bold">Your subscription has been successful.</p>}
+            {successful && <p className="text-success text-md mt-5 font-M-Bold">Congrats You have joined our waiting list.</p>}
         </div>
     </Container >
 }

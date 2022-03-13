@@ -12,7 +12,7 @@ module.exports = {
                 third: "#161629",
                 shadow: "#79BCCF",
                 waitingList: "#DFD7F955",
-                success: "#5a93b5"
+                success: "#f7f7f7"
             },
             screens: {
                 'xsm': '420px',
