@@ -5,7 +5,6 @@ export const Container = styled.div`
   min-width: 320px;
   min-height: 100vh;
   position: relative;
-  background: linear-gradient(287.15deg, #efafbc 0%, #c3e3fa 100%);
 
   .controller {
     svg {
