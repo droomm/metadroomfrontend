@@ -1,38 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, lazy, Suspense } from "react";
 import Image from "next/image";
 import { Container } from './style';
-import { useKeenSlider } from "keen-slider/react"
-import "keen-slider/keen-slider.min.css"
 import LeftArrowSVG from '../../assets/icons/left';
 import gsap from 'gsap';
+const BackGroundVideo = lazy(() => import('./backgroundVideo'));
 
 const FeatureSection = () => {
-    const [currentSlide, setCurrentSlide] = React.useState(0)
-    const [loaded, setLoaded] = useState(false)
-    const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
-        initial: 0,
-        slideChanged(slider) {
-            setCurrentSlide(slider.track.details.rel)
-        },
-        created() {
-            setLoaded(true)
-        },
-    })
+
 
     const [tab, setTabs] = useState<number>(0);
     return <Container id="features"
     >
-
-        <div className=' w-full h-full absolute z-0'>
-
-            <video
-                style={{ width: "99.6vw", height: "100vh", objectFit: "cover" }}
-                autoPlay loop muted preload="auto"
-            >
-                <source src='/videos/feature.mp4' type="video/mp4" />
-            </video>
-        </div>
-
+        <BackGroundVideo />
         <div className='glass w-full h-full absolute z-10'>
 
         </div>
