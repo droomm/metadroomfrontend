@@ -6,8 +6,8 @@ interface SidePanelType {
 export const Container = styled.div<SidePanelType>`
   color: ${(props) => props.theme.colors.white};
   overflow-x: hidden;
-  .side-panel {
-    transition: background 0.6s ease-in-out;
+  .sidePanel {
+    transition: background 0.4s ease-in-out;
     background: ${(props) =>
       props.active ? "rgba(255, 255, 255, 0.15)" : "rgba(0, 0, 0, 0.15)"};
     backdrop-filter: blur(5px);
@@ -19,6 +19,7 @@ interface SvgType {
 
 export const SVGContainer = styled.div<SvgType>`
   cursor: pointer;
+  width: 100%;
   svg {
     fill: ${(props) => {
       if (props.active) return props.theme.colors.primary;

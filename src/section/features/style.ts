@@ -17,7 +17,7 @@ export const Container = styled.div`
   }
 
   .glass {
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(4px) saturate(110%);
   }
 `;

@@ -60,7 +60,7 @@ const TeamMemberSection = () => {
                 return (
                     <div className={'keen-slider__slide member sm:px-2 '} id={data.id} key={index}
                     >
-                        <div className={(data.id === selected ? "gradient mt-0" : " glass md:mt-14 ") + ' rounded-lg w-full  duration-500 flex flex-col items-center py-16'}>
+                        <div className={(data.id === selected ? "gradient mt-0" : " glass mt-14 ") + ' rounded-lg w-full  duration-500 flex flex-col items-center py-16'}>
                             <div className='w-24 h-24 bg-slate-600 rounded-full  relative'>
                                 <div className='relative h-24 w-24 rounded-full overflow-hidden'>
                                     <ImageContainer
@@ -117,6 +117,17 @@ const TeamMemberSection = () => {
         <MarqueeContainer >
             <div className='track1 flex gap-x-10'>
 
+                {Array(12).fill(0).map((data, index) => {
+                    return <img
+                        key={index}
+                        className="logo"
+                        src={`/images/logo${index + 1}.webp`}
+                        alt="logo"
+                        loading="lazy"
+                        placeholder="blur"
+                    />
+                })
+                }
                 {Array(12).fill(0).map((data, index) => {
                     return <img
                         key={index}

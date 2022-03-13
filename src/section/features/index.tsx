@@ -70,7 +70,7 @@ const FeatureSection = () => {
                             setTabs(1)
                         }
                     }}
-                    className='arrow w-1/2 flex justify-center cursor-pointer py-3 active:border-shadow md:hover:border-black/25 border-white transition-all duration-500  rounded-l-full'>
+                    className='arrow w-1/2 flex justify-center cursor-pointer py-3 active:border-shadow hover:border-black/25 border-white transition-all duration-500  rounded-l-full'>
                     <div className='rotate-180'>
                         <LeftArrowSVG width="22" height="22" />
                     </div>
@@ -93,7 +93,7 @@ const FeatureSection = () => {
                             setTabs(0)
                         }
                     }}
-                    className='arrow w-1/2 flex justify-center cursor-pointer py-3 active:border-shadow md:hover:border-black/25 border-white transition-all duration-500  rounded-r-full'>
+                    className='arrow w-1/2 flex justify-center cursor-pointer py-3 active:border-shadow hover:border-black/25 border-white transition-all duration-500  rounded-r-full'>
                     <LeftArrowSVG width="22" height="22" />
                 </div>
             </div>

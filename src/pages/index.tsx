@@ -1,3 +1,5 @@
+
+import Footer from '../section/footer'
 import Layout from '../components/layout'
 import ContentSection from '../section/content'
 import FeatureSection from '../section/features'
@@ -14,6 +16,8 @@ const Home = () => {
             <ContentSection />
             <TeamMemberSection />
             <WaitingList />
+
+            <Footer />
         </Layout>
     )
 }

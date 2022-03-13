@@ -88,7 +88,7 @@ export const MarqueeContainer = styled.div`
     position: absolute;
     white-space: nowrap;
     will-change: transform;
-    animation: marquee 120s linear infinite;
+    animation: marquee 177s linear infinite;
   }
   @keyframes marquee {
     from {

@@ -66,7 +66,7 @@ const HeroSection = () => {
             <Listing />
             <Buttons />
             <div className='w-full flex justify-center  mt-24'>
-                <div className='w-full flex px-1 sm:px-5 font-M-Bold justify-center rounded-3xl md:w-2/3 welcome-box py-12 sm:py-16  '>
+                <div className='w-full flex px-1 sm:px-5 font-M-Bold justify-center rounded-3xl sm:w-10/12 2xl:w-2/3 welcome-box py-12 sm:py-16  '>
                     <p className="text-2xl  md:text-3xl lg:text-5xl text-center text-dark" >
                         Welcome To The Future
                     </p>
@@ -91,7 +91,10 @@ const Buttons = () => {
                     let waitingList = document.getElementById("waitingListInput");
                     if (waitingList) {
                         waitingList.scrollIntoView();
-                        waitingList.focus();
+                        setTimeout(() => {
+                            let waitingList = document.getElementById("waitingListInput");
+                            if (waitingList) waitingList.focus();
+                        }, 1000)
                     }
                 }}
                 className='w-11/12 sm:w-5/12 lg:w-6/12 xl:w-4/12 py-1 sm:py-2 px-2 h-16 sm:h-20 items-center flex justify-center gap-x-5 left-button relative'>
