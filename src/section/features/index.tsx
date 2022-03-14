@@ -103,7 +103,7 @@ const Feature1 = () => {
                     Build and explore incredible ecosystems tied to your smart contracts. Host events, sports, games an online classes.
                 </p>
             </div>
-            <div className='absolute right-0 w-full h-full py-20 lg:py-10 hidden sm:flex  lg:justify-end items-center'>
+            <div className='absolute right-0 top-10 md:top-28 4xl:top-16 w-full h-full md:h-5/6 4xl:h-full py-20 lg:py-10 hidden sm:flex  lg:justify-end items-center'>
                 <div className={'w-full lg:w-5/12 2xl:w-4/12  relative lg:mr-10 2xl:mr-20 h-full '}>
                     <Image
                         src={"/images/feature1.webp"}
@@ -164,8 +164,8 @@ const Feature3 = () => {
                     Shop from your favorite brands on metaverse. Gather the assets powering the future.Trade NFTs, crypto tokens and much more. Even buy digital assets online from peers and ecosystem vendors.
                 </p>
             </div>
-            <div className='absolute right-0 w-full h-full py-20 lg:py-10 hidden sm:flex  sm:justify-end items-center'>
-                <div className={'w-full sm:w-8/12 md:w-5/12 2xl:w-4/12  relative lg:mr-10 2xl:mr-20 h-full '}>
+            <div className='absolute right-0 top-10 md:top-28 4xl:top-16 w-full h-full md:h-5/6 4xl:h-full py-20 lg:py-10 hidden sm:flex  sm:justify-end items-center'>
+                <div className={'w-full sm:w-10/12 md:w-5/12 2xl:w-4/12  relative lg:mr-10 2xl:mr-20 h-full '}>
                     <Image
                         src={"/images/feature3.webp"}
                         layout='fill'

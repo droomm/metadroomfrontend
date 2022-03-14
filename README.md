@@ -1,6 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
+## Getting Started for local test
 
 First, run the development server:
 
@@ -12,23 +10,18 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Deploy 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+for Deployment, i use on [Vercel](https://vercel.com)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+The deployment is actually simple.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. you create ac account on [Vercel](https://vercel.com)(recommended to use github account to create the account).
+2. once you have an account you press the button named "+ new project" and then it will redirect to page that let you import your git repo for deployment. click the import button on the git repo.
+   * if the repo is under a team in git hub it will require you to create a team which is 20 dollar per month with a 14 day trail period.
+   * if the repo is under personal git hub account the deployment will be free.
+3. once you have setup the team it ask you to configure the project.
+   * here by default the it will get the git repo name and it will detect the frame work to next.JS on the "FRAMEWORK PRESET" input if it doesn't change it to next.js.
+   * Lastly there is deploy button there press it and it is done. it will start to deploy the project will take some time. but once done the site will be live and you get a notification about it.
+  
+To setup the domain once the deployment is done the project is set. go to the settings tab and at the second option there is Domains tab in which you can add yours.

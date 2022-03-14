@@ -26,8 +26,8 @@ export const Container = styled.div`
   }
 
   .feature2Image {
-    height: 600px;
-    width: 600px;
+    height: 650px;
+    width: 650px;
     top: 20%;
     @media (max-width: 1800px) {
       height: 550px;
@@ -35,6 +35,19 @@ export const Container = styled.div`
     }
     @media (max-width: 1000px) {
       height: 500px;
+      width: 500px;
+    }
+  }
+  .featureImage {
+    height: 400px;
+    width: 650px;
+    top: 20%;
+    @media (max-width: 1800px) {
+      height: 350px;
+      width: 550px;
+    }
+    @media (max-width: 1000px) {
+      height: 200px;
       width: 500px;
     }
   }
