@@ -24,6 +24,20 @@ export const Container = styled.div`
     background-color: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(16px) saturate(110%);
   }
+
+  .feature2Image {
+    height: 600px;
+    width: 600px;
+    top: 20%;
+    @media (max-width: 1800px) {
+      height: 550px;
+      width: 550px;
+    }
+    @media (max-width: 1000px) {
+      height: 500px;
+      width: 500px;
+    }
+  }
 `;
 
 export const ImageContainer = styled(Image)`

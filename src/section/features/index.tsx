@@ -134,8 +134,8 @@ const Feature2 = () => {
                     Experience life like social interactions. Mint and shared NFT powered content. Monetize your creativity.
                 </p>
             </div>
-            <div className='absolute right-5 w-full md:w-5/12  h-full   justify-center lg:justify-end items-center hidden sm:flex'>
-                <div className={'w-full relative  h-5/6'} style={{ maxHeight: 600 }}>
+            <div className='absolute right-5 feature2Image  justify-center lg:justify-end items-center hidden sm:flex'>
+                <div className={'w-full relative  h-full'} style={{}}>
                     <Image
                         src={"/images/feature2.webp"}
                         layout='fill'
