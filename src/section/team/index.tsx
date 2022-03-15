@@ -148,16 +148,6 @@ const TeamMemberSection = () => {
                     />
                 })
                 }
-                {Array(12).fill(0).map((data, index) => {
-                    return <LazyLoadImage
-                        className="logo"
-                        key={index}
-                        src={`/images/logo${index + 1}.webp`}
-                        alt="logo"
-                        loading="lazy"
-                    />
-                })
-                }
             </div>
         </MarqueeContainer>
 
