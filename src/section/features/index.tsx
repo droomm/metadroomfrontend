@@ -158,7 +158,7 @@ const Feature3 = () => {
                     Pioneer in Web3.0 economy
                 </p>
                 <p className=' text-5xl sm:text-7xl md:text-8xl 4xl:text-8xl  font-M-Bold text-left text-dark'>
-                    Social-Networking
+                    Meta-Commerce
                 </p>
                 <p className='text-md sm:w-2/3 2xl:w-6/12 font-M-Medium mt-5  text-white'>
                     Shop from your favorite brands on metaverse. Gather the assets powering the future.Trade NFTs, crypto tokens and much more. Even buy digital assets online from peers and ecosystem vendors.
