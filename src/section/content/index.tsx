@@ -15,7 +15,7 @@ const ContentSection = () => {
         },
         {
             image: "/images/content3.webp",
-            title: "Meta-Commerce",
+            title: "Metaverse as a Service",
             detail: 'Explore your favorite global brands. Our oracles help bridge real world entities with virtual assets. Anyone can now build meta-stores, trade artifacts and mint digital assets securely.'
 
         },
