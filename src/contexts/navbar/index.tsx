@@ -92,14 +92,6 @@ const NavBarProvider: React.FC = ({ children }) => {
             aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat. "
         },
         {
-            id: "Uday_Allu",
-            image: "/images/UdayAllu.webp",
-            name: "Uday Allu",
-            position: "AI & Co-Founder",
-            link: "https://www.linkedin.com/in/udayallu/",
-            aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
-        },
-        {
             id: "Manish_Goyal",
             image: "/images/ManishGoyal.webp",
             name: "Manish Goyal",
