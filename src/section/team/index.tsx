@@ -91,7 +91,7 @@ const TeamMemberSection = () => {
                                     {data.position}
                                 </p>
                                 <p className='font-M-Medium mt-5 text-md text-center member-detail' >
-                                    "{data.aboutMe}"
+                                    {data.aboutMe}
                                 </p>
                             </div>
                         </div>
