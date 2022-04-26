@@ -33,13 +33,13 @@ const HeroSection = () => {
             <div className='hidden md:flex w-full py-2 gap-x-3 items-center mb-1'>
                 <LogoSVG width="70" height='70' />
                 <p className='text-3xl font-M-Black'>
-                    VirtualWide
+                    Metaphy
                 </p>
             </div>
             <div className='flex md:hidden w-full  py-2 gap-x-3 items-center mb-5'>
                 <LogoSVG width="50" height='50' />
                 <p className='text-2xl font-M-Black'>
-                    VirtualWide
+                    Metaphy
                 </p>
             </div>
             <div className='w-full mt-5 sm:mt-2 relative font-M-Bold'>
