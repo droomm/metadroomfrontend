@@ -10,7 +10,7 @@ export default function Layout({ children, background, header = "title" }: any) 
     return (
         <React.Fragment>
             <Head>
-metaphy                <title>Metaphy</title>
+metaphy                <title style={{fontFamily: 'Zen Dots'}}>Metaphy</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <meta name="description" content='The Social Passport to Metaverse' />
                 <meta property="og:title" content="VirtualWide" />
