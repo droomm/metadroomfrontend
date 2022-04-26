@@ -12,11 +12,11 @@ const Footer = () => <Container className='flex w-screen px-2 sm:px-10 '>
             <div className='flex gap-x-2 items-center'>
                 <LogoSVG width="25" height='25' />
                 <p className='text-lg font-M-Bold'>
-                    VirtualWide
+                    Metaphy
                 </p>
             </div>
             <p className='text-sm font-thin '>
-                © {new Date().getFullYear()} Copyright by VirtualWide Inc.
+                © {new Date().getFullYear()} Copyright by Metaphy Inc.
 
             </p>
         </div>

@@ -1,0 +1,358 @@
+Searching 97 files for "officia"
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/contexts/navbar/index.tsx:
+   74              position: "CEO & Co-Founder",
+   75              link: "https://www.linkedin.com/in/s-rakesh07/",
+   76:             aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
+   77          },
+   78          {
+   ..
+   82              position: "Product & Co-Founder",
+   83              link: "https://www.linkedin.com/in/preetham-sathyamurthy/",
+   84:             aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
+   85          },
+   86          {
+   ..
+   90              position: "Tech & Co-Founder",
+   91              link: "https://www.linkedin.com/in/suvesh-baskar-3a8a8b108/",
+   92:             aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat. "
+   93          },
+   94          {
+   ..
+   98              position: "Strategic Advisor Ex IDC, F&S",
+   99              link: "https://www.linkedin.com/in/manishgoyal2222/",
+  100:             aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
+  101  
+  102          },
+  ...
+  107              position: "Strategic Advisor - BlockChain Investor, Mentor @ ETHDenver",
+  108              link: "https://www.linkedin.com/in/varun-sharma-74b6b013a/",
+  109:             aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
+  110  
+  111          },
+  ...
+  116              position: "Co-founder",
+  117              link: "https://www.linkedin.com/in/navsang/",
+  118:             aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
+  119  
+  120          },
+
+12 matches in 1 file
+
+
+Searching 97 files for "VirtualWide"
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/components/layout/index.tsx:
+   11          <React.Fragment>
+   12              <Head>
+   13:                 <title>VirtualWide</title>
+   14                  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+   15                  <meta name="description" content='The Social Passport to Metaverse' />
+   16:                 <meta property="og:title" content="VirtualWide" />
+   17                  <meta property="og:description" content="Play games, party hard & meet your favorite people in life-like virtual worlds" />
+   18:                 <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/virtualwide-2426e.appspot.com/o/virtualWide.webp?alt=media&token=f9131f68-8741-4446-907e-66ca95737277" />
+   19              </Head>
+   20              <LayoutContainer background={background} id="layout" onScroll={(event: any) => {
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/section/footer/index.tsx:
+   13                  <LogoSVG width="25" height='25' />
+   14                  <p className='text-lg font-M-Bold'>
+   15:                     VirtualWide
+   16                  </p>
+   17              </div>
+   18              <p className='text-sm font-thin '>
+   19:                 © {new Date().getFullYear()} Copyright by VirtualWide Inc.
+   20  
+   21              </p>
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/section/hero/index.tsx:
+   34                  <LogoSVG width="70" height='70' />
+   35                  <p className='text-3xl font-M-Black'>
+   36:                     VirtualWide
+   37                  </p>
+   38              </div>
+   ..
+   40                  <LogoSVG width="50" height='50' />
+   41                  <p className='text-2xl font-M-Black'>
+   42:                     VirtualWide
+   43                  </p>
+   44              </div>
+
+8 matches across 3 files
+
+
+Searching 97 files for "VirtualWide"
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/components/layout/index.tsx:
+   11          <React.Fragment>
+   12              <Head>
+   13:                 <title>Meta</title>
+   14                  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+   15                  <meta name="description" content='The Social Passport to Metaverse' />
+   16:                 <meta property="og:title" content="VirtualWide" />
+   17                  <meta property="og:description" content="Play games, party hard & meet your favorite people in life-like virtual worlds" />
+   18:                 <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/virtualwide-2426e.appspot.com/o/virtualWide.webp?alt=media&token=f9131f68-8741-4446-907e-66ca95737277" />
+   19              </Head>
+   20              <LayoutContainer background={background} id="layout" onScroll={(event: any) => {
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/section/footer/index.tsx:
+   13                  <LogoSVG width="25" height='25' />
+   14                  <p className='text-lg font-M-Bold'>
+   15:                     VirtualWide
+   16                  </p>
+   17              </div>
+   18              <p className='text-sm font-thin '>
+   19:                 © {new Date().getFullYear()} Copyright by VirtualWide Inc.
+   20  
+   21              </p>
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/section/hero/index.tsx:
+   34                  <LogoSVG width="70" height='70' />
+   35                  <p className='text-3xl font-M-Black'>
+   36:                     VirtualWide
+   37                  </p>
+   38              </div>
+   ..
+   40                  <LogoSVG width="50" height='50' />
+   41                  <p className='text-2xl font-M-Black'>
+   42:                     VirtualWide
+   43                  </p>
+   44              </div>
+
+8 matches across 3 files
+
+
+Searching 97 files for "VirtualWide"
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/components/layout/index.tsx:
+   11          <React.Fragment>
+   12              <Head>
+   13: metaphy                <title>VirtualWide</title>
+   14                  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+   15                  <meta name="description" content='The Social Passport to Metaverse' />
+   16:                 <meta property="og:title" content="VirtualWide" />
+   17                  <meta property="og:description" content="Play games, party hard & meet your favorite people in life-like virtual worlds" />
+   18:                 <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/virtualwide-2426e.appspot.com/o/virtualWide.webp?alt=media&token=f9131f68-8741-4446-907e-66ca95737277" />
+   19              </Head>
+   20              <LayoutContainer background={background} id="layout" onScroll={(event: any) => {
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/section/footer/index.tsx:
+   13                  <LogoSVG width="25" height='25' />
+   14                  <p className='text-lg font-M-Bold'>
+   15:                     VirtualWide
+   16                  </p>
+   17              </div>
+   18              <p className='text-sm font-thin '>
+   19:                 © {new Date().getFullYear()} Copyright by VirtualWide Inc.
+   20  
+   21              </p>
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/section/hero/index.tsx:
+   34                  <LogoSVG width="70" height='70' />
+   35                  <p className='text-3xl font-M-Black'>
+   36:                     VirtualWide
+   37                  </p>
+   38              </div>
+   ..
+   40                  <LogoSVG width="50" height='50' />
+   41                  <p className='text-2xl font-M-Black'>
+   42:                     VirtualWide
+   43                  </p>
+   44              </div>
+
+8 matches across 3 files
+
+
+Searching 97 files for "VirtualWide"
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/components/layout/index.tsx:
+   11          <React.Fragment>
+   12              <Head>
+   13: metaphy                <title>Metaphy</title>
+   14                  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+   15                  <meta name="description" content='The Social Passport to Metaverse' />
+   16:                 <meta property="og:title" content="VirtualWide" />
+   17                  <meta property="og:description" content="Play games, party hard & meet your favorite people in life-like virtual worlds" />
+   18:                 <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/virtualwide-2426e.appspot.com/o/virtualWide.webp?alt=media&token=f9131f68-8741-4446-907e-66ca95737277" />
+   19              </Head>
+   20              <LayoutContainer background={background} id="layout" onScroll={(event: any) => {
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/section/footer/index.tsx:
+   13                  <LogoSVG width="25" height='25' />
+   14                  <p className='text-lg font-M-Bold'>
+   15:                     VirtualWide
+   16                  </p>
+   17              </div>
+   18              <p className='text-sm font-thin '>
+   19:                 © {new Date().getFullYear()} Copyright by VirtualWide Inc.
+   20  
+   21              </p>
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/section/hero/index.tsx:
+   34                  <LogoSVG width="70" height='70' />
+   35                  <p className='text-3xl font-M-Black'>
+   36:                     VirtualWide
+   37                  </p>
+   38              </div>
+   ..
+   40                  <LogoSVG width="50" height='50' />
+   41                  <p className='text-2xl font-M-Black'>
+   42:                     VirtualWide
+   43                  </p>
+   44              </div>
+
+8 matches across 3 files
+
+
+Searching 97 files for "VirtualWide"
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/components/layout/index.tsx:
+   11          <React.Fragment>
+   12              <Head>
+   13: metaphy                <title>VirtualWide</title>
+   14                  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+   15                  <meta name="description" content='The Social Passport to Metaverse' />
+   16:                 <meta property="og:title" content="VirtualWide" />
+   17                  <meta property="og:description" content="Play games, party hard & meet your favorite people in life-like virtual worlds" />
+   18:                 <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/virtualwide-2426e.appspot.com/o/virtualWide.webp?alt=media&token=f9131f68-8741-4446-907e-66ca95737277" />
+   19              </Head>
+   20              <LayoutContainer background={background} id="layout" onScroll={(event: any) => {
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/section/footer/index.tsx:
+   13                  <LogoSVG width="25" height='25' />
+   14                  <p className='text-lg font-M-Bold'>
+   15:                     VirtualWide
+   16                  </p>
+   17              </div>
+   18              <p className='text-sm font-thin '>
+   19:                 © {new Date().getFullYear()} Copyright by VirtualWide Inc.
+   20  
+   21              </p>
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/section/hero/index.tsx:
+   34                  <LogoSVG width="70" height='70' />
+   35                  <p className='text-3xl font-M-Black'>
+   36:                     VirtualWide
+   37                  </p>
+   38              </div>
+   ..
+   40                  <LogoSVG width="50" height='50' />
+   41                  <p className='text-2xl font-M-Black'>
+   42:                     VirtualWide
+   43                  </p>
+   44              </div>
+
+8 matches across 3 files
+
+
+Searching 97 files for "VirtualWide"
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/components/layout/index.tsx:
+   11          <React.Fragment>
+   12              <Head>
+   13: metaphy                <title>VirtualWide</title>
+   14                  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+   15                  <meta name="description" content='The Social Passport to Metaverse' />
+   16:                 <meta property="og:title" content="VirtualWide" />
+   17                  <meta property="og:description" content="Play games, party hard & meet your favorite people in life-like virtual worlds" />
+   18:                 <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/virtualwide-2426e.appspot.com/o/virtualWide.webp?alt=media&token=f9131f68-8741-4446-907e-66ca95737277" />
+   19              </Head>
+   20              <LayoutContainer background={background} id="layout" onScroll={(event: any) => {
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/section/footer/index.tsx:
+   13                  <LogoSVG width="25" height='25' />
+   14                  <p className='text-lg font-M-Bold'>
+   15:                     VirtualWide
+   16                  </p>
+   17              </div>
+   18              <p className='text-sm font-thin '>
+   19:                 © {new Date().getFullYear()} Copyright by VirtualWide Inc.
+   20  
+   21              </p>
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/section/hero/index.tsx:
+   34                  <LogoSVG width="70" height='70' />
+   35                  <p className='text-3xl font-M-Black'>
+   36:                     VirtualWide
+   37                  </p>
+   38              </div>
+   ..
+   40                  <LogoSVG width="50" height='50' />
+   41                  <p className='text-2xl font-M-Black'>
+   42:                     VirtualWide
+   43                  </p>
+   44              </div>
+
+8 matches across 3 files
+
+
+Searching 97 files for "virtualwide"
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/components/layout/index.tsx:
+   14                  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+   15                  <meta name="description" content='The Social Passport to Metaverse' />
+   16:                 <meta property="og:title" content="VirtualWide" />
+   17                  <meta property="og:description" content="Play games, party hard & meet your favorite people in life-like virtual worlds" />
+   18:                 <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/virtualwide-2426e.appspot.com/o/virtualWide.webp?alt=media&token=f9131f68-8741-4446-907e-66ca95737277" />
+   19              </Head>
+   20              <LayoutContainer background={background} id="layout" onScroll={(event: any) => {
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/section/footer/index.tsx:
+   13                  <LogoSVG width="25" height='25' />
+   14                  <p className='text-lg font-M-Bold'>
+   15:                     VirtualWide
+   16                  </p>
+   17              </div>
+   18              <p className='text-sm font-thin '>
+   19:                 © {new Date().getFullYear()} Copyright by VirtualWide Inc.
+   20  
+   21              </p>
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/section/hero/index.tsx:
+   34                  <LogoSVG width="70" height='70' />
+   35                  <p className='text-3xl font-M-Black'>
+   36:                     VirtualWide
+   37                  </p>
+   38              </div>
+   ..
+   40                  <LogoSVG width="50" height='50' />
+   41                  <p className='text-2xl font-M-Black'>
+   42:                     VirtualWide
+   43                  </p>
+   44              </div>
+
+7 matches across 3 files
+
+
+Searching 97 files for "virtualwide"
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/components/layout/index.tsx:
+   14                  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+   15                  <meta name="description" content='The Social Passport to Metaverse' />
+   16:                 <meta property="og:title" content="VirtualWide" />
+   17                  <meta property="og:description" content="Play games, party hard & meet your favorite people in life-like virtual worlds" />
+   18:                 <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/virtualwide-2426e.appspot.com/o/virtualWide.webp?alt=media&token=f9131f68-8741-4446-907e-66ca95737277" />
+   19              </Head>
+   20              <LayoutContainer background={background} id="layout" onScroll={(event: any) => {
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/section/footer/index.tsx:
+   13                  <LogoSVG width="25" height='25' />
+   14                  <p className='text-lg font-M-Bold'>
+   15:                     VirtualWide
+   16                  </p>
+   17              </div>
+
+/Users/udayallu/Documents/UDAY/metadroomfrontend/src/section/hero/index.tsx:
+   34                  <LogoSVG width="70" height='70' />
+   35                  <p className='text-3xl font-M-Black'>
+   36:                     VirtualWide
+   37                  </p>
+   38              </div>
+   ..
+   40                  <LogoSVG width="50" height='50' />
+   41                  <p className='text-2xl font-M-Black'>
+   42:                     VirtualWide
+   43                  </p>
+   44              </div>
+
+6 matches across 3 files

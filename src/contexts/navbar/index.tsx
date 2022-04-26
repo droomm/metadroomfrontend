@@ -73,7 +73,7 @@ const NavBarProvider: React.FC = ({ children }) => {
             name: "Rakesh S",
             position: "CEO & Co-Founder",
             link: "https://www.linkedin.com/in/s-rakesh07/",
-            aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
+            aboutMe: ""
         },
         {
             id: "Preetham_S",
@@ -81,7 +81,7 @@ const NavBarProvider: React.FC = ({ children }) => {
             name: "Preetham S",
             position: "Product & Co-Founder",
             link: "https://www.linkedin.com/in/preetham-sathyamurthy/",
-            aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
+            aboutMe: ""
         },
         {
             id: "Suvesh",
@@ -89,7 +89,7 @@ const NavBarProvider: React.FC = ({ children }) => {
             name: "Suvesh",
             position: "Tech & Co-Founder",
             link: "https://www.linkedin.com/in/suvesh-baskar-3a8a8b108/",
-            aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat. "
+            aboutMe: ""
         },
         {
             id: "Manish_Goyal",
@@ -97,7 +97,7 @@ const NavBarProvider: React.FC = ({ children }) => {
             name: "Manish Goyal",
             position: "Strategic Advisor Ex IDC, F&S",
             link: "https://www.linkedin.com/in/manishgoyal2222/",
-            aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
+            aboutMe: ""
 
         },
         {
@@ -106,7 +106,7 @@ const NavBarProvider: React.FC = ({ children }) => {
             name: "Varun Sharma",
             position: "Strategic Advisor - BlockChain Investor, Mentor @ ETHDenver",
             link: "https://www.linkedin.com/in/varun-sharma-74b6b013a/",
-            aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
+            aboutMe: ""
 
         },
         {
@@ -115,7 +115,7 @@ const NavBarProvider: React.FC = ({ children }) => {
             name: "Nav Sangameswaran",
             position: "Co-founder",
             link: "https://www.linkedin.com/in/navsang/",
-            aboutMe: "Officia eu dolor cillum aute duis do nostrud commodo sint nisi pariatur adipisicing non. Deserunt minim occaecat labore duis proident. Laborum enim sint laborum veniam laboris. Exercitation laboris eiusmod occaecat sint sunt aliqua deserunt exercitation minim aute nisi anim. Lorem laborum anim proident et officia fugiat."
+            aboutMe: ""
 
         },
 
