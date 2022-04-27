@@ -15,7 +15,7 @@ metaphy                <title style={{fontFamily: 'Zen Dots'}}>Metaphy</title>
                 <meta name="description" content='Create and discover interactive metaverses for your brand' />
                 <meta property="og:title" content="Metaphy" />
                 <meta property="og:description" content="Create and discover interactive metaverses for your brand" />
-                <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/virtualwide-2426e.appspot.com/o/virtualWide.webp?alt=media&token=f9131f68-8741-4446-907e-66ca95737277" />
+                <meta property="og:image" content="https://raw.githubusercontent.com/droomm/metadroomfrontend/main/src/assets/icons/meta-image.png" />
             </Head>
             <LayoutContainer background={background} id="layout" onScroll={(event: any) => {
                 const welcome: any = document.querySelector('#welcome');
