@@ -12,8 +12,8 @@ export default function Layout({ children, background, header = "title" }: any) 
             <Head>
 metaphy                <title style={{fontFamily: 'Zen Dots'}}>Metaphy</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                <meta name="description" content='The Social Passport to Metaverse' />
-                <meta property="og:title" content="VirtualWide" />
+                <meta name="description" content='Create and discover interactive metaverses for your brand' />
+                <meta property="og:title" content="Metaphy" />
                 <meta property="og:description" content="Create and discover interactive metaverses for your brand" />
                 <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/virtualwide-2426e.appspot.com/o/virtualWide.webp?alt=media&token=f9131f68-8741-4446-907e-66ca95737277" />
             </Head>
