@@ -50,7 +50,7 @@ Searching 97 files for "VirtualWide"
    15                  <meta name="description" content='The Social Passport to Metaverse' />
    16:                 <meta property="og:title" content="VirtualWide" />
    17                  <meta property="og:description" content="Create and discover interactive metaverses for your brand" />
-   18:                 <meta property="og:image" content="https://raw.githubusercontent.com/droomm/metadroomfrontend/main/src/assets/icons/meta-image.png" />
+   18:                 <meta property="og:image" content="https://raw.githubusercontent.com/droomm/metadroomfrontend/main/src/assets/icons/meta-image-small.jpg" />
    19              </Head>
    20              <LayoutContainer background={background} id="layout" onScroll={(event: any) => {
 
@@ -91,7 +91,7 @@ Searching 97 files for "VirtualWide"
    15                  <meta name="description" content='The Social Passport to Metaverse' />
    16:                 <meta property="og:title" content="VirtualWide" />
    17                  <meta property="og:description" content="Create and discover interactive metaverses for your brand" />
-   18:                 <meta property="og:image" content="https://raw.githubusercontent.com/droomm/metadroomfrontend/main/src/assets/icons/meta-image.png" />
+   18:                 <meta property="og:image" content="https://raw.githubusercontent.com/droomm/metadroomfrontend/main/src/assets/icons/meta-image-small.jpg" />
    19              </Head>
    20              <LayoutContainer background={background} id="layout" onScroll={(event: any) => {
 
@@ -132,7 +132,7 @@ Searching 97 files for "VirtualWide"
    15                  <meta name="description" content='The Social Passport to Metaverse' />
    16:                 <meta property="og:title" content="VirtualWide" />
    17                  <meta property="og:description" content="Create and discover interactive metaverses for your brand" />
-   18:                 <meta property="og:image" content="https://raw.githubusercontent.com/droomm/metadroomfrontend/main/src/assets/icons/meta-image.png" />
+   18:                 <meta property="og:image" content="https://raw.githubusercontent.com/droomm/metadroomfrontend/main/src/assets/icons/meta-image-small.jpg" />
    19              </Head>
    20              <LayoutContainer background={background} id="layout" onScroll={(event: any) => {
 
@@ -173,7 +173,7 @@ Searching 97 files for "VirtualWide"
    15                  <meta name="description" content='The Social Passport to Metaverse' />
    16:                 <meta property="og:title" content="VirtualWide" />
    17                  <meta property="og:description" content="Create and discover interactive metaverses for your brand" />
-   18:                 <meta property="og:image" content="https://raw.githubusercontent.com/droomm/metadroomfrontend/main/src/assets/icons/meta-image.png" />
+   18:                 <meta property="og:image" content="https://raw.githubusercontent.com/droomm/metadroomfrontend/main/src/assets/icons/meta-image-small.jpg" />
    19              </Head>
    20              <LayoutContainer background={background} id="layout" onScroll={(event: any) => {
 
@@ -214,7 +214,7 @@ Searching 97 files for "VirtualWide"
    15                  <meta name="description" content='The Social Passport to Metaverse' />
    16:                 <meta property="og:title" content="VirtualWide" />
    17                  <meta property="og:description" content="Create and discover interactive metaverses for your brand" />
-   18:                 <meta property="og:image" content="https://raw.githubusercontent.com/droomm/metadroomfrontend/main/src/assets/icons/meta-image.png" />
+   18:                 <meta property="og:image" content="https://raw.githubusercontent.com/droomm/metadroomfrontend/main/src/assets/icons/meta-image-small.jpg" />
    19              </Head>
    20              <LayoutContainer background={background} id="layout" onScroll={(event: any) => {
 
@@ -255,7 +255,7 @@ Searching 97 files for "VirtualWide"
    15                  <meta name="description" content='The Social Passport to Metaverse' />
    16:                 <meta property="og:title" content="VirtualWide" />
    17                  <meta property="og:description" content="Create and discover interactive metaverses for your brand" />
-   18:                 <meta property="og:image" content="https://raw.githubusercontent.com/droomm/metadroomfrontend/main/src/assets/icons/meta-image.png" />
+   18:                 <meta property="og:image" content="https://raw.githubusercontent.com/droomm/metadroomfrontend/main/src/assets/icons/meta-image-small.jpg" />
    19              </Head>
    20              <LayoutContainer background={background} id="layout" onScroll={(event: any) => {
 
@@ -293,7 +293,7 @@ Searching 97 files for "virtualwide"
    15                  <meta name="description" content='The Social Passport to Metaverse' />
    16:                 <meta property="og:title" content="VirtualWide" />
    17                  <meta property="og:description" content="Create and discover interactive metaverses for your brand" />
-   18:                 <meta property="og:image" content="https://raw.githubusercontent.com/droomm/metadroomfrontend/main/src/assets/icons/meta-image.png" />
+   18:                 <meta property="og:image" content="https://raw.githubusercontent.com/droomm/metadroomfrontend/main/src/assets/icons/meta-image-small.jpg" />
    19              </Head>
    20              <LayoutContainer background={background} id="layout" onScroll={(event: any) => {
 
@@ -331,7 +331,7 @@ Searching 97 files for "virtualwide"
    15                  <meta name="description" content='The Social Passport to Metaverse' />
    16:                 <meta property="og:title" content="VirtualWide" />
    17                  <meta property="og:description" content="Create and discover interactive metaverses for your brand" />
-   18:                 <meta property="og:image" content="https://raw.githubusercontent.com/droomm/metadroomfrontend/main/src/assets/icons/meta-image.png" />
+   18:                 <meta property="og:image" content="https://raw.githubusercontent.com/droomm/metadroomfrontend/main/src/assets/icons/meta-image-small.jpg" />
    19              </Head>
    20              <LayoutContainer background={background} id="layout" onScroll={(event: any) => {
 
