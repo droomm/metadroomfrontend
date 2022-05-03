@@ -19,7 +19,6 @@ const FeatureSection = () => {
                 </p>
             </div>
         </div>
-        <BackGroundVideo />
         <div className='glass w-full h-full absolute z-10'>
 
         </div>
