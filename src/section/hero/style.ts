@@ -87,6 +87,7 @@ export const Container = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  
 
   .topText {
     font-size: 7rem;
@@ -291,7 +292,11 @@ export const Container = styled.div`
   }
 
   .welcome-box {
-    background-color: rgba(255, 255, 255, 0.25);
+    background-image: linear-gradient(      
+      45.05deg,
+      #f8a8ff 26.98%,
+      #6155ed 90.22%
+      );
     backdrop-filter: blur(16px) saturate(110%);
   }
   .left-button {
@@ -303,12 +308,12 @@ export const Container = styled.div`
     }
     max-width: 450px;
     transition: all 0.4s ease-in-out;
-    box-shadow: 0px 0.5px 2.5px #6016fc77;
+    box-shadow: 0px 0.5px 2.5px #f8a8ff;
     :hover {
-      box-shadow: 0px 0.5px 10px #6016fc55;
+      box-shadow: 0px 0.5px 10px #f8a8ff;
     }
     :active {
-      box-shadow: 0px 0.5px 10px #6016fc99;
+      box-shadow: 0px 0.5px 10px #f8a8ff;
     }
     .shadow {
       box-shadow: 0px 0px 6.592983722686768px 0px #ffffff inset;
@@ -326,12 +331,12 @@ export const Container = styled.div`
     }
     max-width: 450px;
     transition: all 0.4s ease-in-out;
-    box-shadow: 0px 0.5px 2.5px #6016fc77;
+    box-shadow: 0px 0.5px 2.5px #f8a8ff;
     :hover {
-      box-shadow: 0px 0.5px 10px #6016fc55;
+      box-shadow: 0px 0.5px 10px #f8a8ff;
     }
     :active {
-      box-shadow: 0px 0.5px 10px #6016fc99;
+      box-shadow: 0px 0.5px 10px #f8a8ff;
     }
   }
 `;

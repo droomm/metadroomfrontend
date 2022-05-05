@@ -9,7 +9,7 @@ export const Container = styled.div<SidePanelType>`
   .sidePanel {
     transition: background 0.4s ease-in-out;
     background: ${(props) =>
-      props.active ? "rgba(255, 255, 255, 0.15)" : "rgba(0, 0, 0, 0.15)"};
+      true ? "rgba(255, 255, 255, 0.15)" : "rgba(0, 0, 0, 0.15)"};
     backdrop-filter: blur(5px);
   }
 `;

@@ -13,13 +13,17 @@ const FeatureSection = () => {
     return <Container id="features"
     >
         <div className='w-full flex justify-center absolute z-20 -top-20 mt-4'>
-            <div className='w-full flex px-1 sm:px-5 font-M-Bold justify-center rounded-3xl sm:w-10/12 2xl:w-2/3 welcome-box py-12 sm:py-16  '>
-                <p className="text-2xl  md:text-3xl lg:text-5xl text-center text-dark" >
-                    Welcome To The Future
+            <div 
+              className='w-full flex px-1 sm:px-5 font-M-Bold justify-center rounded-3xl sm:w-10/12 2xl:w-2/3 welcome-box py-12 sm:py-16' 
+              // style="background: rgb(248,168,255); background: linear-gradient(103deg, rgba(248,168,255,1) 0%, rgba(97,85,237,1) 100%);"
+              style={{ background: "linear-gradient(103deg, rgba(248,168,255,1) 0%, rgba(97,85,237,1) 100%);" }}
+            >
+                <p className="text-2xl  md:text-3xl lg:text-5xl text-center text-dark motdGradient" >
+                    <span className="motdGradient">Welcome To The Future</span>
                 </p>
             </div>
         </div>
-        <div className='glass w-full h-full absolute z-10'>
+        <div className='w-full h-full absolute z-10'>
 
         </div>
         <div className='px-2 pr-4 sm:pl-24 sm:pr-4 pb-10 w-screen min-h-screen pt-5 flex flex-col relative  z-20'>
@@ -98,7 +102,7 @@ const Feature1 = () => {
                 <p className=' text-6xl sm:text-7xl md:text-8xl 4xl:text-8xl   font-M-Bold text-left text-dark'>
                     World Building
                 </p>
-                <p className='text-md sm:w-2/3 2xl:w-6/12 font-M-Medium mt-5  text-white'>
+                <p className='text-md sm:text-xl 2xl:w-6/12 font-M-Medium mt-5  text-white'>
                     Build and explore incredible ecosystems tied to your smart contracts. Host events, sports, games an online classes.
                 </p>
             </div>
@@ -129,7 +133,7 @@ const Feature2 = () => {
                 <p className=' text-5xl sm:text-7xl md:text-8xl 4xl:text-8xl   font-M-Bold text-left text-dark'>
                     Social-Networking
                 </p>
-                <p className='text-md sm:w-2/3 2xl:w-6/12 font-M-Medium mt-5  text-white'>
+                <p className='text-md sm:text-xl 2xl:w-6/12 font-M-Medium mt-5  text-white'>
                     Experience life like social interactions. Mint and shared NFT powered content. Monetize your creativity.
                 </p>
             </div>
@@ -159,7 +163,7 @@ const Feature3 = () => {
                 <p className=' text-5xl sm:text-7xl md:text-8xl 4xl:text-8xl  font-M-Bold text-left text-dark'>
                     Meta-Commerce
                 </p>
-                <p className='text-md sm:w-2/3 2xl:w-6/12 font-M-Medium mt-5  text-white'>
+                <p className='text-md sm:text-xl 2xl:w-6/12 font-M-Medium mt-5  text-white'>
                     Shop from your favorite brands on metaverse. Gather the assets powering the future.Trade NFTs, crypto tokens and much more. Even buy digital assets online from peers and ecosystem vendors.
                 </p>
             </div>

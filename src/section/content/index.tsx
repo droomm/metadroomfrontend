@@ -6,7 +6,7 @@ const ContentSection = () => {
         {
             image: "/images/content1.webp",
             title: "Discovery Engine",
-            detail: 'Discover & monetize your virtual world and creativity. Engage & earn from decentralized content sales, ads, digital merchandized and much mor'
+            detail: 'Discover & monetize your virtual world and creativity. Engage & earn from decentralized content sales, ads, digital merchandized and much more'
         },
         {
             image: "/images/content2.webp",
