@@ -116,7 +116,14 @@ const NavBarProvider: React.FC = ({ children }) => {
             position: "Co-founder",
             link: "https://www.linkedin.com/in/navsang/",
             aboutMe: ""
-
+        },
+        {
+            id: "Gloria Felicia",
+            image: "/images/glo.webp",
+            name: "Gloria Felicia",
+            position: "Founding Advisor",
+            link: "https://id.linkedin.com/in/gloriafelicia",
+            aboutMe: ""
         },
 
     ]
