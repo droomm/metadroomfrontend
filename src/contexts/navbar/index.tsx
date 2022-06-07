@@ -92,15 +92,6 @@ const NavBarProvider: React.FC = ({ children }) => {
             aboutMe: ""
         },
         {
-            id: "Manish_Goyal",
-            image: "/images/ManishGoyal.webp",
-            name: "Manish Goyal",
-            position: "Strategic Advisor Ex IDC, F&S",
-            link: "https://www.linkedin.com/in/manishgoyal2222/",
-            aboutMe: ""
-
-        },
-        {
             id: "Varun_Sharma",
             image: "/images/VarunSharma.webp",
             name: "Varun Sharma",
