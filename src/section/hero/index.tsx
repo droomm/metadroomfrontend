@@ -101,7 +101,7 @@ const Buttons = () => {
             </button>
             <button
                 onClick={() => {
-                    window.open("https://www.dropbox.com/s/6z3ya7fsrya2qxp/Metaphy%20Labs%20-%20Landing%20Deck.pdf?dl=0");
+                    window.open("");
                 }}
                 className='w-11/12 md:w-5/12 lg:w-5/12 xl:w-4/12 py-1 sm:py-2 px-2 h-16  sm:h-20 items-center flex justify-center gap-x-5 right-button relative'>
                 <p className='text-center text-xl xl:text-3xl font-M-Bold'>
