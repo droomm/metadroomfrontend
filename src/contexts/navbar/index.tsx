@@ -83,14 +83,14 @@ const NavBarProvider: React.FC = ({ children }) => {
             link: "https://www.linkedin.com/in/preetham-sathyamurthy/",
             aboutMe: ""
         },
-        {
-            id: "Suvesh",
-            image: "/images/Suvesh.webp",
-            name: "Suvesh",
-            position: "Tech & Co-Founder",
-            link: "https://www.linkedin.com/in/suvesh-baskar-3a8a8b108/",
-            aboutMe: ""
-        },
+        // {
+        //     id: "Suvesh",
+        //     image: "/images/Suvesh.webp",
+        //     name: "Suvesh",
+        //     position: "Tech & Co-Founder",
+        //     link: "https://www.linkedin.com/in/suvesh-baskar-3a8a8b108/",
+        //     aboutMe: ""
+        // },
         {
             id: "Varun_Sharma",
             image: "/images/VarunSharma.webp",
@@ -108,14 +108,14 @@ const NavBarProvider: React.FC = ({ children }) => {
             link: "https://www.linkedin.com/in/navsang/",
             aboutMe: ""
         },
-        {
-            id: "Gloria Felicia",
-            image: "/images/glo.webp",
-            name: "Gloria Felicia",
-            position: "Founding Advisor",
-            link: "https://id.linkedin.com/in/gloriafelicia",
-            aboutMe: ""
-        },
+        // {
+        //     id: "Gloria Felicia",
+        //     image: "/images/glo.webp",
+        //     name: "Gloria Felicia",
+        //     position: "Founding Advisor",
+        //     link: "https://id.linkedin.com/in/gloriafelicia",
+        //     aboutMe: ""
+        // },
 
     ]
 
