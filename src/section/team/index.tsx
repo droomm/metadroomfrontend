@@ -115,7 +115,7 @@ const TeamMemberSection = () => {
         </div>
 
 
-        <MarqueeContainer >
+        {/*rqueeContainer >
             <div className='track1 flex gap-x-10'>
 
                 {Array(12).fill(0).map((data, index) => {
@@ -149,7 +149,7 @@ const TeamMemberSection = () => {
                 })
                 }
             </div>
-        </MarqueeContainer>
+        </MarqueeContainer> */}
 
     </Container >
 
