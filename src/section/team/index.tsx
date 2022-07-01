@@ -114,7 +114,7 @@ const TeamMemberSection = () => {
             </div>
         </div>
 
-
+{/* 
         <MarqueeContainer >
             <div className='track1 flex gap-x-10'>
 
@@ -149,7 +149,7 @@ const TeamMemberSection = () => {
                 })
                 }
             </div>
-        </MarqueeContainer>
+        </MarqueeContainer> */}
 
     </Container >
 
