@@ -79,7 +79,7 @@ const NavBarProvider: React.FC = ({ children }) => {
             id: "Preetham_S",
             image: "/images/Preetham.webp",
             name: "Preetham S",
-            position: "Product & Co-Founder",
+            position: "Tech & Co-Founder",
             link: "https://www.linkedin.com/in/preetham-sathyamurthy/",
             aboutMe: ""
         },
@@ -95,7 +95,7 @@ const NavBarProvider: React.FC = ({ children }) => {
             id: "Varun_Sharma",
             image: "/images/VarunSharma.webp",
             name: "Varun Sharma",
-            position: "Strategic Advisor - BlockChain Investor, Mentor @ ETHDenver",
+            position: "web3 & Co-Founder",
             link: "https://www.linkedin.com/in/varun-sharma-74b6b013a/",
             aboutMe: ""
 
@@ -104,7 +104,7 @@ const NavBarProvider: React.FC = ({ children }) => {
             id: "Nav Sangameswaran",
             image: "/images/NavSangameswaran.webp",
             name: "Nav Sangameswaran",
-            position: "Co-founder",
+            position: "Product & Co-founder",
             link: "https://www.linkedin.com/in/navsang/",
             aboutMe: ""
         },
